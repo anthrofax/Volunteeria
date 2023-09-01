@@ -12,6 +12,11 @@
     }
 
     .organization-card {
-        @apply bg-palewhite py-9 px-4 rounded-lg outline outline-purple2 flex flex-col justify-center items-center
+        @apply bg-palewhite py-9 px-4 rounded-lg outline outline-purple2 flex flex-col justify-center items-center;
+    }
+
+    .card-rating {
+        @apply absolute border-2 border-red-500 flex flex-col text-center items-center justify-center h-full w-full;
     }
 }
+
