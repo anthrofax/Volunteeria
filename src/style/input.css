@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .fitur-website {
+        @apply flex gap-3 flex-col p-5;
+    }
+
+    .kontribusi-kanan {
+        @apply flex flex-col items-end text-end ;
+    }
+
+    .organization-card {
+        @apply bg-palewhite py-9 px-4 rounded-lg outline outline-purple2 flex flex-col justify-center items-center
+    }
+}
