@@ -3,11 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&family=Inter:wght@100;200;400;600;700&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/src/style/output.css">
     <title>Volunteeria</title>
 </head>
-<body>
-    <nav></nav>
-    <main></main>
-    <footer></footer>
+<body class="text-white font-poppins bg-black1">
+    <nav class="bg-black1 p-8 flex items-center	justify-between	" >
+        <div class="log flex items-center gap-x-5">
+            <img src="/src/img/vektor1.png" alt="Volunteeria Logo">
+            <h2 class="text-3xl ">Volunteeria</h2>
+        </div>
+
+
+        <ul class="flex gap-x-5 text-xl">
+            <li ><a href="">Login</a></li>
+            <li><a href="" >Signup</a></li>
+            <li><a href="" >Employers/Post Job</a></li>
+         </ul>
+    </nav>
+    <section class="flex items-center h-[864px] pl-16 bg-slate-400 bg-no-repeat bg-cover bg-blend-multiply	" style="background-image: url(src/img/2a6e9eb9b34168c9d78edcea53e10f46.jpeg)">
+        <div class="main-content h-fit flex gap-3 flex-col">
+            <h2 class="text-5xl">Tebarkan kebaikan bersama</h2>
+            <p class="text-xl ml-2">Daftar sebagai...</p>
+            <div class="sign-button flex gap-4 ">
+                <button class="bg-gradient-to-b from-black1 to-black2 p-3 rounded-lg">Sukarelawan</button>
+                <button class="bg-gradient-to-b from-black1 to-black2 p-3 rounded-lg">Perekrut</button>
+            </div>
+        </div>
+       
+    </section>
+    <footer class="mt-[10000px]"></footer>
 </body>
 </html>
