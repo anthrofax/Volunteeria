@@ -14,7 +14,7 @@ cardRating.forEach((card, i) => {
 
     if (card.classList.contains('card-active')) {
         circleElement[i].classList.add('bg-slate-100');
-        card.classList.remove('invisible');
+        card.classList.remove('hidden');
     } 
 
     console.log(circleElement[i])

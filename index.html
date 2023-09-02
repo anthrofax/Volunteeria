@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,101 +13,144 @@
     <script defer src="/src/js/index.js"></script>
     <title>Volunteeria</title>
 </head>
-<body class="text-white font-poppins bg-black1">
+<body class="text-palewhite font-poppins bg-black1 ">
+
+    <!-- Back to Top Button -->
+    <a href="#" class="fixed bottom-5 right-5 rounded-full bg-purple1 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-500 ease-in-out hover:bg-palewhite hover:shadow-lg focus:bg-palewhite focus:shadow-lg focus:outline-none focus:ring-0 active:bg-palewhite active:shadow-lg" id="btn-back-to-top">
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    data-prefix="fas"
+    class="h-4 w-4"
+    role="img"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 448 512">
+    <path
+      fill="currentColor"
+      d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path>
+  </svg>
+</a>
+
     <!-- Navbar -->
-    <nav class="bg-[#CACACA] py-8 pr-16 pl-8 flex items-center	justify-between	drop-shadow-[0_ 5px_15px_white] text-black1" >
-        <div class=" flex items-center gap-x-5 ">
-            <img src="/src/img/vektor1.png" alt="Volunteeria Logo">
-            <h1 class="text-3xl uppercase tracking-widest">Volunteeria</h1>
+    <nav class="bg-black2 sm:py-8 sm:pr-20 sm:pl-16 max-sm:px-5 flex items-center justify-between drop-shadow-[0_ 5px_15px_white] text-palewhite w-screen relative" >
+        <div class=" flex items-center gap-x-5 max-sm:gap-x-2">
+            <img src="/src/img/logo.svg" alt="Volunteeria Logo" width="60px" class="max-sm:w-10 max-sm:h-20">
+            <a href="" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm hover:text-purple1 transition-colors">
+                <h1>Volunteeria</h1>
+            </a>
+            
         </div>
 
+        <div class="lg:hidden">
+			<button class="navbar-burger flex items-center text-blue-600 p-3">
+				<svg class="block h-5 w-5 sm:h-10 sm:w-10 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+					<title>Mobile menu</title>
+					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+				</svg>
+			</button>
+		</div>
 
-        <ul class="flex gap-x-8 text-lg">
-            <li ><a href="">LOGIN</a></li>
-            <li><a href="" >SIGNUP</a></li>
-            <li><a href="" >EMPLOYERS/POST JOB</a></li>
+        <div class="absolute bg-black2 border-r-2 border-b-2 border-slate-500 p-10 top-20 -left-96 sm:hidden">
+             <div class="mb-10 flex justify-end">X</div>
+             <ul class="flex flex-col ">
+                <li class="py-2 border-y-2 border-palewhite">
+                    <a href="">LOGIN</a>
+                </li>
+                <li class="py-2 border-b-2 border-palewhite">
+                    <a href="">SIGNUP</a>
+                </li>
+                <li class="py-2 border-b-2 border-palewhite">
+                    <a href="">EMPLOYERS/POST JOB</a>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="hidden lg:flex gap-x-8 text-base">
+            <li ><a href="" class="hover:text-purple1 duration-500">LOGIN</a></li>
+            <li><a href=""  class="hover:text-purple1 duration-500">SIGNUP</a></li>
+            <li><a href=""  class="hover:text-purple1 duration-500 border border-purple1 px-4 py-5 rounded-full hover:border-palewhite">EMPLOYERS/POST JOB</a></li>
          </ul>
     </nav>
 
     <!-- Jumbotron -->
-    <header class="flex items-center py-[300px] pl-16 bg-slate-400 bg-no-repeat bg-cover bg-blend-multiply" style="background-image: url(src/img/2a6e9eb9b34168c9d78edcea53e10f46.jpeg)">
-        <div class="main-content h-fit flex gap-3 flex-col">
-            <h2 class="text-5xl">Tebarkan kebaikan bersama</h2>
-            <p class="text-xl ml-2">Daftar sebagai...</p>
+    <header class="flex items-center justify-center sm:justify-start max-sm:py-20 sm:py-[300px] sm:pl-16 bg-slate-600 bg-no-repeat bg-cover bg-center bg-blend-multiply" style="background-image: url(src/img/2a6e9eb9b34168c9d78edcea53e10f46.jpeg)">
+        <div class="main-content h-fit flex gap-3 flex-col items-center sm:items-start">
+            <h2 class="sm:text-4xl text-2xl text-center sm:text-left">Tebarkan kebaikan bersama</h2>
+            <p class="sm:text-xl text-sm ml-2 sm:text-left">Daftar sebagai...</p>
             <div class="sign-button flex gap-4 ">
-                <a href="" class="bg-gradient-to-b from-black1 to-black2 p-3 rounded-lg">Sukarelawan</a>
-                <a href="" class="bg-gradient-to-b from-black1 to-black2 p-3 rounded-lg">Perekrut</a>
+                <a href="" class="jumbtotron-button">Sukarelawan</a>
+                <a href="" class="jumbtotron-button">Perekrut</a>
             </div>
         </div>
     </header>
 
 <!-- Section 1 -->
-    <section class="p-20">
-        <div class="border-y-2 py-9 flex flex-col gap-10">
-            <h2 class="text-4xl">Need something done?</h2>
-            <div class="flex gap-2  h-fit ">
+    <section class="p-10 sm:p-20">
+        <div class="border-y-4 border-purple1/40 py-9 flex flex-col gap-10">
+            <h2 class="text-2xl text-center sm:text-3xl">Need something done?</h2>
+            <div class="flex gap-10 h-fit flex-wrap lg:flex-nowrap justify-center">
                 <div class="fitur-website">
-                    <h4 class="text-2xl ">Post a job</h4>
-                    <p class="text-justify">It's free and easy to post a job. Simply fill in a title, description and budget and competitive bids come within minutes.</p>
+                    <h4 class="text-xl ">Post a job</h4>
+                    <p class="text-justify text-sm  sm:text-justify ">It's free and easy to post a job. Simply fill in a title, description and budget and competitive bids come within minutes.</p>
                 </div>
                 <div class="fitur-website">
-                    <h4 class="text-2xl">Pencarian Berdasarkan Kriteria</h4>
-                    <p class="text-justify">Website pencari lowongan volunteer harus menyediakan fitur pencarian yang kuat. Ini memungkinkan pengguna untuk memfilter lowongan berdasarkan kriteria seperti lokasi, jenis organisasi, waktu yang tersedia, dan bidang minat.</p>
+                    <h4 class="text-xl">Pencarian Berdasarkan Kriteria</h4>
+                    <p class="text-justify text-sm sm:text-justify ">Website pencari lowongan volunteer harus menyediakan fitur pencarian yang kuat. Ini memungkinkan pengguna untuk memfilter lowongan berdasarkan kriteria seperti lokasi, jenis organisasi, waktu yang tersedia, dan bidang minat.</p>
                 </div>
                 <div class="fitur-website">
-                    <h4 class="text-2xl">Profil Pengguna</h4>
-                    <p class="text-justify">Website tersebut dapat memungkinkan pengguna untuk membuat profil pribadi. Profil ini dapat mencakup informasi tentang minat, keterampilan, pengalaman sebelumnya, dan ketersediaan.</p>
+                    <h4 class="text-xl">Profil Pengguna</h4>
+                    <p class="text-justify text-sm sm:text-justify ">Website tersebut dapat memungkinkan pengguna untuk membuat profil pribadi. Profil ini dapat mencakup informasi tentang minat, keterampilan, pengalaman sebelumnya, dan ketersediaan.</p>
                 </div>
                 <div class="fitur-website">
-                    <h4 class="text-2xl">Ulasan dan Penilaian Organisasi</h4>
-                    <p class="text-justify">Memberikan platform untuk pengguna memberikan ulasan dan penilaian terhadap organisasi yang mereka sukarelawan. Ini membantu calon volunteer untuk mendapatkan wawasan tentang pengalaman sukarelawan dari orang lain.</p>
+                    <h4 class="text-xl">Ulasan dan Penilaian Organisasi</h4>
+                    <p class="text-justify text-sm sm:text-justify ">Memberikan platform untuk pengguna memberikan ulasan dan penilaian terhadap organisasi yang mereka sukarelawan. Ini membantu calon volunteer untuk mendapatkan wawasan tentang pengalaman sukarelawan dari orang lain.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Section 2 -->
-    <section class="p-16 bg-black3">
-        <div class="text-3xl mb-10 text-center">
-            <h2>Volunteeria telah memberikan dampak positif yang signifikan.</h2>
+    <section class="py-16 px-10 bg-black3">
+        <div class="text-xl sm:text-3xl mb-5 lg:mb-10 text-center">
+            <h2>Volunteeria telah memberikan dampak <br> positif yang signifikan.</h2>
         </div>
         
-        <div class="flex">
-            <div class="flex flex-col gap-20 p-10">
-                <div class="flex flex-col">
-                    <img src="/src/img/help-1.jpeg" alt="" width="400px" class="shadow-[-10px_10px_5px_0_rgba(255,255,255,0.3)]">
-                    <h5 class="text-2xl pt-5">Lorem ipsum dolor sit amet consectetur.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veritatis eveniet inventore magni aliquid nihil in cumque deleniti totam nostrum.</p>
+        <div class="flex flex-col lg:flex-row ">
+            <div class="flex flex-col gap-16 lg:gap-20 p-10">
+                <div class="kontribusi">
+                    <img src="/src/img/help-1.jpeg" alt="" class="shadow-[-10px_10px_5px_0_rgba(95,122,219,0.3)] contribution-image">
+                    <h5 class="contribution-header">Lorem ipsum dolor sit amet consectetur.</h5>
+                    <p class="contribution-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veritatis eveniet inventore magni aliquid nihil in cumque deleniti totam nostrum.</p>
                 </div>
-                <div>
-                    <img src="/src/img/help-2.jpeg" alt="" width="400px" class="shadow-[-10px_10px_5px_0_rgba(255,255,255,0.3)]">
-                    <h5 class="text-2xl pt-5">Lorem ipsum dolor sit amet consectetur.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veritatis eveniet inventore magni aliquid nihil in cumque deleniti totam nostrum.</p>
+                <div class="kontribusi">
+                    <img src="/src/img/help-2.jpeg" alt="" class="shadow-[-10px_10px_5px_0_rgba(95,122,219,0.3)] contribution-image">
+                    <h5 class="contribution-header">Lorem ipsum dolor sit amet consectetur.</h5>
+                    <p class="contribution-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veritatis eveniet inventore magni aliquid nihil in cumque deleniti totam nostrum.</p>
                 </div>
-                <div>
-                    <img src="/src/img/help-3.jpeg" alt="" width="400px" class="shadow-[-10px_10px_5px_0_rgba(255,255,255,0.3)]">
-                    <h5 class="text-2xl pt-5">Lorem ipsum dolor sit amet consectetur.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veritatis eveniet inventore magni aliquid nihil in cumque deleniti totam nostrum.</p>
+                <div class="kontribusi">
+                    <img src="/src/img/help-3.jpeg" alt="" class="shadow-[-10px_10px_5px_0_rgba(95,122,219,0.3)] contribution-image">
+                    <h5 class="contribution-header">Lorem ipsum dolor sit amet consectetur.</h5>
+                    <p class="contribution-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veritatis eveniet inventore magni aliquid nihil in cumque deleniti totam nostrum.</p>
                 </div>
             </div>
 
-            <div class="border-l-4 border-slate-50/50 rounded-full"></div>
+            <div class="hidden lg:block border-l-4 border-purple1/40 rounded-full"></div>
 
-            <div class="flex flex-col gap-16 pt-60 px-10">
-                <div class="kontribusi-kanan">
-                    <img src="/src/img/help-4.jpeg" alt="" width="400px" class="shadow-[10px_10px_5px_0_rgba(255,255,255,0.3)]">
-                    <h5 class="text-2xl pt-5">Lorem ipsum dolor sit amet consectetur.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veritatis eveniet inventore magni aliquid nihil in cumque deleniti totam nostrum.</p>
+            <div class="flex flex-col gap-16 lg:pt-60 px-10">
+                <div class="kontribusi">
+                    <img src="/src/img/help-4.jpeg" alt="" class="shadow-[10px_10px_5px_0_rgba(95,122,219,0.3)] contribution-image">
+                    <h5 class="contribution-header">Lorem ipsum dolor sit amet consectetur.</h5>
+                    <p class="contribution-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veritatis eveniet inventore magni aliquid nihil in cumque deleniti totam nostrum.</p>
                 </div>
-                <div class="kontribusi-kanan">
-                    <img src="/src/img/help-5.jpeg" alt="" width="400px" class="shadow-[10px_10px_5px_0_rgba(255,255,255,0.3)]">
-                    <h5 class="text-2xl pt-5">Lorem ipsum dolor sit amet consectetur.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veritatis eveniet inventore magni aliquid nihil in cumque deleniti totam nostrum.</p>
+                <div class="kontribusi">
+                    <img src="/src/img/help-5.jpeg" alt="" class="shadow-[10px_10px_5px_0_rgba(95,122,219,0.3)] contribution-image">
+                    <h5 class="contribution-header">Lorem ipsum dolor sit amet consectetur.</h5>
+                    <p class="contribution-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veritatis eveniet inventore magni aliquid nihil in cumque deleniti totam nostrum.</p>
                 </div>
-                <div class="kontribusi-kanan">
-                    <img src="/src/img/help-7.jpeg" alt="" width="400px" class="shadow-[10px_10px_5px_0_rgba(255,255,255,0.3)]">
-                    <h5 class="text-2xl pt-5">Lorem ipsum dolor sit amet consectetur.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veritatis eveniet inventore magni aliquid nihil in cumque deleniti totam nostrum.</p>
+                <div class="kontribusi">
+                    <img src="/src/img/help-7.jpeg" alt="" class="shadow-[10px_10px_5px_0_rgba(95,122,219,0.3)] contribution-image">
+                    <h5 class="contribution-header">Lorem ipsum dolor sit amet consectetur.</h5>
+                    <p class="contribution-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veritatis eveniet inventore magni aliquid nihil in cumque deleniti totam nostrum.</p>
                 </div>
             </div>
         </div>
@@ -117,11 +160,11 @@
     <section class="p-32 bg-black1 flex flex-col gap-36 justify-center items-center ">
         <div class=" w-screen flex flex-col gap-7 items-center ">
             <div class="text-center">
-                <h1 class="text-4xl ">Customers Reviews</h1>
-                <p class="mt-2 text-xl">Testimonials from clients who have used our services</p>
+                <h1 class="text-2xl sm:text-4xl ">Customers Reviews</h1>
+                <p class="mt-2 text-md sm:text-xl">Testimonials from clients who have used our services</p>
             </div>
 
-            <div class="w-[70%] relative h-56 ">
+            <div class="w-[70%] relative h-96 sm:h-64 ">
                 <div class="left-right-button -left-7 top-1/2 -translate-y-1/2" >
                     <a href="" >☚ </a>
                 </div>
@@ -132,64 +175,77 @@
                 </div>
 
                
-                  <div class="card-rating card-active invisible">
+                  <div class="card-rating card-active hidden">
                     <!-- Profile -->
                     <div class="card-header-box">
-                        <img src="/src/img/edo.png" alt="" width="100px" class="row-span-2 "/>
-                        <h3 class="card-user-name ">Edo</h3>
-                        <p class="card-user-profession">Siswa SMA</p>
+                        <img src="/src/img/edo.png" alt="" class="sm:card-user-img "/>
+                        <div class="card-img-text">
+                            <h3 class="sm:card-user-name ">Edo</h3>
+                            <p class="sm:card-user-profession">Siswa SMA</p>
+                        </div>
                     </div>
-                    <p class="">Layanan dan promo yang ditawarkan sangat menarik. Website memberikan pengalaman browsing yang menyenangkan dan mudah untuk digunakan.</p>
+                    <p class="card-description">Layanan dan promo yang ditawarkan sangat menarik. Website memberikan pengalaman browsing yang menyenangkan dan mudah untuk digunakan.</p>
                   </div>
 
-                  <div class="card-rating invisible">
+                  <div class="card-rating hidden">
                     <!-- Profile -->
                     <div class="card-header-box">
-                        <img src="/src/img/iki.png" alt="" width="100px" class="row-span-2 "/>
-                        <h3 class="card-user-name ">Rizki</h3>
+                        <img src="/src/img/iki.png" alt="" class="card-user-img "/>
+                        <div class="card-img-text">
+                              <h3 class="card-user-name ">Rizki</h3>
                         <p class="card-user-profession">Mahasiswa</p>
+                        </div>
+                      
                     </div>
-                    <p class="">Fitur ramah anak sangat bermanfaat bagi orang tua seperti kami, fitur tersebut memberikan rasa aman bagi para orang tua ketika anak-anaknya sedang menggunakan website Anthrofax.</p>
+                    <p class="card-description">Fitur ramah anak sangat bermanfaat bagi orang tua seperti kami, fitur tersebut memberikan rasa aman bagi para orang tua ketika anak-anaknya sedang menggunakan website Anthrofax.</p>
                   </div>
 
-                  <div class="card-rating invisible">
+                  <div class="card-rating hidden">
                     <!-- Profile -->
                     <div class="card-header-box">
-                        <img src="/src/img/sopian.png" alt="" width="100px" class="row-span-2 "/>
-                        <h3 class="card-user-name ">Sopian</h3>
-                        <p class="card-user-profession">Mahasiswa</p>
+                        <img src="/src/img/sopian.png" alt="" class="card-user-img "/>
+                        <div class="card-img-text">
+                            <h3 class="card-user-name ">Sopian</h3>
+                            <p class="card-user-profession">Mahasiswa</p>
+                        </div>
                     </div>
-                    <p class="">Tampilan website yang user friendly sehingga memudahkan orang awam dalam menggunakan website ini. Good job Anthrofax Team.</p>
+                    <p class="card-description">Tampilan website yang user friendly sehingga memudahkan orang awam dalam menggunakan website ini. Good job Anthrofax Team.</p>
                   </div>
 
-                  <div class="card-rating invisible">
+                  <div class="card-rating hidden">
                     <!-- Profile -->
                     <div class="card-header-box">
-                        <img src="/src/img/rei.png" alt="" width="100px" class="row-span-2 "/>
-                        <h3 class="card-user-name ">Rei</h3>
-                        <p class="card-user-profession">Bisnis Online</p>
+                        <img src="/src/img/rei.png" alt="" class="card-user-img"/>
+                        <div class="card-img-text">
+                            <h3 class="card-user-name ">Rei</h3>
+                            <p class="card-user-profession">Bisnis Online</p>
+                        </div>
                     </div>
-                    <p class="">Fitur unduh video online sangat bermanfaat untuk tetap bisa menonton video-video yang disuka dimanapun berada tanpa harus ribet sinyal.</p>
+                    <p class="card-description">Fitur unduh video online sangat bermanfaat untuk tetap bisa menonton video-video yang disuka dimanapun berada tanpa harus ribet sinyal.</p>
                   </div>
 
-                  <div class="card-rating invisible">
+                  <div class="card-rating hidden">
                     <!-- Profile -->
                     <div class="card-header-box">
-                        <img src="/src/img/husna.png" alt="" width="100px" class="row-span-2 "/>
-                        <h3 class="card-user-name ">Husna</h3>
-                        <p class="card-user-profession">Karyawan</p>
+                        <img src="/src/img/husna.png" alt="" class="card-user-img "/>
+                        <div class="card-img-text">
+                            <h3 class="card-user-name ">Husna</h3>
+                            <p class="card-user-profession">Karyawan</p>
+                        </div>
                     </div>
-                    <p class="">Informasi-informasi yang diberikan didalam website sangat jelas sehingga memudahkan penggunanya dalam memilih layanan.</p>
+                    <p class="card-description">Informasi-informasi yang diberikan didalam website sangat jelas sehingga memudahkan penggunanya dalam memilih layanan.</p>
                   </div>
                   
-                  <div class="card-rating invisible">
+                  <div class="card-rating hidden">
                     <!-- Profile -->
                     <div class="card-header-box">
-                        <img src="/src/img/pratama.png" alt="" width="100px" class="row-span-2 "/>
-                        <h3 class="card-user-name ">Ikhwan Pratama</h3>
-                        <p class="card-user-profession">Fotografer</p>
+                        <img src="/src/img/pratama.png" alt="" class="card-user-img "/>
+                        <div class="card-img-text">
+                            <h3 class="card-user-name ">Ikhwan Pratama</h3>
+                            <p class="card-user-profession">Fotografer</p>
+                        </div>
                     </div>
-                    <p class="">Promo-promo yang beragam dengan berbagai harga langganan yang cukup terjangkau dengan keuntungan yang banyak.</p>
+                    <p class="card-description">Promo-promo yang beragam dengan berbagai harga langganan yang cukup terjangkau dengan keuntungan yang banyak.</p>
                   </div>
             </div>
 
@@ -198,7 +254,8 @@
             </div>
         </div>
 
-        <div class="flex rounded-xl flex-col gap-5 justify-center bg-no-repeat bg-cover w-fit h-fit p-32 bg-blend-multiply bg-slate-500 shadow-[0_10px_30px_0_rgba(255,255,255,0.3)]" style="background-image: url(src/img/organisasi-sosial.jpeg);">
+
+        <!-- <div class="flex rounded-xl flex-col gap-5 justify-center bg-no-repeat bg-cover p-32 bg-blend-multiply bg-slate-500 shadow-[0_10px_30px_0_rgba(95,122,219,0.3)]" style="background-image: url(src/img/organisasi-sosial.jpeg);">
             <div>
                 <h2 class="text-3xl">Volunteeria sudah didukung</h2>
                 <p class="text-md">Kami sudah diverifikasi & teruji oleh</p>
@@ -214,6 +271,8 @@
                 </div>
                 <div class="organization-card">
                     <img src="/src/img/Asset 3.svg" alt="" width="80px">
+                    <P class="text-green-950 font-semibold text-[10px] ">KEMENTRIAN SOSIAL</P>
+                    <P class="text-green-950 font-semibold text-[10px] ">REPUBLIK INDONESIA</P>
                 </div>
                 <div class="organization-card">
                     <img src="/src/img/Asset 7.svg" alt="" width="60px">
@@ -230,29 +289,73 @@
                     <h1 class="text-black1 font-semibold text-sm mt-3 italic">care for humanity</h1>
                 </div>
             </div>
+        </div> -->
+    </section>
+
+    <section class="bg-black2 h-fit p-16">
+        <div>
+            <div>
+                <h2 class="text-xl text-center sm:text-2xl">Volunteeria sudah didukung</h2>
+                <p class="text-sm text-center sm:text-base">Kami sudah diverifikasi & teruji oleh</p>
+            </div>
+
+            <div class="flex gap-6 flex-wrap mx-auto mt-10 border justify-center p-20 bg-slate-500 bg-no-repeat bg-blend-multiply bg-cover bg-center bg-fixed" style="background-image: url(src/img/organisasi-sosial.jpeg);">
+                <div class="organization-card">
+                    <img src="/src/img/Asset 1.svg" alt="" class="organization-img">
+                    <h1 class="text-[#00499D] font-semibold text-lg mt-1">BNPB</h1>
+                </div>
+                <div class="organization-card">
+                    <img src="/src/img/Asset 2.svg" alt=""  >
+                </div>
+                <div class="organization-card">
+                    <img src="/src/img/Asset 13.svg" alt="" class="organization-img">
+                    <P class="text-green-950 font-semibold text-[10px] mt-3">KEMENTRIAN SOSIAL</P>
+                    <P class="text-green-950 font-semibold text-[10px] ">REPUBLIK INDONESIA</P>
+                </div>
+                <div class="organization-card">
+                    <img src="/src/img/Asset 7.svg" alt="" class="organization-img">
+                    <P class="text-green-950 font-semibold text-[10px] mt-1">BAZNAS</P>
+                </div>
+                <div class="organization-card">
+                    <img src="/src/img/Asset 5.svg" alt="" class="organization-img">
+                    <P class="text-[#00499D] font-semibold text-[8px] mt-3">YAYASAN PEDULI</P>
+                    <P class="text-red-600 font-semibold text-[8px] ">KESEJAHTERAAN BERSAMA</P>
+                </div>
+                <div class="organization-card">
+                    <img src="/src/img/Asset 6.svg" alt="" class="organization-img">
+                    <h1 class="text-black1 font-semibold text-sm mt-3 italic">care for humanity</h1>
+                </div>
         </div>
     </section>
-    <footer class="py-20 pl-20 pr-36 bg-palewhite flex flex-col gap-10 text-black1">
-        <div class="flex items-center gap-x-5 ">
-            <img src="/src/img/vektor1.png" alt="Volunteeria Logo" class="w-16">
-            <h1 class="text-lg uppercase tracking-widest font-semibold">Volunteeria</h1>
+
+    
+    <footer class="py-20 px-10 bg-black1 flex flex-col gap-10 text-palewhite lg:pr-32">
+        <div class="flex flex-col items-center gap-2 sm:gap-4 sm:flex-row">
+            <img src="/src/img/logo.svg" alt="Volunteeria Logo" class="w-16">
+            <h1 class="text-sm sm:text-lg lg:text-2xl uppercase tracking-widest font-semibold">Volunteeria</h1>
         </div>
 
         <div class="flex justify-between">
-            <div class="flex gap-28">
+            <div class="flex flex-col gap-10">
                 <div>
-                    <h4 class="font-semibold text-xl">Company</h4>
-                    <a href="" class="mt-3">About</a>
-                    <a href=""> FAQ</a>
+                    <h4 class="footer-links-title">Company</h4>
+                    <ul>
+                        <li>
+                            <a href="" class="mt-3 hover-text">About</a>
+                        </li>
+                        <li>
+                            <a href="" class="hover-text"> FAQ</a>
+                        </li>
+                    </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold text-xl">Career</h4>
-                    <a href="" class="mt-3">Professional</a>
+                    <h4 class="footer-links-title">Career</h4>
+                    <a href="" class="mt-3 hover-text">Professional</a>
                 </div>
             </div>
             <div>
-                <h4 class="font-semibold text-xl">Contact us</h4>
-                <a href="" class="mt-3">+62 90120024</a>
+                <h4 class="footer-links-title">Contact us</h4>
+                <a href="" class="mt-3 hover-text">+62 90120024</a>
             </div>
         </div>
     </footer>

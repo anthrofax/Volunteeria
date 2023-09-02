@@ -3,36 +3,78 @@
 @tailwind utilities;
 
 @layer components {
+    .hover-text {
+        @apply hover:text-purple1 duration-500
+    }
+    .jumbtotron-button {
+        @apply bg-purple1 p-2 text-sm sm:p-3 rounded-lg hover:bg-palewhite hover-text;
+    }
+
     .fitur-website {
-        @apply flex gap-3 flex-col p-5;
+        @apply flex gap-5 flex-col p-5 bg-black2 shadow-[0_0_20px_0_rgba(95,122,219,0.2)] grow text-center max-w-xs sm:max-w-md duration-1000 hover:-translate-y-4;
     }
 
-    .kontribusi-kanan {
-        @apply flex flex-col items-end text-end ;
+    /* Contribution Section */
+    .kontribusi {
+        @apply flex flex-col items-center text-center ;
     }
 
+    .contribution-header {
+        @apply text-base sm:text-xl pt-5;
+    }
+
+    .contribution-caption {
+        @apply text-xs sm:text-base
+    }
+
+    .contribution-image {
+        @apply max-w-[230px] sm:max-w-md lg:max-w-sm;
+    }
+
+    /* Supported */
     .organization-card {
-        @apply bg-palewhite py-9 px-4 rounded-lg outline outline-purple2 flex flex-col justify-center items-center;
+        @apply bg-palewhite py-9 px-4 rounded-lg outline outline-purple2 flex flex-col justify-center items-center w-28 h-48 text-center ;
     }
 
+    .organization-img {
+        @apply w-24 h-auto;
+    }
+
+
+    /* Review */
     .card-rating {
-        @apply absolute rounded-xl flex flex-col gap-y-2 px-10 bg-palewhite justify-center h-full w-full text-black1 ;
+        @apply absolute rounded-xl flex flex-col gap-y-2 px-10 bg-palewhite items-center sm:items-start justify-center h-full w-full text-black1 ;
     }
 
     .card-header-box {
-        @apply grid grid-cols-2 items-center gap-x-2 w-fit;
+        @apply max-sm:max-w-[100px] max-sm:flex max-sm:flex-col max-sm:items-center grid grid-cols-2 items-end gap-x-2 justify-start  w-fit ;
+    }
+
+    .card-img-text {
+        @apply flex flex-col items-center pb-2 sm:items-start
+    }
+
+    .card-user-img {
+        @apply max-w-[120px] lg:max-w-[100px] 
     }
 
     .card-user-name {
-        @apply self-end justify-self-start text-xl ;
+        @apply  text-xl;
     }
 
-    .card-user-profession {
-        @apply col-start-2 self-start justify-self-start 
+
+    .card-description {
+        @apply text-center sm:text-start;
     }
 
     .left-right-button {
         @apply absolute w-14 h-14 text-5xl bg-purple1 z-10 rounded-full flex items-center justify-center;
     }
+
+    /* Footer */
+    .footer-links-title {
+        @apply font-semibold text-base lg:text-xl
+    }
+
 }
 
