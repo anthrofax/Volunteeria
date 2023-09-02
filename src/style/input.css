@@ -16,7 +16,23 @@
     }
 
     .card-rating {
-        @apply absolute border-2 border-red-500 flex flex-col text-center items-center justify-center h-full w-full;
+        @apply absolute rounded-xl flex flex-col gap-y-2 px-10 bg-palewhite justify-center h-full w-full text-black1 ;
+    }
+
+    .card-header-box {
+        @apply grid grid-cols-2 items-center gap-x-2 w-fit;
+    }
+
+    .card-user-name {
+        @apply self-end justify-self-start text-xl ;
+    }
+
+    .card-user-profession {
+        @apply col-start-2 self-start justify-self-start 
+    }
+
+    .left-right-button {
+        @apply absolute w-14 h-14 text-5xl bg-purple1 z-10 rounded-full flex items-center justify-center;
     }
 }
 
