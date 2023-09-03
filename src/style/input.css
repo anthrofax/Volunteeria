@@ -3,78 +3,81 @@
 @tailwind utilities;
 
 @layer components {
-    .hover-text {
-        @apply hover:text-purple1 duration-500
-    }
-    .jumbtotron-button {
-        @apply bg-purple1 p-2 text-sm sm:p-3 rounded-lg hover:bg-palewhite hover-text;
-    }
+  .sticky-navbar {
+    @apply fixed left-0 right-0 opacity-50;
+  }
+  .hover-text {
+    @apply hover:text-purple1 duration-500;
+  }
+  .jumbtotron-button {
+    @apply bg-purple1 p-2 text-sm sm:p-3 rounded-lg hover:bg-palewhite hover-text;
+  }
 
-    .fitur-website {
-        @apply flex gap-5 flex-col p-5 bg-black2 shadow-[0_0_20px_0_rgba(95,122,219,0.2)] grow text-center max-w-xs sm:max-w-md duration-1000 hover:-translate-y-4;
-    }
+  .fitur-website {
+    @apply flex gap-5 flex-col p-5 bg-black2 shadow-[0_0_20px_0_rgba(95,122,219,0.2)] grow text-center max-w-xs sm:max-w-md duration-1000 hover:-translate-y-4;
+  }
 
-    /* Contribution Section */
-    .kontribusi {
-        @apply flex flex-col items-center text-center ;
-    }
+  /* Contribution Section */
+  .kontribusi {
+    @apply flex flex-col items-center text-center gap-5;
+  }
 
-    .contribution-header {
-        @apply text-base sm:text-xl pt-5;
-    }
+  .contribution-header {
+    @apply text-base sm:text-xl md:text-2xl order-1;
+  }
 
-    .contribution-caption {
-        @apply text-xs sm:text-base
-    }
+  .contribution-caption {
+    @apply text-xs sm:text-base order-3  w-[80%];
+  }
 
-    .contribution-image {
-        @apply max-w-[230px] sm:max-w-md lg:max-w-sm;
-    }
+  .contribution-image {
+    @apply max-w-[230px] sm:max-w-md lg:max-w-sm order-2;
+  }
 
-    /* Supported */
-    .organization-card {
-        @apply bg-palewhite py-9 px-4 rounded-lg outline outline-purple2 flex flex-col justify-center items-center w-28 h-48 text-center ;
-    }
+  /* Supported */
+  .organization-card {
+    @apply bg-palewhite py-9 px-4 rounded-lg outline outline-purple2 flex flex-col justify-center items-center w-28 min-w-[112px] h-48 text-center hover:shadow-2xl hover:-translate-y-4 hover:outline-purple1 hover:bg-palewhite/90 transition-all;
+  }
 
-    .organization-img {
-        @apply w-24 h-auto;
-    }
+  .organization-img {
+    @apply w-24 h-auto;
+  }
 
+  /* Review */
+  .card-rating {
+    @apply absolute left-[15%] rounded-xl flex flex-col gap-y-2 px-10 py-14 bg-palewhite items-center sm:items-start justify-center h-full w-[70%] text-black1 duration-1000 hover:bg-slate-300 cursor-pointer;
+  }
 
-    /* Review */
-    .card-rating {
-        @apply absolute rounded-xl flex flex-col gap-y-2 px-10 bg-palewhite items-center sm:items-start justify-center h-full w-full text-black1 ;
-    }
+  .card-header-box {
+    @apply max-sm:max-w-[100px] max-sm:flex max-sm:flex-col max-sm:items-center grid grid-cols-2 items-end gap-x-2 justify-start  w-fit;
+  }
 
-    .card-header-box {
-        @apply max-sm:max-w-[100px] max-sm:flex max-sm:flex-col max-sm:items-center grid grid-cols-2 items-end gap-x-2 justify-start  w-fit ;
-    }
+  .card-img-text {
+    @apply flex flex-col items-center pb-2 sm:items-start text-xs sm:text-sm lg:text-base;
+  }
 
-    .card-img-text {
-        @apply flex flex-col items-center pb-2 sm:items-start
-    }
+  .card-user-img {
+    @apply max-w-[80px] lg:max-w-[100px];
+  }
 
-    .card-user-img {
-        @apply max-w-[120px] lg:max-w-[100px] 
-    }
+  .card-user-name {
+    @apply text-lg sm:text-xl lg:text-2xl text-center;
+  }
 
-    .card-user-name {
-        @apply  text-xl;
-    }
+  .card-description {
+    @apply text-center text-sm  sm:text-start lg:text-lg;
+  }
 
+  .carousel-button {
+    @apply absolute w-14 h-14 text-5xl bg-purple1 z-10 rounded-full flex items-center justify-center top-1/2 -translate-y-1/2 hover:bg-black2 hover:text-purple1 duration-500;
+  }
 
-    .card-description {
-        @apply text-center sm:text-start;
-    }
+  .dot-active {
+    background-color: rgb(241, 245, 249);
+  }
 
-    .left-right-button {
-        @apply absolute w-14 h-14 text-5xl bg-purple1 z-10 rounded-full flex items-center justify-center;
-    }
-
-    /* Footer */
-    .footer-links-title {
-        @apply font-semibold text-base lg:text-xl
-    }
-
+  /* Footer */
+  .footer-links-title {
+    @apply font-semibold text-base lg:text-xl;
+  }
 }
-
