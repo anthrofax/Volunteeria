@@ -3,23 +3,31 @@
 @tailwind utilities;
 
 @layer components {
+    /* Navbar */
   .sticky-navbar {
     @apply fixed left-0 right-0 opacity-50;
   }
   .hover-text {
     @apply hover:text-purple1 duration-500;
   }
+
+  .nav-links {
+    @apply hover:text-purple1 duration-500;
+  }
+
+  /* Jumbotron */
   .jumbtotron-button {
     @apply bg-purple1 p-2 text-sm sm:p-3 rounded-lg hover:bg-palewhite hover-text;
   }
 
+  /* Feature Section */
   .fitur-website {
     @apply flex gap-5 flex-col p-5 bg-black2 shadow-[0_0_20px_0_rgba(95,122,219,0.2)] grow text-center max-w-xs sm:max-w-md duration-1000 hover:-translate-y-4;
   }
 
   /* Contribution Section */
   .kontribusi {
-    @apply flex flex-col items-center text-center gap-5;
+    @apply flex flex-col items-center text-center gap-5 duration-1000 ease-out;
   }
 
   .contribution-header {
@@ -32,6 +40,14 @@
 
   .contribution-image {
     @apply max-w-[230px] sm:max-w-md lg:max-w-sm order-2;
+  }
+
+  .contribution-r-animation {
+    @apply translate-x-52 opacity-0 translate-y-24 scale-50 
+  }
+
+  .contribution-l-animation {
+    @apply -translate-x-52 opacity-0 translate-y-24 scale-50
   }
 
   /* Supported */

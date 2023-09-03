@@ -29,10 +29,10 @@
     </a>
 
     <!-- Navbar -->
-    <nav class="bg-black2 sm:py-8 sm:pr-20 sm:pl-16 max-sm:px-5 flex items-center justify-between drop-shadow-[0_ 5px_15px_white] text-palewhite relative">
+    <nav class="bg-black2 sm:py-8 sm:pr-20 sm:pl-16 max-sm:px-5 flex items-center justify-between drop-shadow-[0_ 5px_15px_white] text-palewhite relative  hover:opacity-100 duration-500 z-30">
       <div class="flex items-center gap-x-5 max-sm:gap-x-2">
         <img src="/src/img/logo.svg" alt="Volunteeria Logo" width="60px" class="max-sm:w-10 max-sm:h-20" />
-        <a href="" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm hover:text-purple1 transition-colors mt-2">
+        <a href="" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm mt-2 nav-links">
           <h1>Volunteeria</h1>
         </a>
       </div>
@@ -62,9 +62,9 @@
       </div>
 
       <ul class="hidden lg:flex gap-x-8 text-base">
-        <li><a href="" class="hover:text-purple1 duration-500">LOGIN</a></li>
-        <li><a href="" class="hover:text-purple1 duration-500">SIGNUP</a></li>
-        <li><a href="" class="hover:text-purple1 duration-500 border border-purple1 px-4 py-5 rounded-full hover:border-palewhite">EMPLOYERS/POST JOB</a></li>
+        <li><a href="" class="nav-links">LOGIN</a></li>
+        <li><a href="" class="nav-links">SIGNUP</a></li>
+        <li><a href="" class="nav-links border border-purple1 px-4 py-5 rounded-full hover:border-palewhite">EMPLOYERS/POST JOB</a></li>
       </ul>
     </nav>
 
@@ -115,7 +115,7 @@
     </section>
 
     <!-- Section 2 -->
-    <section class="py-16 bg-black3">
+    <section class="contribution-section py-16 bg-black3">
       <div class="text-xl sm:text-3xl mb-2 lg:mb-10 text-center w-[70%] m-auto">
         <h2>
           Volunteeria telah memberikan dampak <br />
@@ -124,7 +124,7 @@
       </div>
 
       <div class="flex flex-col lg:flex-row">
-        <div class="flex flex-col gap-16 lg:gap-20 p-10">
+        <div class="flex flex-col gap-16 lg:gap-20 p-10 left-cont">
           <div class="kontribusi">
             <img src="/src/img/help-1.jpeg" alt="" class="shadow-[-10px_10px_5px_0_rgba(95,122,219,0.3)] contribution-image" />
             <h5 class="contribution-header">Lorem ipsum dolor sit amet consectetur.</h5>
@@ -142,7 +142,7 @@
           </div>
         </div>
 
-        <div class="hidden lg:block border-l-4 border-purple1/40 rounded-full"></div>
+        <div class="hidden lg:block border-l-4 border-purple1/40 rounded-full h-0 cont-devider duration-500"></div>
 
         <div class="flex flex-col gap-16 lg:pt-60 px-10">
           <div class="kontribusi">
