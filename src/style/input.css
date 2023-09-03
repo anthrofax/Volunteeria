@@ -35,7 +35,7 @@
   }
 
   .contribution-caption {
-    @apply text-xs sm:text-base order-3  w-[80%];
+    @apply text-sm sm:text-lg lg:text-base order-3  w-[80%];
   }
 
   .contribution-image {
@@ -94,6 +94,6 @@
 
   /* Footer */
   .footer-links-title {
-    @apply font-semibold text-base lg:text-xl;
+    @apply font-semibold text-sm lg:text-lg;
   }
 }

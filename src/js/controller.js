@@ -29,7 +29,6 @@ const init = function() {
     controlCarousel();
     controlNavbar();
     controlContributionSection();
-    console.log(hei)
 }
 
 init();

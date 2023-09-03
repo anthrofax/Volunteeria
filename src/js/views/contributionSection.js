@@ -13,7 +13,6 @@ class contributionSection {
 
       this._deviderHeightInit += Number.parseInt(getComputedStyle(this._parentElement).height) / this._contribution.length;
       this._contDeviderLine.style.height = `${this._deviderHeightInit}px`;
-      console.log(Number.parseInt(getComputedStyle(this._contDeviderLine).height), this._deviderHeightInit)
 
       this._sectionObserver.unobserve(entry.target);
     },
