@@ -1632,6 +1632,16 @@ video {
     padding-bottom: 300px;
   }
 
+  .sm\:py-\[512px\] {
+    padding-top: 512px;
+    padding-bottom: 512px;
+  }
+
+  .sm\:py-\[320px\] {
+    padding-top: 320px;
+    padding-bottom: 320px;
+  }
+
   .sm\:pl-16 {
     padding-left: 4rem;
   }
