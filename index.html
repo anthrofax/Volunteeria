@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&family=Inter:wght@100;200;400;600;700&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="/src/style/output.css" />
-    <script defer type="module" src="/src/js/controller.js"></script>
+    <script defer type="module" src="/src/js/main/controller.js"></script>
     <title>Volunteeria</title>
   </head>
   <body class="text-palewhite font-poppins bg-black1">
@@ -37,7 +37,7 @@
         </a>
       </div>
 
-      <div class="lg:hidden">
+      <div class="lg:hidden peer">
         <button class="navbar-burger flex items-center text-blue-600 p-3">
           <svg class="block h-5 w-5 sm:h-10 sm:w-10 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <title>Mobile menu</title>
@@ -46,7 +46,7 @@
         </button>
       </div>
 
-      <div class="absolute bg-black2 border-r-2 border-b-2 border-slate-500 p-10 top-20 -left-96 hidden sm:hidden">
+      <div class="absolute bg-black2 border-r-2 border-b-2 border-slate-500 p-10 top-20 -left-96 hidden sm:hidden duration-1000 peer-active:top-0 peer-active:left-0 peer-active:block peer-active:fixed">
         <div class="mb-10 flex justify-end">X</div>
         <ul class="flex flex-col">
           <li class="py-2 border-y-2 border-palewhite">
@@ -84,8 +84,11 @@
     </header>
 
     <!-- Section 1 -->
-    <section class="p-10 sm:p-20">
-      <div class="border-y-4 border-purple1/40 py-9 flex flex-col gap-10">
+    <section class="feature-section p-10 sm:p-20 relative flex flex-col items-center">
+      <div class="top-line feature-line self-start">
+        
+      </div>
+      <div class="mb-10 py-9 flex flex-col gap-10 duration-1000 ">
         <h2 class="text-2xl text-center sm:text-3xl">Need something done?</h2>
         <div class="flex gap-10 h-fit flex-wrap lg:flex-nowrap justify-center">
           <div class="fitur-website">
@@ -111,6 +114,9 @@
             </p>
           </div>
         </div>
+      </div>
+      <div class="bottom-line feature-line self-end">
+
       </div>
     </section>
 

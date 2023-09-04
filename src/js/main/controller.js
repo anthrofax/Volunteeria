@@ -1,6 +1,7 @@
 import carouselView from "./views/carouselView.js";
 import navbarView from "./views/navbarView.js";
 import contributionSection from "./views/contributionSection.js";
+import featureSectionView from "./views/featureSectionView.js";
 
 const controlCarousel = function() {
     // Render Carousel & Dots
@@ -18,6 +19,10 @@ const controlNavbar = function() {
     navbarView.fixNavbar();
 }
 
+const controlFeatureSection = function() {
+    featureSectionView.scrollAnimation();
+}
+
 const controlContributionSection = function () {
     contributionSection.init();
     if (screen.width >= 1024) {
@@ -29,6 +34,7 @@ const init = function() {
     controlCarousel();
     controlNavbar();
     controlContributionSection();
+    controlFeatureSection();
 }
 
 init();

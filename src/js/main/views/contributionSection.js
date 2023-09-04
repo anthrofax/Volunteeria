@@ -18,7 +18,7 @@ class contributionSection {
     },
     {
       root: null,
-      threshold: 0.15,
+      threshold: 1,
     }
   );
 

@@ -23,7 +23,7 @@ class navbarView {
   }
 
   navLinkHandler() {
-    this._parentElement.addEventListener("mouseover", this.fadeOutLinks.bind(this,  .5));
+    this._parentElement.addEventListener("mouseover", this.fadeOutLinks.bind(this,  0.5));
     this._parentElement.addEventListener("mouseout", this.fadeOutLinks.bind(this, 1));
   }
 
