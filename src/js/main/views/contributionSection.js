@@ -8,6 +8,7 @@ class contributionSection {
       const [entry] = entries;
 
       if (!entry.isIntersecting) return;
+
       if (entry.target.getAttribute("dataset-order") === "odd") entry.target.classList.remove("contribution-l-animation");
       if (entry.target.getAttribute("dataset-order") === "even") entry.target.classList.remove("contribution-r-animation");
 
@@ -23,8 +24,6 @@ class contributionSection {
   );
 
   scrollAnimation() {
-    const contClass = this;
-
     this._contribution.forEach((cont) => {
       this._sectionObserver.observe(cont);
       cont.classList.add(`${cont.getAttribute("dataset-order") === "odd" ? "contribution-l-animation" : "contribution-r-animation"}`);

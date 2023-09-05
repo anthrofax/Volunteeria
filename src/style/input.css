@@ -61,11 +61,11 @@
   }
 
   .contribution-r-animation {
-    @apply translate-x-52 opacity-0 scale-50;
+    @apply translate-x-[7vw] opacity-0 scale-50;
   }
 
   .contribution-l-animation {
-    @apply -translate-x-52 opacity-0 scale-50;
+    @apply -translate-x-[7vw] opacity-0 scale-50;
   }
 
   /* Supported */
