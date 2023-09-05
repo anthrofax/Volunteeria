@@ -54,12 +54,12 @@
         <form class="text-xs sm:text-base">
           <div class="flex flex-col my-4 sm:my-7">
             <label for="name" class="text-palewhite">Nama</label>
-            <input type="text" name="name" id="name" class="mt-2 p-2 focus:outline-none focus:ring-0 rounded text-xs sm:text-base text-palewhite" placeholder="Masukkan nama" />
+            <input type="text" name="name" id="name" class="mt-2 p-2 focus:outline-none focus:ring-0 rounded text-xs sm:text-base text-black1" placeholder="Masukkan nama" />
           </div>
 
           <div class="flex flex-col my-4">
             <label for="email" class="text-palewhite">Alamat email</label>
-            <input type="email" name="email" id="email" class="mt-2 p-2 border focus:outline-none focus:ring-0 rounded text-xs sm:text-base text-palewhite" placeholder="Masukkan email" />
+            <input type="email" name="email" id="email" class="mt-2 p-2 border focus:outline-none focus:ring-0 rounded text-xs sm:text-base text-black1" placeholder="Masukkan email" />
           </div>
 
           <div class="flex flex-col my-4">
@@ -69,7 +69,7 @@
                 :type=" show ? 'text': 'password' "
                 name="password"
                 id="password"
-                class="flex-1 p-2 pr-10 border focus:outline-none focus:ring-0 rounded text-xs sm:text-base text-palewhite"
+                class="flex-1 p-2 pr-10 border focus:outline-none focus:ring-0 rounded text-xs sm:text-base text-black1"
                 placeholder="Masukkan password"
                 type="password"
               />
@@ -98,7 +98,7 @@
                 :type=" show ? 'text': 'password' "
                 name="password_confirmation"
                 id="password_confirmation"
-                class="flex-1 p-2 pr-10 border focus:outline-none focus:ring-0 rounded text-xs sm:text-base text-palewhite"
+                class="flex-1 p-2 pr-10 border focus:outline-none focus:ring-0 rounded text-xs sm:text-base text-black1"
                 placeholder="Masukkan password lagi"
                 type="password"
               />
@@ -132,26 +132,7 @@
           </div>
         </form>
 
-        <div class="flex items-center justify-between lg:mt-4">
-          <div class="lg:w-full h-[1px] bg-black2"></div>
-          <span class="text-xs sm:text-base uppercase mx-6 text-palewhite">Or</span>
-          <div class="lg:w-full h-[1px] bg-black2"></div>
-        </div>
-
-        <div class="text-sm flex items-center justify-center lg:flex-col gap-3 mt-3 lg:mt-7">
-          <a href="#" class="flex items-center justify-start text-palewhite p-[3vw] lg:py-3 bg-black2 rounded-full lg:rounded-md gap-3">
-            <img src="../src/img/google.svg" alt="" class="w-5 h-5 sm:w-8 sm:h-8" />
-            <span class="hidden lg:inline">Sign up with Google</span>
-          </a>
-          <a href="#" class="flex w-fit items-center justify-start text-palewhite p-[2.5vw] lg:py-3 bg-black2 hover:bg-black2 rounded-full lg:rounded-md gap-3">
-            <img src="../src/img/facebook.svg" alt="" class="w-5 h-5 sm:w-8 sm:h-8" />
-            <span class="hidden lg:inline">Sign up with Facebook</span>
-          </a>
-          <a href="#" class="flex items-center justify-start text-palewhite p-[3vw] lg:py-3 bg-black2 hover:bg-black2 rounded-full lg:rounded-md gap-3">
-            <img src="../src/img/linkedin.svg" alt="" class="w-5 h-5 sm:w-8 sm:h-8" />
-            <span class="hidden lg:inline">Sign up with LinkedIn</span>
-          </a>
-        </div>
+      
       </div>
 
       <!-- Right Area -->

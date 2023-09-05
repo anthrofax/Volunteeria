@@ -2,21 +2,18 @@ import carouselView from "./views/carouselView.js";
 import navbarView from "./views/navbarView.js";
 import contributionSection from "./views/contributionSection.js";
 import featureSectionView from "./views/featureSectionView.js";
-
-const controlCarousel = function() {
-    // Render Carousel & Dots
-    carouselView.renderSlider();
-
-    // Next Prev Button Handler
-    carouselView.carouselButtonHandler();
-
-    // Dot Button Handler
-    carouselView.carouselDotHandler();
-}
+import jumbotronView from "./views/jumbotronView.js";
+import { state } from "./model.js";
 
 const controlNavbar = function() {
     navbarView.navLinkHandler();
     navbarView.fixNavbar();
+    navbarView.hamburgerHandler();
+    navbarView.overlayBgHandler();
+}
+
+const controlJumbotronSection = function() {
+    jumbotronView.imageInterval(state.mainImageUrl);
 }
 
 const controlFeatureSection = function() {
@@ -30,11 +27,23 @@ const controlContributionSection = function () {
     }
 }
 
+const controlCarousel = function() {
+    // Render Carousel & Dots
+    carouselView.renderSlider();
+
+    // Next Prev Button Handler
+    carouselView.carouselButtonHandler();
+
+    // Dot Button Handler
+    carouselView.carouselDotHandler();
+}
+
 const init = function() {
-    controlCarousel();
+    controlJumbotronSection();
     controlNavbar();
     controlContributionSection();
     controlFeatureSection();
+    controlCarousel();
 }
 
 init();

@@ -1,6 +1,8 @@
 class navbarView {
   _parentElement = document.querySelector("nav");
   _navLinks = this._parentElement.querySelectorAll("a");
+  _hamburgerButton = this._parentElement.querySelector('.hamburger');
+  _overlayBg = document.querySelector('.overlay-bg');
 
   fixNavbar() {
     const jumbotron = document.querySelector(".jumbotron");
@@ -37,6 +39,40 @@ class navbarView {
         link.style.opacity = opacity
       }
     });
+  }
+
+  hamburgerHandler() {
+    this._hamburgerButton.addEventListener('click', () => {
+      this._showNavbar();
+      this._overlayBg.classList.remove('hidden');
+    })
+  }
+
+  overlayBgHandler() {
+    this._overlayBg.addEventListener('click', () => {
+      this._showNavbar();
+      this._overlayBg.classList.add('hidden')
+    })
+  }
+
+  _showNavbar() {
+    const threeLine = this._hamburgerButton.querySelectorAll('.three-line')
+    const closeHamburger = this._hamburgerButton.querySelector('.close-hamburger');
+    const closeLine = this._hamburgerButton.querySelectorAll('.close-line');
+    const sideNavbar = document.querySelector('.side-navbar');
+    
+    this._hamburgerButton.classList.toggle('ring-4'); 
+
+    threeLine.forEach(line => line.classList.toggle('translate-x-10'));
+
+    closeHamburger.classList.toggle('left-1/2');
+    closeHamburger.classList.toggle('w-12');
+
+    closeLine.forEach((line, i) => {
+      (i === 0) ? line.classList.toggle('rotate-45') : line.classList.toggle('-rotate-45');
+    })
+
+    sideNavbar.classList.toggle('-translate-x-full');
   }
 }
 
