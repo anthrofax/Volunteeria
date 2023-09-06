@@ -33,7 +33,7 @@
     <div class="overlay-bg bg-black opacity-50 fixed left-0 right-0 bottom-0 top-0 z-30 hidden"></div>
 
     <!-- Navbar -->
-    <nav class="bg-black2 sm:py-8 sm:pr-20 sm:pl-16 max-sm:px-5 flex items-center justify-between drop-shadow-[0_ 5px_15px_white] text-palewhite relative hover:opacity-100 duration-500 z-20">
+    <nav class="bg-black1 sm:py-8 sm:pr-20 sm:pl-16 max-sm:px-5 flex items-center justify-between drop-shadow-[0_ 5px_15px_white] text-palewhite relative hover:opacity-100 duration-500 z-20 backdrop-blur-md">
       <div class="flex items-center gap-x-5 max-sm:gap-x-2">
         <img src="./src/img/logo.svg" alt="Volunteeria Logo" width="60px" class="max-sm:w-10 max-sm:h-20" />
         <a href="#" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm mt-2 nav-links">
@@ -63,7 +63,7 @@
             class="text-white bg-purple1 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-purple1 dark:hover:bg-purple2 dark:focus:ring-palewhite "
             type="button"
           >
-            SIGNNUP
+            SIGN UP
             <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
             </svg>
@@ -167,10 +167,16 @@
 
     <!-- Jumbotron -->
     <header
-      class="jumbotron flex items-center justify-center sm:justify-start max-sm:py-20 w-screen h-screen bg-slate-600 bg-no-repeat bg-cover bg-center bg-blend-multiply duration-[2000ms] relative"
+      class="jumbotron flex items-center justify-center sm:justify-start max-sm:py-20 w-full h-screen bg-slate-600 bg-no-repeat bg-cover bg-center bg-blend-multiply duration-[2000ms] relative transition-[background-image]"
       style="background-image: url(src/img/mainimage.png)"
     >
-      <div class="loading-indicator bg-palewhite h-[2px] w-0 absolute left-0 top-0 duration-[10000ms] ease-linear"></div>
+      <div class="loading-indicator bg-palewhite h-[2px] w-0 absolute left-0 top-0 ease-in-out duration-[50ms] ">
+      </div>
+
+      <!-- Prev Button -->
+      <button class="prevnext-jumbotron-button left-0 opacity-0">
+        <img src="src/img/backpurple2.svg" alt="" class="w-[40%]">
+      </button>
       <div class="main-content h-fit flex gap-3 flex-col items-center sm:items-start sm:ml-10 lg:ml-16 px-[3vw]">
         <h2 class="sm:text-4xl text-2xl text-center sm:text-left">Tebarkan kebaikan bersama</h2>
         <p class="sm:text-xl text-sm ml-2 sm:text-left">Daftar sebagai...</p>
@@ -179,6 +185,11 @@
           <a href="./signup/signup.php" class="jumbtotron-button">Perekrut</a>
         </div>
       </div>
+
+      <!-- Next Button -->
+      <button class="prevnext-jumbotron-button right-0 opacity-0">
+        <img src="src/img/backpurple2.svg" alt="" class="w-[40%] rotate-180">
+      </button>
     </header>
 
     <!-- Section 1 -->

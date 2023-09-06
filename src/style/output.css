@@ -1086,6 +1086,41 @@ input:checked + .toggle-bg {
   }
 }
 
+.prevnext-jumbotron-button {
+  position: absolute;
+  display: flex;
+  height: 4rem;
+  width: 5vw;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  transition-duration: 500ms;
+}
+
+.prevnext-jumbotron-button:hover {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.prevnext-jumbotron-button:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 41 43 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px) {
+  .prevnext-jumbotron-button {
+    height: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .prevnext-jumbotron-button {
+    width: 3vw;
+  }
+}
+
 /* Feature Section */
 
 .fitur-website {
@@ -1770,6 +1805,10 @@ input:checked + .toggle-bg {
 
 .w-\[20px\] {
   width: 20px;
+}
+
+.w-\[40\%\] {
+  width: 40%;
 }
 
 .w-\[50px\] {
@@ -2648,6 +2687,12 @@ input:checked + .toggle-bg {
   transition-duration: 150ms;
 }
 
+.transition-\[background-image\] {
+  transition-property: background-image;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2708,20 +2753,16 @@ input:checked + .toggle-bg {
   transition-duration: 75ms;
 }
 
-.duration-\[10000ms\] {
-  transition-duration: 10000ms;
-}
-
 .duration-\[2000ms\] {
   transition-duration: 2000ms;
 }
 
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.duration-\[50ms\] {
+  transition-duration: 50ms;
 }
 
-.ease-linear {
-  transition-timing-function: linear;
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ease-out {
@@ -2737,6 +2778,12 @@ input:checked + .toggle-bg {
   50% {
     transform: translateY(-50px);
   }
+}
+
+/* Untuk cek, apakah section Jumbotron sedang di hover atau tidak */
+
+.jumbotron:hover {
+  opacity: 0.99;
 }
 
 @media (min-width: 640px) {

@@ -12,6 +12,11 @@
   }
 }
 
+/* Untuk cek, apakah section Jumbotron sedang di hover atau tidak */
+.jumbotron:hover {
+  opacity: 0.99;
+}
+
 @layer components {
   /* Navbar */
   .sticky-navbar {
@@ -32,6 +37,10 @@
   /* Jumbotron */
   .jumbtotron-button {
     @apply bg-purple1 p-2 text-sm sm:p-3 rounded-lg hover:bg-palewhite hover-text;
+  }
+
+  .prevnext-jumbotron-button {
+    @apply h-16 sm:h-24 bg-black w-[5vw] lg:w-[3vw] flex items-center justify-center absolute duration-500 hover:scale-125 active:bg-black1;
   }
 
   /* Feature Section */
