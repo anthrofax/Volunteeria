@@ -1,0 +1,59 @@
+[
+    {
+        "judul": "Pengajar Bahasa Inggris untuk Anak-Anak",
+        "deskripsi_pekerjaan": "Kami mencari pengajar bahasa Inggris yang bersemangat untuk mengajar anak-anak di lingkungan kami. Tugas meliputi mengajar tata bahasa, kosakata, dan bermain dalam bahasa Inggris.",
+        "persyaratan": ["Kemampuan berbicara bahasa Inggris yang baik", "Pengalaman mengajar anak-anak akan menjadi nilai tambah"],
+        "lokasi": {
+            "kota": "Yogyakarta",
+            "negara": "Indonesia"
+        },
+        "jadwal": "Selasa dan Kamis, pukul 15:00 - 17:00 WIB",
+        "manfaat_kompensasi": "Sukarelawan akan mendapatkan sertifikat pelatihan bahasa Inggris dan dukungan dalam pengembangan keterampilan mengajar.",
+        "kontak": {
+          "nama": "Yayasan Pendidikan Anak Bangsa",
+          "email": "info@pendidikananakbangsa.org",
+          "telepon": "+62 123-456-7890"
+        },
+        "tentang_organisasi": "Yayasan Pendidikan Anak Bangsa adalah organisasi non-profit yang berkomitmen untuk meningkatkan pendidikan anak-anak di daerah pedesaan.",
+        "tentang_proyek_program": "Program ini bertujuan untuk membantu anak-anak di lingkungan kami memahami bahasa Inggris dengan baik, membuka peluang pendidikan yang lebih baik untuk masa depan mereka.",
+        "tanggal_berakhir_lamaran": "30 September 2023"
+      },
+    {
+        "judul": "Pengajar Matematika untuk Anak-Anak",
+        "deskripsi_pekerjaan": "Kami mencari pengajar matematika yang bersemangat untuk mengajar anak-anak di usia sekolah dasar. Tugas meliputi membantu anak-anak memahami konsep matematika dasar dan memberikan dukungan dalam pekerjaan rumah.",
+        "persyaratan": ["Kemampuan matematika yang kuat", "Kemampuan berkomunikasi dengan anak-anak"],
+        "lokasi": {
+            "kota": "Jakarta",
+            "negara": "Indonesia"
+        },
+        "jadwal": "Sabtu dan Minggu, pukul 10:00 - 12:00",
+        "manfaat_kompensasi": "Sukarelawan akan mendapatkan sertifikat pengajaran matematika dasar dan pengalaman berharga dalam mengajar anak-anak.",
+        "kontak": {
+          "nama": "Yayasan Pendidikan Muda",
+          "email": "info@pendidikanmuda.org",
+          "telepon": "+62 123-456-7890"
+        },
+        "tentang_organisasi": "Yayasan Pendidikan Muda adalah organisasi non-profit yang berfokus pada pendidikan anak-anak di daerah perkotaan.",
+        "tentang_proyek_program": "Program ini bertujuan untuk meningkatkan pemahaman matematika anak-anak sekolah dasar dan membantu mereka meraih prestasi yang lebih baik.",
+        "tanggal_berakhir_lamaran": "15 Oktober 2023"
+      },
+    {
+        "judul": "Relawan Penyuluhan Kesehatan",
+        "deskripsi_pekerjaan": "Kami membutuhkan relawan yang dapat memberikan penyuluhan kesehatan kepada komunitas setempat. Tugas termasuk memberikan informasi tentang pola makan sehat, gaya hidup aktif, dan pencegahan penyakit.",
+        "persyaratan": ["Minat dalam kesehatan masyarakat", "Kemampuan berbicara di depan umum"],
+        "lokasi": {
+            "kota": "Surabaya",
+            "negara": "Indonesia"
+        },
+        "jadwal": "Senin, pukul 08:00 - 12:00",
+        "manfaat_kompensasi": "Sukarelawan akan mendapatkan pelatihan penyuluhan kesehatan dan dukungan dalam pengembangan keterampilan",
+        "kontak": {
+          "nama": "Lembaga Kesehatan Masyarakat",
+          "email": "info@kesehatanmasyarakat.org,",
+          "telepon": "+62 123-456-7890"
+        },
+        "tentang_organisasi": "Lembaga Kesehatan Masyarakat adalah organisasi yang fokus pada promosi kesehatan masyarakat",
+        "tentang_proyek_program": "Proyek ini bertujuan untuk meningkatkan kesadaran masyarakat tentang pentingnya gaya hidup sehat",
+        "tanggal_berakhir_lamaran": "20 Oktober 2023"
+      }
+    ]      

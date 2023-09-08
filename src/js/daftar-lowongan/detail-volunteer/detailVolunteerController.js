@@ -1,50 +1,14 @@
-import carouselView from "../views/carouselView.js";
-import mainNavbarView from "../views/mainNavbarView.js";
-import contributionSection from "../views/contributionSection.js";
-import featureSectionView from "../views/featureSectionView.js";
-import jumbotronView from "../views/jumbotronView.js";
-import { state } from "../model.js";
+import detailVolunteerNavbarView from "./detail-volunteer-views/detailVolunteerNavbarView.js";
 
 const controlNavbar = function() {
-    mainNavbarView.navLinkHandler();
-    mainNavbarView.fixNavbar();
-    mainNavbarView.hamburgerHandler();
-    mainNavbarView.overlayBgHandler();
+    detailVolunteerNavbarView.navLinkHandler();
+    detailVolunteerNavbarView.fixNavbar();
+    detailVolunteerNavbarView.hamburgerHandler();
+    detailVolunteerNavbarView.overlayBgHandler();
 }
 
-const controlJumbotronSection = function() {
-    jumbotronView.imageInterval(state.mainImageUrl);
-    jumbotronView.prevnextHandler(state.mainImageUrl);
-}
-
-const controlFeatureSection = function() {
-    featureSectionView.scrollAnimation();
-}
-
-const controlContributionSection = function () {
-    contributionSection.init();
-    if (screen.width >= 1024) {
-        contributionSection.scrollAnimation();
-    }
-}
-
-const controlCarousel = function() {
-    // Render Carousel & Dots
-    carouselView.renderSlider();
-
-    // Next Prev Button Handler
-    carouselView.carouselButtonHandler();
-
-    // Dot Button Handler
-    carouselView.carouselDotHandler();
-}
-
-const init = function() {
-    controlJumbotronSection();
+const init = async function() {
     controlNavbar();
-    controlContributionSection();
-    controlFeatureSection();
-    controlCarousel();
 
      // Preline Library for Dark Mode 
     const HSThemeAppearance = {
@@ -129,6 +93,8 @@ const init = function() {
             })
         })
     })
+    
+   
 }
 
 init();

@@ -18,7 +18,6 @@ class jumbotronView {
         this._loadingIndicator.style.width = `${this._loadingLineWidth++}vw`;
         this._prevNextButton.forEach((button) => button.classList.replace("opacity-50", "opacity-0"));
       } else {
-        console.log(this._isAnimating)
         this._prevNextButton.forEach((button) => button.classList.replace("opacity-0", "opacity-50"));
       }
     }, 50);
@@ -44,10 +43,7 @@ class jumbotronView {
   }
 
   _changeImage(changeTo, url) {
-    if (this._isAnimating === true) {
-      console.log(this._isAnimating)
-      return;
-    }
+    if (this._isAnimating === true) return;
 
     if (changeTo === "prev") this._imageIndex === 0 ? (this._imageIndex = url.length - 1) : this._imageIndex--;
     else if (changeTo === "next") this._imageIndex === url.length - 1 ? (this._imageIndex = 0) : this._imageIndex++;
@@ -56,10 +52,9 @@ class jumbotronView {
     this._isAnimating = true;
     this._parentElement.style.backgroundImage = `url(${url[this._imageIndex]})`;
 
-    setTimeout(function () {
+    setTimeout(() => {
       this._isAnimating = false;
-      console.log(this._isAnimating);
-    }, 2000);
+    }, 2500);
   }
 }
 

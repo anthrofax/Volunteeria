@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.js", "./index.html", "./login/**/*.html", "./signup/**/*.html",  "./node_modules/flowbite/**/*.js"],
+  content: ["./src/**/*.js", "./index.html", "**/*.html",  "./node_modules/flowbite/**/*.js", './node_modules/preline/**/*.js'],
   theme: {
     extend: {
       colors: {
@@ -10,6 +10,7 @@ module.exports = {
         'purple1': '#5F7ADB',
         'purple2': '#A2B2EE',
         'palewhite': '#CACACA',
+        'white2': '#F3F5FA',
       },
       fontFamily: {
         'inria': "Inria",
@@ -24,7 +25,8 @@ module.exports = {
     },
   },
   plugins: [
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    require('preline/plugin'),
 ]
 }
 
