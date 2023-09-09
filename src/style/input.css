@@ -133,7 +133,7 @@
   }
 
   .carousel-button {
-    @apply absolute w-14 h-14 text-5xl bg-palewhite dark:bg-purple1  z-10 rounded-full flex items-center justify-center top-1/2 -translate-y-1/2  hover:bg-black2 hover:text-purple1 dark:hover:bg-black2 dark:hover:text-purple1 text-black2 dark:text-palewhite duration-500;
+    @apply absolute w-14 h-14 text-5xl bg-palewhite dark:bg-purple1  z-10 rounded-full flex items-center justify-center top-1/2 -translate-y-1/2  hover:bg-purple2 hover:text-palewhite dark:hover:bg-black2 dark:hover:text-purple1 text-purple1 dark:text-palewhite duration-500;
   }
 
   .dot-active {
@@ -145,10 +145,12 @@
     @apply font-semibold text-sm lg:text-lg;
   }
 
+  /* --- DAFTAR LOWONGAN PAGE --- */
   /* Daftar Lowongan */
   .daftar-lowongan {
     @apply w-full  p-5 text-sm rounded-lg shadow-[0_0_25px_-10px_rgba(0,0,0,0.3)] dark:shadow-[0_0_25px_-15px_rgba(95,122,219,0.5)] border dark:border-palewhite/10 bg-white dark:bg-black2
   }
+
 }
 
 
