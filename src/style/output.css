@@ -992,12 +992,6 @@ input:checked + .toggle-bg {
   width: 100%;
 }
 
-@media (min-width: 320px) {
-  .container {
-    max-width: 320px;
-  }
-}
-
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -1483,15 +1477,15 @@ input:checked + .toggle-bg {
   font-size: 3rem;
   line-height: 1;
   --tw-text-opacity: 1;
-  color: rgb(46 50 57 / var(--tw-text-opacity));
+  color: rgb(95 122 219 / var(--tw-text-opacity));
   transition-duration: 500ms;
 }
 
 .carousel-button:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(46 50 57 / var(--tw-bg-opacity));
+  background-color: rgb(162 178 238 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgb(95 122 219 / var(--tw-text-opacity));
+  color: rgb(202 202 202 / var(--tw-text-opacity));
 }
 
 :is(.dark .carousel-button) {
@@ -1526,6 +1520,8 @@ input:checked + .toggle-bg {
     line-height: 1.75rem;
   }
 }
+
+/* --- DAFTAR LOWONGAN PAGE --- */
 
 /* Daftar Lowongan */
 
@@ -1647,14 +1643,6 @@ input:checked + .toggle-bg {
 
 .top-1\/2 {
   top: 50%;
-}
-
-.top-28 {
-  top: 7rem;
-}
-
-.top-56 {
-  top: 14rem;
 }
 
 .-z-10 {
@@ -1846,8 +1834,12 @@ input:checked + .toggle-bg {
   height: 5vw;
 }
 
-.h-\[85vh\] {
-  height: 85vh;
+.h-\[70\%\] {
+  height: 70%;
+}
+
+.h-\[95\%\] {
+  height: 95%;
 }
 
 .h-fit {
@@ -2548,8 +2540,16 @@ input:checked + .toggle-bg {
   padding-bottom: 2.25rem;
 }
 
+.pb-52 {
+  padding-bottom: 13rem;
+}
+
 .pl-10 {
   padding-left: 2.5rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .pt-2 {
