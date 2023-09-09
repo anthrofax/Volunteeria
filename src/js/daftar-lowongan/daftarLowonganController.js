@@ -1,5 +1,6 @@
 import lowonganNavbarView from "./daftar-lowongan-views/lowonganNavbarView.js";
 import mainView from "./daftar-lowongan-views/mainView.js";
+import { state } from "../model.js";
 
 const controlNavbar = function() {
     lowonganNavbarView.navLinkHandler();
@@ -10,7 +11,9 @@ const controlNavbar = function() {
 
 const controlMain = function() {
     mainView.closeVolunteerDetailHandler();
-    mainView.openDetailVolunteer();
+    mainView.searchVolunteerByLocation(state.daftarLowonganBawaan);
+
+    if (screen.width >= 1024) mainView.openDetailVolunteer();
 }
 
 const init = function() {
