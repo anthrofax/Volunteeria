@@ -1,4 +1,4 @@
-import Navbar from "../../views/Navbar.js";
+import Navbar from "../../Navbar.js";
 
 class lowonganNavbarView extends Navbar {
   _searchNavbar = document.querySelector('.search-nav');
@@ -30,8 +30,6 @@ class lowonganNavbarView extends Navbar {
   fixNavbar() {
     this._navObserver.observe(this._parentElement);
   }
-
-  
 }
 
 export default new lowonganNavbarView();

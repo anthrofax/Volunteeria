@@ -1,16 +1,16 @@
-import detailVolunteerNavbarView from "../../innerNavbarView.js";
+import innerNavbarView from '../innerNavbarView.js'
 
 const controlNavbar = function() {
-    detailVolunteerNavbarView.navLinkHandler();
-    detailVolunteerNavbarView.fixNavbar();
-    detailVolunteerNavbarView.hamburgerHandler();
-    detailVolunteerNavbarView.overlayBgHandler();
+    innerNavbarView.navLinkHandler();
+    innerNavbarView.fixNavbar();
+    innerNavbarView.hamburgerHandler();
+    innerNavbarView.overlayBgHandler();
 }
 
-const init = async function() {
+const init = function() {
     controlNavbar();
 
-     // Preline Library for Dark Mode 
+    // Preline Library for Dark Mode 
     const HSThemeAppearance = {
         init() {
             const defaultTheme = 'default'
@@ -93,8 +93,6 @@ const init = async function() {
             })
         })
     })
-    
-   
 }
 
 init();

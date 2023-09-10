@@ -1,4 +1,4 @@
-import Navbar from "../../../views/Navbar.js";
+import Navbar from "./Navbar.js";
 
 class detailVolunteerNavbarView extends Navbar {
   _searchNavbar = document.querySelector('.search-nav');

@@ -1,8 +1,8 @@
-import carouselView from "../views/carouselView.js";
-import mainNavbarView from "../views/mainNavbarView.js";
-import contributionSection from "../views/contributionSection.js";
-import featureSectionView from "../views/featureSectionView.js";
-import jumbotronView from "../views/jumbotronView.js";
+import carouselView from "./main-views/carouselView.js";
+import mainNavbarView from "./main-views/mainNavbarView.js";
+import contributionSection from "./main-views/contributionSection.js";
+import featureSectionView from "./main-views/featureSectionView.js";
+import jumbotronView from "./main-views/jumbotronView.js";
 import { state } from "../model.js";
 
 const controlNavbar = function() {
