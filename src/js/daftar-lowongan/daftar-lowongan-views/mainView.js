@@ -44,6 +44,13 @@ class mainView {
     });
   }
 
+  // Parameter tampilSemua mengharapkan tipe data boolean (true/false)
+  printJumlahLowongan(tampilSemua) {
+    if (tampilSemua) this._jumlahLowonganHTML.textContent = `Tersedia ${this._lowonganContainer.children.length} lowongan saat ini di Volunteeria.`
+    else if (this._jumlahLowonganYangDicari === 0) this._jumlahLowonganHTML.textContent = "Kami tidak menemukan lowongan yang tersedia di lokasi yang anda inginkan."
+    else this._jumlahLowonganHTML.textContent = `Kami menemukan ${this._lowonganContainer.children.length} lowongan yang tersedia di lokasi yang anda inginkan.`
+  }
+
   searchVolunteerByLocation() {
     this._searchBar.addEventListener("keydown", (e) => {
       // Jika tombol yang ditekan selain enter, fungsi tidak dilanjutkan
@@ -65,14 +72,12 @@ class mainView {
       });
 
       // Jika user tidak menginputkan apa apa, maka daftar lowongan yang ditampilkan adalah daftar lowongan bawaan yang disediakan Volunteeria
-      if (this._searchBar.value === "") {
-        this._lowonganYangDicari = this._lowonganBawaan;
-        this._jumlahLowonganHTML.textContent = `Terdapat 6 lowongan yang tersedia saat ini di Volunteeria.`;
-      } else if (this._lowonganYangDicari === '') return;
-      else this._jumlahLowonganHTML.textContent = `Kami menemukan ${this._jumlahLowonganYangDicari} lowongan volunteer sesuai dengan lokasi yang anda inginkan`;
+      if (this._searchBar.value === "") this._lowonganYangDicari = this._lowonganBawaan;
+      
 
       this._lowonganContainer.innerHTML = "";
       this._lowonganContainer.insertAdjacentHTML("beforeend", this._lowonganYangDicari);
+      (this._searchBar.value === "") ? this.printJumlahLowongan(true) : this.printJumlahLowongan(false);
     });
   }
 }
