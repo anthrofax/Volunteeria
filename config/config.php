@@ -1,3 +1,3 @@
 <?php
-$koneksi = mysqli_connect('localhost', 'root', '', 'volunteeria_app');
+$koneksi = mysqli_connect('localhost', 'root', '', 'filament_volunteeria');
 ?>

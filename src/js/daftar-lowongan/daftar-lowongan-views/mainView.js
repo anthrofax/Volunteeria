@@ -19,15 +19,28 @@ class mainView {
     });
   }
 
+  // tadi gua utak-atik ini buat detail nya masih error malah data pertama mulu yang keambil, tapi sebelum gua edit bagian ini, search bar sama halaman daftar lowongan pas lagi ga ada lowongan udah ga bener tampilannya do
   openDetailVolunteer() {
     this._parentElement.addEventListener("click", (e) => {
       const clickedVolunteer = e.target.closest(".daftar-lowongan");
-
+      
       if (!clickedVolunteer) return;
+      const id = clickedVolunteer.getAttribute('data-id');
       e.preventDefault();
 
+      const volunteerDetail = document.querySelectorAll(`.volunteer-detail`);
+      
+
       this._mainImage.classList.replace("flex", "hidden");
-      this._volunteerDetail.classList.replace("hidden", "block");
+
+      volunteerDetail.forEach(function(node){
+        if(+node.getAttribute('data-id')===+id){
+          node.classList.remove("hidden");
+        }else{
+          node.classList.add("hidden")
+        }
+      })
+      // this._volunteerDetail.classList.replace("hidden", "block");
     });
   }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth ">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,33 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&family=Inter:wght@100;200;400;600;700&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
-    <script src="../node_modules/preline/dist/preline.js"></script>
+    <script src="../../node_modules/preline/dist/preline.js"></script>
 
-    <link rel="stylesheet" href="../src/style/output.css" />
-    <script defer type="module" src="../src/js/daftar-lowongan/daftarLowonganController.js"></script>
-
+    <link rel="stylesheet" href="../../src/style/output.css" />
+    <script defer type="module" src="../../src/js/daftar-lowongan/detail-volunteer/detailVolunteerController.js"></script>
     <title>Volunteeria</title>
   </head>
+
   <body class="bg-white2 dark:bg-black2 font-poppins">
-    <!-- Back to Top Button -->
-    <a
-      href="#"
-      class="fixed bottom-5 right-5 rounded-full bg-purple1 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-500 ease-in-out hover:bg-palewhite hover:shadow-lg hover:text-purple1 z-20"
-      id="btn-back-to-top"
-    >
-      <svg aria-hidden="true" focusable="false" data-prefix="fas" class="h-4 w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-        <path
-          fill="currentColor"
-          d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
-        ></path>
-      </svg>
-    </a>
     <!-- Overlay Background -->
     <div class="overlay-bg bg-black opacity-50 fixed left-0 right-0 bottom-0 top-0 z-30 hidden"></div>
     <!-- Navbar -->
     <nav class="bg-white dark:bg-black1 sm:py-8 sm:pr-20 sm:pl-16 max-sm:px-5 flex items-center justify-between drop-shadow-[0_ 5px_15px_white] text-black1 dark:text-palewhite relative hover:opacity-100 duration-1000 z-20 backdrop-blur-md">
       <div class="flex items-center gap-x-5 max-sm:gap-x-2">
-        <img src="../src/img/logo.svg" alt="Volunteeria Logo" width="60px" class="max-sm:w-10 max-sm:h-20" />
+        <img src="../../src/img/logo.svg" alt="Volunteeria Logo" width="60px" class="max-sm:w-10 max-sm:h-20" />
         <a href="../volunteeria.html" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm mt-2 nav-links">
           <h1>Volunteeria</h1>
         </a>
@@ -100,10 +87,10 @@
 
       <ul class="hidden xl:flex gap-x-5 text-sm items-center">
         <li>
-          <a href="#" class="nav-links relative active-link text-purple1 after:scale-100">Lowongan Volunteer</a>
+          <a href="../daftar-lowongan.php" class="nav-links relative active-link text-purple1 after:scale-100">Lowongan Volunteer</a>
         </li>
         <li>
-          <a href="../tips-volunteer/tips-volunteer.html" class="nav-links hoverable-link">Tips Volunteer</a>
+          <a href="../../tips-volunteer/tips-volunteer.html" class="nav-links hoverable-link">Tips Volunteer</a>
         </li>
         <li><a href="" class="nav-links border border-purple1 px-4 py-5 rounded-full hover:border-black1 dark:hover:border-palewhite">FOR EMPLOYERS</a></li>
         <li>
@@ -157,14 +144,14 @@
       <div class="h-full px-3 py-10 overflow-y-auto bg-gray-50 dark:bg-black1">
         <ul class="space-y-2 font-medium">
           <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
-              <img src="../src/img/volunteer.svg" alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
+            <a href="../daftar-lowongan.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
+              <img src="../../src/img/volunteer.svg" alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
               <span class="flex-1 ml-3 whitespace-nowrap text-purple1">Lowongan Volunteer</span>
             </a>
           </li>
           <li>
-            <a href="../tips-volunteer/tips-volunteer.html" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
-              <img src="../src/img/tips.svg" alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
+            <a href="../../tips-volunteer/tips-volunteer.html" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
+              <img src="../../src/img/tips.svg" alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
               <span class="flex-1 ml-3 whitespace-nowrap">Tips Volunteer</span>
             </a>
           </li>
@@ -188,187 +175,57 @@
       </div>
     </aside>
 
-    <!-- Search Navbar Section -->
-    <nav class="search-nav p-5 bg-purple1 dark:bg-black2 h-fit hover:opacity-100 duration-500">
-      <form>
-        <div class="relative">
-          <div class="absolute inset-y-0 w-10 flex items-center pointer-events-none z-10">
-            <img src="../src/img/locationpurple.svg" alt="" class="w-7 h-7 absolute left-1/2 -translate-x-1/2" />
-          </div>
-          <input
-            type="text"
-            id="default-search"
-            class="search-location block w-full p-4 pl-10 text-sm text-black1 dark:text-palewhite rounded-lg bg-white dark:bg-black1 dark:focus:ring-purple1 dark:focus:border-purple1 dark:placeholder-palewhite border-none drop-shadow-[0_0_1px_rgba(255,255,255,0.8)]"
-            placeholder="Area, kota, & daerah..."
-            required
-          />
-        </div>
-      </form>
-    </nav>
-
-    <!-- Section Daftar Lowongan -->
-    <main class="flex flex-col py-5 bg-white2 dark:bg-black1 dark:text-palewhite relative">
-      <p class="jumlah-lowongan text-black1 dark:text-palewhite text-sm mx-auto lg:ml-8 mb-5 w-[80%] lg:w-[400px] text-center lg:text-left">Terdapat 6 lowongan yang tersedia saat ini.</p>
-
-      <ul class="lowongan-container flex flex-col h-fit px-8 items-center gap-5 lg:w-[35vw]">
-        <li class="daftar-lowongan">
-          <a href="./detail-volunteer/detail-volunteer.html">
-            <h1 class="text-lg mt-5 text-purple1">Admin Penjualan</h1>
-            <p>PT Utama Sejuk Abadi</p>
-            <h3 class="mt-3 font-semibold location-data">Jakarta Raya</h3>
-
-            <p class="mt-5">
-              Kriteria <br />
-              ・Mampu berkomunikasi dengan baik <br />
-              ・Tidak ada minimal pendidikan <br />
-              ・Mampu bekerja sama dengan tim <br />
-              ・Memiliki pengalaman di bidang terkait menjadi nilai plus <br />
-            </p>
-          </a>
-        </li>
-
-        <li class="daftar-lowongan">
-          <a href="./detail-volunteer/detail-volunteer.html">
-            <h1 class="text-lg text-purple1 mt-5">Admin Penjualan</h1>
-            <p>PT Utama Sejuk Abadi</p>
-            <h3 class="mt-3 font-semibold location-data">Bandung</h3>
-
-            <p class="mt-5">
-              Kriteria <br />
-              ・Mampu berkomunikasi dengan baik <br />
-              ・Tidak ada minimal pendidikan <br />
-              ・Mampu bekerja sama dengan tim <br />
-              ・Memiliki pengalaman di bidang terkait menjadi nilai plus <br />
-            </p>
-          </a>
-        </li>
-
-        <li class="daftar-lowongan">
-          <a href="./detail-volunteer/detail-volunteer.html" >
-            <h1 class="text-lg text-purple1 mt-5">Admin Penjualan</h1>
-            <p>PT Utama Sejuk Abadi</p>
-            <h3 class="mt-3 font-semibold location-data">Jakarta Raya</h3>
-
-            <p class="mt-5">
-              Kriteria <br />
-              ・Mampu berkomunikasi dengan baik <br />
-              ・Tidak ada minimal pendidikan <br />
-              ・Mampu bekerja sama dengan tim <br />
-              ・Memiliki pengalaman di bidang terkait menjadi nilai plus <br />
-            </p>
-          </a>
-        </li>
-
-        <li class="daftar-lowongan">
-          <a href="./detail-volunteer/detail-volunteer.html" >
-            <h1 class="text-lg text-purple1 mt-5">Admin Penjualan</h1>
-            <p>PT Utama Sejuk Abadi</p>
-            <h3 class="mt-3 font-semibold location-data">Bandung</h3>
-
-            <p class="mt-5">
-              Kriteria <br />
-              ・Mampu berkomunikasi dengan baik <br />
-              ・Tidak ada minimal pendidikan <br />
-              ・Mampu bekerja sama dengan tim <br />
-              ・Memiliki pengalaman di bidang terkait menjadi nilai plus <br />
-            </p>
-          </a>
-        </li>
-
-        <li class="daftar-lowongan">
-          <a href="./detail-volunteer/detail-volunteer.html" >
-            <h1 class="text-lg text-purple1 mt-5">Admin Penjualan</h1>
-            <p>PT Utama Sejuk Abadi</p>
-            <h3 class="mt-3 font-semibold location-data">Jakarta Raya</h3>
-
-            <p class="mt-5">
-              Kriteria <br />
-              ・Mampu berkomunikasi dengan baik <br />
-              ・Tidak ada minimal pendidikan <br />
-              ・Mampu bekerja sama dengan tim <br />
-              ・Memiliki pengalaman di bidang terkait menjadi nilai plus <br />
-            </p>
-          </a>
-        </li>
-
-        <li class="daftar-lowongan">
-          <a href="./detail-volunteer/detail-volunteer.html" >
-            <h1 class="text-lg text-purple1 mt-5">Admin Penjualan</h1>
-            <p>PT Utama Sejuk Abadi</p>
-            <h3 class="mt-3 font-semibold location-data">Jakarta Raya</h3>
-
-            <p class="mt-5">
-              Kriteria <br />
-              ・Mampu berkomunikasi dengan baik <br />
-              ・Tidak ada minimal pendidikan <br />
-              ・Mampu bekerja sama dengan tim <br />
-              ・Memiliki pengalaman di bidang terkait menjadi nilai plus <br />
-            </p>
-          </a>
-        </li>
-      </ul>
-
-      <!-- Detail Volunteer (Area kanan, khusus untuk tampilan laptop) -->
-      <div class="volunteer-detail-parent overflow-y-scroll fixed right-0 w-[65vw] h-[70%] hidden lg:block bg-white dark:bg-black2 shadow-[0_0_25px_-10px_rgba(0,0,0,0.3)] dark:shadow-[0_0_25px_-15px_rgba(95,122,219,0.5)] rounded-lg">
-        <div class="main-image flex flex-col absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center text-black1 dark:text-palewhite text-center">
-          <img src="../src/img/wehave.png" alt="" class="w-64 mb-5" />
-          <h3 class="font-semibold text-xl">Tersedia berbagai jenis lowongan yang mungkin cocok untuk mu</h3>
-          <p>Pilih salah satu lowongan volunteer untuk melihat lebih lanjut</p>
+    <main class="dark:bg-black2">
+      <section class="px-8 text-center lg:text-left py-20 bg-white dark:bg-black1 dark:text-palewhite flex flex-col lg:flex-row lg:items-center justify-start gap-5 lg:justify-between relative">
+        <a href="../daftar-lowongan.php" class="left-3 top-5 absolute w-10 h-10 bg-purple1 hover:bg-palewhite duration-500 rounded-full flex items-center justify-center backdrop-blur-xl bg-opacity-80">
+          <img src="../../src/img/backwhite2.svg" alt="Back Logo" class="w-5 h-5" />
+        </a>
+        <div >
+          <h1 class="font-bold text-lg lg:text-xl mt-3">Admin Penjualan</h1>
+          <h2 class="font-semibold text-base lg:text-lg">PT Utama Sejuk Abadi</h2>
+          <p class="text-sm lg:text-base">Jakarta Raya</p>
         </div>
 
-        <div class="volunteer-detail hidden">
-          <section class="p-5 bg-white dark:bg-black1 dark:text-palewhite rounded-b-lg text-center">
-            <div class="flex justify-between mb-5 text-purple1">
-              <a href="./detail-volunteer/detail-volunteer.html">View in full screen</a>
-              <a href="" class="close-detail-volunteer">Close</a>
-            </div>
-            <h1 class="font-bold text-lg mt-8">Admin Penjualan</h1>
-            <h2 class="font-semibold text-base mt-2">PT Utama Sejuk Abadi</h2>
-            <p class="text-sm">Jakarta Raya</p>
+        <button class="rounded-md bg-purple1 w-full lg:w-[10vw] h-12 text-white hover:bg-purple1/90 duration-100">Apply Now</button>
+      </section>
 
-            <button class="rounded-md bg-purple1 w-full h-12 mt-10 mx-auto text-white hover:bg-purple1/90 duration-100">Apply Now</button>
-          </section>
+      <section class="mt-5 px-5 py-12 bg-white dark:bg-black1 dark:text-palewhite text-sm lg:text-base">
+        <p>
+          Kuota penerimaan : 16 <br> <br>
+        </p>
 
-          <section class="mt-5 px-5 pt-12 bg-white dark:bg-black1 dark:text-palewhite text-base rounded-t-lg pb-52">
-            <p>
-              Kuota penerimaan : 16 <br />
-              <br />
-            </p>
+        <p>
+          Job Desk <br />
+          ・Bekerja Full Time di dalam kantor <br />
+          ・Menjawab telepon, Email, Whatsapp dari customer <br />
+          ・Handle order dan membuat invoice <br />
+          ・Mengurusi Administrasi kantor <br />
+          ・Mempelajari jobdesc untuk backup team lain <br />
+          ・Hari Kerja Senin – Jumat, 08.00 – 17.00. Sabtu 09.00 – 14.00 <br />
+          <br />
+        </p>
 
-            <p>
-              Job Desk <br />
-              ・Bekerja Full Time di dalam kantor <br />
-              ・Menjawab telepon, Email, Whatsapp dari customer <br />
-              ・Handle order dan membuat invoice <br />
-              ・Mengurusi Administrasi kantor <br />
-              ・Mempelajari jobdesc untuk backup team lain <br />
-              ・Hari Kerja Senin – Jumat, 08.00 – 17.00. Sabtu 09.00 – 14.00 <br />
-              <br />
-            </p>
+          <p>
+             Yang didapatkan <br />
+          ・Pengalaman bekerja sama dalam tim <br />
+          ・Relasi yang dapat membangun <br />
+          ・Kesempatan belajar hal baru <br />
+          ・Sertifikat sebagai bukti telah mengikuti kegiatan volunteer <br /> <br>
+          </p>
 
-            <p>
-              Yang didapatkan <br />
-              ・Pengalaman bekerja sama dalam tim <br />
-              ・Relasi yang dapat membangun <br />
-              ・Kesempatan belajar hal baru <br />
-              ・Sertifikat sebagai bukti telah mengikuti kegiatan volunteer <br />
-              <br />
-            </p>
+          <p>
+             Kontak <br />
+             Telepon : +62 8301830 <br>
+            Email : jayaabadi@gmail.com <br>
+            Instagram : @jayaabadi_
+          </p>
 
-            <p>
-              Kontak <br />
-              Telepon : +62 8301830 <br />
-              Email : jayaabadi@gmail.com <br />
-              Instagram : @jayaabadi_
-            </p>
-          </section>
-        </div>
-      </div>
+      </section>
     </main>
 
-    <footer class="z-10 drop-shadow-[0_-3px_10px_rgba(95,122,219,0.8)] py-5 px-5 bg-white dark:bg-black1 dark:text-palewhite flex flex-col gap-8 text-black1 lg:pr-32 relative bottom-0">
+    <footer class="mt-5 drop-shadow-[0_-3px_10px_rgba(95,122,219,0.8)] py-5 px-5 bg-white dark:bg-black1 dark:text-palewhite flex flex-col gap-8 text-black1 lg:pr-32">
       <div class="flex flex-col items-center gap-2 sm:gap-4 sm:flex-row">
-        <img src="../src/img/logo.svg" alt="Volunteeria Logo" class="w-16" />
+        <img src="../../src/img/logo.svg" alt="Volunteeria Logo" class="w-16" />
         <h1 class="text-sm sm:text-lg lg:text-2xl uppercase tracking-widest font-semibold">Volunteeria</h1>
       </div>
 
