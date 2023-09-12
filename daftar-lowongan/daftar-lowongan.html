@@ -41,67 +41,66 @@
       </div>
 
       <!-- Dark Mode (Mobile) -->
-      <div class="hs-dropdown lg:hidden" data-hs-dropdown-placement="bottom-right" data-hs-dropdown-offset="30">
-        <a class="hs-dropdown-toggle hs-dark-mode group flex items-center text-gray-600 hover:text-blue-600 font-medium dark:text-gray-400 dark:hover:text-gray-500" href="javascript:;">
-          <svg class="hs-dark-mode-active:hidden block w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path
-              d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"
-            />
-          </svg>
-          <svg class="hs-dark-mode-active:block hidden w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path
-              d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
-            />
-          </svg>
-        </a>
-
-        <div
-          id="selectThemeDropdown"
-          class="hs-dropdown-menu hs-dropdown-open:opacity-100 mt-2 hidden z-10 transition-[margin,opacity] opacity-0 duration-300 mb-2 origin-bottom-left bg-white shadow-md rounded-lg p-2 space-y-1 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700"
-        >
-          <a
-            class="hs-auto-mode-active:bg-gray-100 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-            href="javascript:;"
-            data-hs-theme-click-value="auto"
-          >
-            Auto (system default)
+      <div class="flex items-center gap-[5vw]">
+        <div class="hs-dropdown xl:hidden" data-hs-dropdown-placement="bottom-right" data-hs-dropdown-offset="30">
+          <a class="hs-dropdown-toggle hs-dark-mode group flex items-center text-gray-600 hover:text-blue-600 font-medium dark:text-gray-400 dark:hover:text-gray-500" href="javascript:;">
+            <svg class="hs-dark-mode-active:hidden block w-[7vw] max-w-[2rem]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+              <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"
+              />
+            </svg>
+            <svg class="hs-dark-mode-active:block hidden w-[7vw] max-w-[2rem]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+              <path
+                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+              />
+            </svg>
           </a>
-          <a
-            class="hs-default-mode-active:bg-gray-100 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-            href="javascript:;"
-            data-hs-theme-click-value="default"
-          >
-            Default (light mode)
-          </a>
-          <a
-            class="hs-dark-mode-active:bg-gray-700 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-            href="javascript:;"
-            data-hs-theme-click-value="dark"
-          >
-            Dark
-          </a>
-        </div>
-      </div>
 
-      <button class="hamburger relative lg:hidden elative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-purple1 ring-white ring-opacity-30 duration-200 shadow-md burger-ring">
-        <div class="flex flex-col gap-[1.5vw] sm:gap-2 justify-center items-center w-[5vw] h-[5vw] transform transition-all duration-300 origin-center max-w-sm">
-          <div class="bg-white h-[2px] w-[20px] max-w-[20px] transform transition-all duration-300 origin-left three-line"></div>
-          <div class="bg-white h-[2px] w-[20px] max-w-[20px] rounded transform transition-all duration-300 delay-75 three-line"></div>
-          <div class="bg-white h-[2px] w-[20px] max-w-[20px] transform transition-all duration-300 origin-left delay-150 three-line"></div>
-
-          <div class="absolute items-center justify-center transform transition-all duration-500 top-1/2 -left-10 flex w-0 -translate-x-1/2 close-hamburger">
-            <div class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 delay-300 close-line"></div>
-            <div class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 delay-300 close-line"></div>
+          <div
+            id="selectThemeDropdown"
+            class="hs-dropdown-menu hs-dropdown-open:opacity-100 mt-2 hidden z-10 transition-[margin,opacity] opacity-0 duration-300 mb-2 origin-bottom-left bg-white shadow-md rounded-lg p-2 space-y-1 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700"
+          >
+            <a
+              class="hs-auto-mode-active:bg-gray-100 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+              href="javascript:;"
+              data-hs-theme-click-value="auto"
+            >
+              Auto (system default)
+            </a>
+            <a
+              class="hs-default-mode-active:bg-gray-100 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+              href="javascript:;"
+              data-hs-theme-click-value="default"
+            >
+              Default (light mode)
+            </a>
+            <a
+              class="hs-dark-mode-active:bg-gray-700 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+              href="javascript:;"
+              data-hs-theme-click-value="dark"
+            >
+              Dark
+            </a>
           </div>
         </div>
-      </button>
 
-      <ul class="hidden lg:flex gap-x-5 text-sm items-center">
+        <button class="hamburger relative xl:hidden elative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-purple1 ring-white ring-opacity-30 duration-200 shadow-md burger-ring">
+          <div class="flex flex-col gap-[1.5vw] sm:gap-2 justify-center items-center w-[5vw] h-[5vw] transform transition-all duration-300 origin-center max-w-sm">
+            <div class="bg-white h-[2px] w-[20px] max-w-[20px] transform transition-all duration-300 origin-left three-line"></div>
+            <div class="bg-white h-[2px] w-[20px] max-w-[20px] rounded transform transition-all duration-300 delay-75 three-line"></div>
+            <div class="bg-white h-[2px] w-[20px] max-w-[20px] transform transition-all duration-300 origin-left delay-150 three-line"></div>
+
+            <div class="absolute items-center justify-center transform transition-all duration-500 top-1/2 -left-10 flex w-0 -translate-x-1/2 close-hamburger">
+              <div class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 delay-300 close-line"></div>
+              <div class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 delay-300 close-line"></div>
+            </div>
+          </div>
+        </button>
+      </div>
+
+      <ul class="hidden xl:flex gap-x-5 text-sm items-center">
         <li>
-          <a href="#" class="nav-links hoverable-link text-purple1">Lowongan Volunteer</a>
-        </li>
-        <li>
-          <a href="../volunteeria.html" class="nav-links hoverable-link">Company Profiles</a>
+          <a href="#" class="nav-links relative active-link text-purple1 after:scale-100">Lowongan Volunteer</a>
         </li>
         <li>
           <a href="../tips-volunteer/tips-volunteer.html" class="nav-links hoverable-link">Tips Volunteer</a>
@@ -154,19 +153,13 @@
     </nav>
 
     <!-- Mobile Sidebar -->
-    <aside id="default-sidebar" class="lg:hidden side-navbar fixed top-0 left-0 z-50 w-64 h-screen transition-transform -translate-x-full" aria-label="Sidebar">
+    <aside id="default-sidebar" class="xl:hidden side-navbar fixed top-0 left-0 z-50 w-64 h-screen transition-transform -translate-x-full" aria-label="Sidebar">
       <div class="h-full px-3 py-10 overflow-y-auto bg-gray-50 dark:bg-black1">
         <ul class="space-y-2 font-medium">
           <li>
             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
               <img src="../src/img/volunteer.svg" alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
               <span class="flex-1 ml-3 whitespace-nowrap text-purple1">Lowongan Volunteer</span>
-            </a>
-          </li>
-          <li>
-            <a href="../volunteeria.html" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
-              <img src="../src/img/company-profile.svg" alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
-              <span class="flex-1 ml-3 whitespace-nowrap">Company Profiles</span>
             </a>
           </li>
           <li>
@@ -317,9 +310,9 @@
 
       <!-- Detail Volunteer (Area kanan, khusus untuk tampilan laptop) -->
       <div class="volunteer-detail-parent overflow-y-scroll fixed right-0 w-[65vw] h-[70%] hidden lg:block bg-white dark:bg-black2 shadow-[0_0_25px_-10px_rgba(0,0,0,0.3)] dark:shadow-[0_0_25px_-15px_rgba(95,122,219,0.5)] rounded-lg">
-        <div class="main-image flex flex-col absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center text-black1 dark:text-palewhite">
+        <div class="main-image flex flex-col absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center text-black1 dark:text-palewhite text-center">
           <img src="../src/img/wehave.png" alt="" class="w-64 mb-5" />
-          <h3 class="font-semibold text-xl text-center">Tersedia berbagai jenis lowongan yang mungkin cocok untuk mu</h3>
+          <h3 class="font-semibold text-xl">Tersedia berbagai jenis lowongan yang mungkin cocok untuk mu</h3>
           <p>Pilih salah satu lowongan volunteer untuk melihat lebih lanjut</p>
         </div>
 
@@ -375,7 +368,7 @@
 
     <footer class="z-10 drop-shadow-[0_-3px_10px_rgba(95,122,219,0.8)] py-5 px-5 bg-white dark:bg-black1 dark:text-palewhite flex flex-col gap-8 text-black1 lg:pr-32 relative bottom-0">
       <div class="flex flex-col items-center gap-2 sm:gap-4 sm:flex-row">
-        <img src="../../src/img/logo.svg" alt="Volunteeria Logo" class="w-16" />
+        <img src="../src/img/logo.svg" alt="Volunteeria Logo" class="w-16" />
         <h1 class="text-sm sm:text-lg lg:text-2xl uppercase tracking-widest font-semibold">Volunteeria</h1>
       </div>
 

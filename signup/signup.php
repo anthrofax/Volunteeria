@@ -48,8 +48,8 @@
     <!-- Left Area -->
     <div class="lg:w-full sm:w-5/6 md:w-2/3 xl:w-1/3 2xl:w-1/4 w-[80vw] h-[70vh] lg:h-full bg-black1 flex flex-col items-center justify-start py-8 px-[8vw] lg:px-10 overflow-scroll lg:overflow-auto rounded-xl lg:rounded-none">
 
-      <a href="../index.html" class="absolute left-4 top-4 w-12 h-12 bg-palewhite hover:bg-black2 duration-500 rounded-full flex items-center justify-center backdrop-blur-xl bg-opacity-80">
-        <img src="../src/img/backpurple2.svg" alt="Back Logo" class="w-3" />
+      <a href="../volunteeria.html" class="absolute left-4 top-4 w-12 h-12 bg-palewhite hover:bg-black2 duration-500 rounded-full flex items-center justify-center backdrop-blur-xl bg-opacity-80">
+        <img src="../src/img/arrow-purple.svg" alt="Back Logo" class="w-3" />
       </a>
       <h2 class="text-center text-lg sm:text-3xl font-bold tracking-wide text-palewhite">Sign Up</h2>
       <!-- <p class="text-center text-xs sm:text-base text-palewhite mt-2">Sudah punya akun? <a href="../login/login.html" class="text-purple1 hover:text-purple1 hover:underline" title="Sign In">Login di sini</a></p> -->

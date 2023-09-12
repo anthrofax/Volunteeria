@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth ">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,7 @@
     <script src="./node_modules/preline/dist/preline.js"></script>
 
     <link rel="stylesheet" href="./src/style/output.css" />
-    <script defer type="module" src="./src/js/main/controller.js"></script>
+    <script defer type="module" src="./src/js/company-profile/controller.js"></script>
     <title>Volunteeria</title>
   </head>
   <body class="text-black1 dark:text-palewhite font-poppins bg-white dark:bg-black1">
@@ -42,61 +42,63 @@
         </a>
       </div>
 
-      <!-- Dark Mode (Mobile) -->
-      <div class="hs-dropdown lg:hidden" data-hs-dropdown-placement="bottom-right" data-hs-dropdown-offset="30">
-        <a class="hs-dropdown-toggle hs-dark-mode group flex items-center text-gray-600 hover:text-blue-600 font-medium dark:text-gray-400 dark:hover:text-gray-500" href="javascript:;">
-          <svg class="hs-dark-mode-active:hidden block w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path
-              d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"
-            />
-          </svg>
-          <svg class="hs-dark-mode-active:block hidden w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path
-              d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
-            />
-          </svg>
-        </a>
-
-        <div
-          id="selectThemeDropdown"
-          class="hs-dropdown-menu hs-dropdown-open:opacity-100 mt-2 hidden z-10 transition-[margin,opacity] opacity-0 duration-300 mb-2 origin-bottom-left bg-white shadow-md rounded-lg p-2 space-y-1 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700"
-        >
-          <a
-            class="hs-auto-mode-active:bg-gray-100 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-            href="javascript:;"
-            data-hs-theme-click-value="auto"
-          >
-            Auto (system default)
+      <div class="flex items-center gap-[5vw]">
+        <!-- Dark Mode (Mobile) -->
+        <div class="hs-dropdown lg:hidden" data-hs-dropdown-placement="bottom-right" data-hs-dropdown-offset="30">
+          <a class="hs-dropdown-toggle hs-dark-mode group flex items-center text-gray-600 hover:text-blue-600 font-medium dark:text-gray-400 dark:hover:text-gray-500" href="javascript:;">
+            <svg class="hs-dark-mode-active:hidden block w-[7vw] max-w-[2rem]" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" viewBox="0 0 16 16">
+              <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"
+              />
+            </svg>
+            <svg class="hs-dark-mode-active:block hidden w-[7vw] max-w-[2rem]" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" viewBox="0 0 16 16">
+              <path
+                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+              />
+            </svg>
           </a>
-          <a
-            class="hs-default-mode-active:bg-gray-100 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-            href="javascript:;"
-            data-hs-theme-click-value="default"
-          >
-            Default (light mode)
-          </a>
-          <a
-            class="hs-dark-mode-active:bg-gray-700 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-            href="javascript:;"
-            data-hs-theme-click-value="dark"
-          >
-            Dark
-          </a>
-        </div>
-      </div>
 
-      <button class="hamburger relative lg:hidden elative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-purple1 ring-white ring-opacity-30 duration-200 shadow-md burger-ring">
-        <div class="flex flex-col gap-[1.5vw] sm:gap-2 justify-center items-center w-[5vw] h-[5vw] transform transition-all duration-300 origin-center max-w-sm">
-          <div class="bg-white h-[2px] w-[20px] max-w-[20px] transform transition-all duration-300 origin-left three-line"></div>
-          <div class="bg-white h-[2px] w-[20px] max-w-[20px] rounded transform transition-all duration-300 delay-75 three-line"></div>
-          <div class="bg-white h-[2px] w-[20px] max-w-[20px] transform transition-all duration-300 origin-left delay-150 three-line"></div>
-
-          <div class="absolute items-center justify-center transform transition-all duration-500 top-1/2 -left-10 flex w-0 -translate-x-1/2 close-hamburger">
-            <div class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 delay-300 close-line"></div>
-            <div class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 delay-300 close-line"></div>
+          <div
+            id="selectThemeDropdown"
+            class="hs-dropdown-menu hs-dropdown-open:opacity-100 mt-2 hidden z-10 transition-[margin,opacity] opacity-0 duration-300 mb-2 origin-bottom-left bg-white shadow-md rounded-lg p-2 space-y-1 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700"
+          >
+            <a
+              class="hs-auto-mode-active:bg-gray-100 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+              href="javascript:;"
+              data-hs-theme-click-value="auto"
+            >
+              Auto (system default)
+            </a>
+            <a
+              class="hs-default-mode-active:bg-gray-100 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+              href="javascript:;"
+              data-hs-theme-click-value="default"
+            >
+              Default (light mode)
+            </a>
+            <a
+              class="hs-dark-mode-active:bg-gray-700 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+              href="javascript:;"
+              data-hs-theme-click-value="dark"
+            >
+              Dark
+            </a>
           </div>
         </div>
-      </button>
+
+        <button class="hamburger relative lg:hidden elative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-purple1 ring-white ring-opacity-30 duration-200 shadow-md burger-ring">
+          <div class="flex flex-col gap-[1.5vw] sm:gap-2 justify-center items-center w-[5vw] h-[5vw] transform transition-all duration-300 origin-center max-w-sm">
+            <div class="bg-white h-[2px] w-[20px] max-w-[20px] transform transition-all duration-300 origin-left three-line"></div>
+            <div class="bg-white h-[2px] w-[20px] max-w-[20px] rounded transform transition-all duration-300 delay-75 three-line"></div>
+            <div class="bg-white h-[2px] w-[20px] max-w-[20px] transform transition-all duration-300 origin-left delay-150 three-line"></div>
+
+            <div class="absolute items-center justify-center transform transition-all duration-500 top-1/2 -left-10 flex w-0 -translate-x-1/2 close-hamburger">
+              <div class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 delay-300 close-line"></div>
+              <div class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 delay-300 close-line"></div>
+            </div>
+          </div>
+        </button>
+      </div>
 
       <ul class="hidden lg:flex gap-x-8 text-base items-center">
         <li><a href="./signup/signup.php" class="nav-links hoverable-link">DAFTAR PEREKRUT</a></li>
@@ -187,34 +189,38 @@
 
     <!-- Jumbotron -->
     <header
-      class="jumbotron flex items-center justify-center sm:justify-start max-sm:py-20 w-full h-screen bg-slate-600 bg-no-repeat bg-cover bg-center bg-blend-multiply duration-[2000ms] relative transition-[background-image]"
+      class="jumbotron flex items-center max-sm:justify-center max-sm:py-20 w-full h-screen bg-slate-600 bg-no-repeat bg-cover bg-center bg-blend-multiply duration-[2000ms] relative transition-[background-image] "
       style="background-image: url(src/img/mainimage.png)"
     >
       <div class="loading-indicator bg-purple1 dark:bg-palewhite h-[3px] w-0 absolute left-0 top-0 ease-in-out duration-[50ms]"></div>
 
       <!-- Prev Button -->
       <button class="prevnext-jumbotron-button left-0 opacity-0">
-        <img src="src/img/backpurple2.svg" alt="" class="w-[40%]" />
+        <img src="src/img/arrow-white.svg" alt="" class="w-[40%]" />
       </button>
-      <div class="main-content h-fit flex gap-3 flex-col items-center sm:items-start sm:ml-10 lg:ml-16 px-[3vw] text-palewhite">
-        <h2 class="sm:text-4xl text-2xl text-center sm:text-left">Tebarkan kebaikan bersama</h2>
-        <p class="sm:text-xl text-sm ml-2 sm:text-left">Daftar sebagai...</p>
-        <div class="sign-button flex gap-4">
-          <a href="./signup/signup_sukarelawan.html" class="jumbtotron-button">Sukarelawan</a>
-          <a href="./signup/signup.php" class="jumbtotron-button">Perekrut</a>
-        </div>
+      <div class="jumbotron-text left-5  ">
+        <h2 class="sm:text-4xl text-2xl text-center sm:text-left tracking-widest font-semibold uppercase opacity-0">Tebarkan Kebaikan Bersama</h2>
+        <p class="sm:text-xl text-sm ml-2 sm:text-left opacity-0">Temukan Peluang Volunteer yang Menginspirasi.</p>
+      </div>
+      <div class="jumbotron-text  left-1/2 -translate-x-1/2 ">
+        <h2 class="sm:text-3xl text-2xl text-center  tracking-widest font-semibold uppercase opacity-0">Jadilah Bagian dari Perubahan</h2>
+        <p class="sm:text-lg text-sm ml-2 text-center opacity-0">Temukan Volunteer untuk Mewujudkan Impian Anda</p>
+      </div>
+      <div class="jumbotron-text right-5 ">
+        <h2 class="sm:text-4xl text-2xl text-center sm:text-right tracking-widest font-semibold uppercase opacity-0">Berkontribusi, Berpengalaman, Berarti</h2>
+        <p class="sm:text-xl text-sm ml-2 sm:text-right opacity-0">Temukan Aksi Volunteer yang Signifikan.</p>
       </div>
 
       <!-- Next Button -->
       <button class="prevnext-jumbotron-button right-0 opacity-0">
-        <img src="src/img/backpurple2.svg" alt="" class="w-[40%] rotate-180" />
+        <img src="src/img/arrow-white.svg" alt="" class="w-[40%] rotate-180" />
       </button>
     </header>
 
     <!-- Section 1 (Fitur Website) -->
     <section class="feature-section p-10 sm:p-20 relative flex flex-col items-center">
       <div class="top-line feature-line self-start"></div>
-      <div class="mb-10 py-9 flex flex-col gap-10 duration-1000">
+      <div class="mb-10 py-9 flex flex-col gap-16 duration-1000">
         <h2 class="text-2xl text-center sm:text-3xl">Need something done?</h2>
         <div class="flex gap-10 h-fit flex-wrap lg:flex-nowrap justify-center">
           <div class="fitur-website">
@@ -424,9 +430,9 @@
       </div>
     </section>
 
-    <footer class=" drop-shadow-[0_-3px_10px_rgba(95,122,219,0.8)] py-5 px-5 bg-white dark:bg-black1 dark:text-palewhite flex flex-col gap-8 text-black1 lg:pr-32">
+    <footer class="drop-shadow-[0_-3px_10px_rgba(95,122,219,0.8)] py-5 px-5 bg-white dark:bg-black1 dark:text-palewhite flex flex-col gap-8 text-black1 lg:pr-32">
       <div class="flex flex-col items-center gap-2 sm:gap-4 sm:flex-row">
-        <img src="../../src/img/logo.svg" alt="Volunteeria Logo" class="w-16" />
+        <img src="./src/img/logo.svg" alt="Volunteeria Logo" class="w-16" />
         <h1 class="text-sm sm:text-lg lg:text-2xl uppercase tracking-widest font-semibold">Volunteeria</h1>
       </div>
 
@@ -454,5 +460,7 @@
         </div>
       </div>
     </footer>
+
+   
   </body>
 </html>

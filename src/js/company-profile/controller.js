@@ -14,6 +14,7 @@ const controlNavbar = function() {
 
 const controlJumbotronSection = function() {
     jumbotronView.imageInterval(state.mainImageUrl);
+    jumbotronView.textAnimation();
     jumbotronView.prevnextHandler(state.mainImageUrl);
 }
 
