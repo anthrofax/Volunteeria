@@ -12,15 +12,6 @@
   }
 }
 
-@keyframes firstTextAnimation {
-  0% {
-    transform: translateX(-5rem);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 @keyframes secondTitleAnimation {
   0% {
     transform: translateY(-10rem);
@@ -35,18 +26,6 @@
   }
   100% {
     transform: translateY(0);
-  }
-}
-
-@keyframes thirdTextAnimation {
-  0% {
-    transform: translateX(5rem);
-  }
-  50% {
-    transform: translateX(-5rem);
-  }
-  100% {
-    transform: translateX(0);
   }
 }
 
@@ -71,6 +50,10 @@
 // Untuk menyembunyikan scrollbar
 .tips-scrollable-element::-webkit-scrollbar {
   display: none;
+}
+
+.apply-form::-webkit-scrollbar {
+  display: none
 }
 
 @layer components {
@@ -116,11 +99,11 @@
   }
 
   .jumbotron-text {
-    @apply h-fit gap-3 flex-col items-center text-palewhite absolute;
+    @apply h-fit gap-3 flex-col items-center text-palewhite absolute w-[80vw];
   }
 
   .first-text-animation {
-    @apply opacity-100 translate-x-16;
+    @apply opacity-100 lg:translate-x-10 ;
   }
 
   .second-title-animation {
@@ -134,7 +117,7 @@
   }
 
   .third-text-animation {
-    @apply opacity-100 -translate-x-16;;
+    @apply opacity-100 lg:-translate-x-10
   }
 
   /* Feature Section */

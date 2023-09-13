@@ -9,14 +9,6 @@
     transform: translateY(-50px);
   }
 }
-@keyframes firstTextAnimation {
-  0% {
-    transform: translateX(-5rem);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 @keyframes secondTitleAnimation {
   0% {
     transform: translateY(-10rem);
@@ -33,23 +25,16 @@
     transform: translateY(0);
   }
 }
-@keyframes thirdTextAnimation {
-  0% {
-    transform: translateX(5rem);
-  }
-  50% {
-    transform: translateX(-5rem);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 /* Untuk cek, apakah section Jumbotron sedang di hover atau tidak */
 .jumbotron:hover {
   opacity: 0.99999;
 }
 
 .tips-scrollable-element::-webkit-scrollbar {
+  display: none;
+}
+
+.apply-form::-webkit-scrollbar {
   display: none;
 }
 
@@ -105,10 +90,10 @@
     @apply h-16 sm:h-24 bg-black w-[5vw] lg:w-[3vw] flex items-center justify-center absolute duration-500 hover:scale-125 hover:bg-palewhite active:bg-black1;
   }
   .jumbotron-text {
-    @apply h-fit gap-3 flex-col items-center text-palewhite absolute;
+    @apply h-fit gap-3 flex-col items-center text-palewhite absolute w-[80vw];
   }
   .first-text-animation {
-    @apply opacity-100 translate-x-16;
+    @apply opacity-100 lg:translate-x-10;
   }
   .second-title-animation {
     @apply opacity-100;
@@ -119,7 +104,7 @@
     animation: secondTextAnimation 2s 0.5s 1 backwards;
   }
   .third-text-animation {
-    @apply opacity-100 -translate-x-16;
+    @apply opacity-100 lg:-translate-x-10;
   }
   /* Feature Section */
   .fitur-website {
