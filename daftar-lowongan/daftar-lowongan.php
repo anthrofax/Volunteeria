@@ -213,101 +213,25 @@
       <p class="jumlah-lowongan text-black1 dark:text-palewhite text-sm mx-auto lg:ml-8 mb-5 w-[80%] lg:w-[400px] text-center lg:text-left">Terdapat 6 lowongan yang tersedia saat ini.</p>
 
       <ul class="lowongan-container flex flex-col min-h-screen px-8 items-center gap-5 lg:w-[35vw]">
-         <li class="daftar-lowongan">
+      <?php
+        include('../config/config.php');
+        $query = mysqli_query($koneksi, "SELECT * FROM suntings ");
+        while ($lowongan = mysqli_fetch_array($query)) {
+          $job_id = $lowongan['id'];
+      ?>
+         <li class="daftar-lowongan" data-id="<?=$job_id?>">
           <a href="./detail-volunteer/detail-volunteer.html">
-            <h1 class="text-lg mt-5 text-purple1">Admin Penjualan</h1>
-            <p>PT Utama Sejuk Abadi</p>
-            <h3 class="mt-3 font-semibold location-data">Jakarta Raya</h3>
+            <h1 class="text-lg mt-5 text-purple1"><?php echo $lowongan['posisi'] ?></h1>
+            <p><?php echo $lowongan['nama_agency'] ?></p>
+            <h3 class="mt-3 font-semibold location-data"><?php echo $lowongan['lokasi'] ?></h3>
 
             <p class="mt-5">
               Kriteria <br />
-              ・Mampu berkomunikasi dengan baik <br />
-              ・Tidak ada minimal pendidikan <br />
-              ・Mampu bekerja sama dengan tim <br />
-              ・Memiliki pengalaman di bidang terkait menjadi nilai plus <br />
+              <?php echo $lowongan['kriteria'] ?>
             </p>
           </a>
         </li>
-
-        <li class="daftar-lowongan">
-          <a href="./detail-volunteer/detail-volunteer.html">
-            <h1 class="text-lg text-purple1 mt-5">Admin Penjualan</h1>
-            <p>PT Utama Sejuk Abadi</p>
-            <h3 class="mt-3 font-semibold location-data">Bandung</h3>
-
-            <p class="mt-5">
-              Kriteria <br />
-              ・Mampu berkomunikasi dengan baik <br />
-              ・Tidak ada minimal pendidikan <br />
-              ・Mampu bekerja sama dengan tim <br />
-              ・Memiliki pengalaman di bidang terkait menjadi nilai plus <br />
-            </p>
-          </a>
-        </li>
-
-        <li class="daftar-lowongan">
-          <a href="./detail-volunteer/detail-volunteer.html" >
-            <h1 class="text-lg text-purple1 mt-5">Admin Penjualan</h1>
-            <p>PT Utama Sejuk Abadi</p>
-            <h3 class="mt-3 font-semibold location-data">Jakarta Raya</h3>
-
-            <p class="mt-5">
-              Kriteria <br />
-              ・Mampu berkomunikasi dengan baik <br />
-              ・Tidak ada minimal pendidikan <br />
-              ・Mampu bekerja sama dengan tim <br />
-              ・Memiliki pengalaman di bidang terkait menjadi nilai plus <br />
-            </p>
-          </a>
-        </li>
-
-        <li class="daftar-lowongan">
-          <a href="./detail-volunteer/detail-volunteer.html" >
-            <h1 class="text-lg text-purple1 mt-5">Admin Penjualan</h1>
-            <p>PT Utama Sejuk Abadi</p>
-            <h3 class="mt-3 font-semibold location-data">Bandung</h3>
-
-            <p class="mt-5">
-              Kriteria <br />
-              ・Mampu berkomunikasi dengan baik <br />
-              ・Tidak ada minimal pendidikan <br />
-              ・Mampu bekerja sama dengan tim <br />
-              ・Memiliki pengalaman di bidang terkait menjadi nilai plus <br />
-            </p>
-          </a>
-        </li>
-
-        <li class="daftar-lowongan">
-          <a href="./detail-volunteer/detail-volunteer.html" >
-            <h1 class="text-lg text-purple1 mt-5">Admin Penjualan</h1>
-            <p>PT Utama Sejuk Abadi</p>
-            <h3 class="mt-3 font-semibold location-data">Jakarta Raya</h3>
-
-            <p class="mt-5">
-              Kriteria <br />
-              ・Mampu berkomunikasi dengan baik <br />
-              ・Tidak ada minimal pendidikan <br />
-              ・Mampu bekerja sama dengan tim <br />
-              ・Memiliki pengalaman di bidang terkait menjadi nilai plus <br />
-            </p>
-          </a>
-        </li>
-
-        <li class="daftar-lowongan">
-          <a href="./detail-volunteer/detail-volunteer.html" >
-            <h1 class="text-lg text-purple1 mt-5">Admin Penjualan</h1>
-            <p>PT Utama Sejuk Abadi</p>
-            <h3 class="mt-3 font-semibold location-data">Jakarta Raya</h3>
-
-            <p class="mt-5">
-              Kriteria <br />
-              ・Mampu berkomunikasi dengan baik <br />
-              ・Tidak ada minimal pendidikan <br />
-              ・Mampu bekerja sama dengan tim <br />
-              ・Memiliki pengalaman di bidang terkait menjadi nilai plus <br />
-            </p>
-          </a>
-        </li>
+        <?php } ?>
       </ul>
 
       <!-- Detail Volunteer (Area kanan, khusus untuk tampilan laptop) -->
@@ -318,17 +242,22 @@
           <p>Pilih salah satu lowongan volunteer untuk melihat lebih lanjut</p>
         </div>
 
-        <div class="volunteer-detail hidden">
+        <?php
+          include('../config/config.php');
+          $query = mysqli_query($koneksi, "SELECT * FROM suntings ");
+          while ($daftar_lowongan = mysqli_fetch_array($query)) {
+        ?>
+        <div class="volunteer-detail hidden" data-id="<?=$daftar_lowongan['id']?>">
           <section class="p-5 bg-white dark:bg-black1 dark:text-palewhite rounded-b-lg text-center">
             <div class="flex justify-between mb-5 text-purple1">
               <a href="./detail-volunteer/detail-volunteer.html">View in full screen</a>
               <a href="" class="close-detail-volunteer">Close</a>
             </div>
-            <h1 class="font-bold text-lg mt-8">Admin Penjualan</h1>
-            <h2 class="font-semibold text-base mt-2">PT Utama Sejuk Abadi</h2>
-            <p class="text-sm">Jakarta Raya</p>
+            <h1 class="font-bold text-lg mt-8"><?php echo $daftar_lowongan['posisi'] ?></h1>
+            <h2 class="font-semibold text-base mt-2"><?php echo $daftar_lowongan['nama_agency'] ?></h2>
+            <p class="text-sm"><?php echo $daftar_lowongan['lokasi'] ?></p>
 
-            <button class="rounded-md bg-purple1 w-full h-12 mt-10 mx-auto text-white hover:bg-purple1/90 duration-100">Apply Now</button>
+            <a href="../form-apply/form-apply.html"><button class="rounded-md bg-purple1 w-full h-12 mt-10 mx-auto text-white hover:bg-purple1/90 duration-100">Apply Now</button></a>
           </section>
 
           <section class="mt-5 px-5 pt-12 bg-white dark:bg-black1 dark:text-palewhite text-base rounded-t-lg pb-52">
@@ -365,6 +294,7 @@
             </p>
           </section>
         </div>
+        <?php } ?>
       </div>
     </main>
 

@@ -39,7 +39,7 @@
 
     <div class="flex h-screen w-full items-center justify-center ">
       <div class="w-[80vw]  max-w-sm h-[90vh] max-h-[30rem] login-area rounded-xl bg-black1 bg-opacity-50 px-16 py-10 shadow-lg backdrop-blur-md max-sm:px-8 duration-1000 relative ">
-            <a href="../index.html" class="absolute -left-3 -top-3 w-10 h-10 sm:-left-5 sm:-top-5 sm:w-12 sm:h-12 bg-palewhite hover:bg-black2 duration-500 rounded-full flex items-center justify-center backdrop-blur-xl bg-opacity-80">
+            <a href="../daftar-lowongan/daftar-lowongan.php" class="absolute -left-3 -top-3 w-10 h-10 sm:-left-5 sm:-top-5 sm:w-12 sm:h-12 bg-palewhite hover:bg-black2 duration-500 rounded-full flex items-center justify-center backdrop-blur-xl bg-opacity-80">
                 <img src="../src/img/arrow-purple.svg" alt="Back Logo" class="w-3" >
             </a>
           <div class="mb-8 flex flex-col items-center text-center text-palewhite">

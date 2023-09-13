@@ -1774,11 +1774,6 @@ input:checked + .toggle-bg {
   margin-bottom: 1rem;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -1845,10 +1840,6 @@ input:checked + .toggle-bg {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-7 {
-  margin-top: 1.75rem;
 }
 
 .block {
@@ -1935,12 +1926,12 @@ input:checked + .toggle-bg {
   height: 50px;
 }
 
-.h-\[5vw\] {
-  height: 5vw;
+.h-\[55\%\] {
+  height: 55%;
 }
 
-.h-\[65\%\] {
-  height: 65%;
+.h-\[5vw\] {
+  height: 5vw;
 }
 
 .h-\[70\%\] {
@@ -1970,10 +1961,6 @@ input:checked + .toggle-bg {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[55\%\] {
-  height: 55%;
 }
 
 .max-h-\[30rem\] {
@@ -2074,10 +2061,6 @@ input:checked + .toggle-bg {
 
 .w-\[85\%\] {
   width: 85%;
-}
-
-.w-\[95\%\] {
-  width: 95%;
 }
 
 .w-full {
@@ -2722,11 +2705,6 @@ input:checked + .toggle-bg {
   padding-bottom: 2.25rem;
 }
 
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
 .pb-52 {
   padding-bottom: 13rem;
 }
@@ -3163,16 +3141,6 @@ input:checked + .toggle-bg {
       max-width: 100px;
     }
   }
-}
-
-.placeholder\:text-base::-moz-placeholder {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.placeholder\:text-base::placeholder {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .placeholder\:text-xs::-moz-placeholder {
@@ -3781,12 +3749,12 @@ input:checked + .toggle-bg {
     height: 14rem;
   }
 
-  .lg\:h-full {
-    height: 100%;
-  }
-
   .lg\:h-\[65\%\] {
     height: 65%;
+  }
+
+  .lg\:h-full {
+    height: 100%;
   }
 
   .lg\:w-1\/2 {
