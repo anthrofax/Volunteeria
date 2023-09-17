@@ -1,0 +1,43 @@
+{
+    "lowongan-pekerjaan": [
+        {
+            "posisi": "Front-end Developer",
+            "perusahaan": "PT Teknologi Maju",
+            "lokasi": "Surabaya",
+            "kuotaPenerimaan": 10,
+            "jobDesk": ["Mengembangkan antarmuka pengguna", "Mengimplementasikan desain UI/UX", "Optimisasi kinerja aplikasi web"],
+            "banefit": ["Gaji kompetitif", "Fleksibilitas kerja", "Peluang pengembangan karier"],
+            "kontak": {
+                "telepon": "085712345678",
+                "email": "hr@teknologimaju.com",
+                "instagram": "@teknologimaju"
+            }
+        },
+        {
+            "posisi": "Data Analyst",
+            "perusahaan": "PT Analitik Cerdas",
+            "lokasi": "Bandung",
+            "kuotaPenerimaan": 8,
+            "jobDesk": ["Menganalisis data", "Membuat laporan analisis", "Mengembangkan model prediksi"],
+            "banefit": ["Gaji kompetitif", "Fasilitas kerja modern", "Kesempatan pelatihan dan pengembangan"],
+            "kontak": {
+                "telepon": "081923456789",
+                "email": "hr@analitikcerdas.com",
+                "instagram": "@analitikcerdas"
+            }
+        },
+        {
+            "posisi": "UX Designer",
+            "perusahaan": "PT Desain Kreatif",
+            "lokasi": "Yogyakarta",
+            "kuotaPenerimaan": 6,
+            "jobDesk": ["Merancang pengalaman pengguna yang menarik", "Prototyping desain", "Berkerjasama dengan tim pengembangan"],
+            "banefit": ["Gaji kompetitif", "Atmosfer kerja yang kreatif", "Fleksibilitas waktu kerja"],
+            "kontak": {
+                "telepon": "082134567890",
+                "email": "hr@desainkreatif.com",
+                "instagram": "@desainkreatif"
+            }
+        }
+    ]
+}
