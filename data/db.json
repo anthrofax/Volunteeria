@@ -1,0 +1,32 @@
+{
+    "news": [
+        {
+            "id": 1,
+            "gambar": "../src/img/tips2.webp",
+            "judul": "Dear Mahasiswa, Persiapkan 5 Hal Ini Sebelum Terjun Jadi Volunteer!",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis non sapien viverra volutpat. Vestibulum hendrerit nunc ac sapien lobortis, id hendrerit elit ultricies. Quisque congue tincidunt orci, id vulputate odio suscipit eu. Sed id metus quis elit dictum bibendum id ac quam. Fusce consectetur facilisis leo, vel egestas lectus. Vivamus nec est sit amet justo efficitur feugiat eu vel odio. Proin aliquet ipsum ac turpis volutpat, eget tincidunt orci venenatis. Curabitur in tellus nec nisi viverra convallis. Sed dignissim, dolor eu tincidunt scelerisque, purus urna vestibulum lorem, eu tincidunt nisi libero a ligula.",
+            "newsSrc": "https://www.umn.ac.id/dear-mahasiswa-persiapkan-5-hal-ini-sebelum-terjun-jadi-volunteer/"
+        },
+        {
+            "id": 2,
+            "gambar": "../src/img/tips3.jpeg",
+            "judul": "Kamu Ingin Jadi Volunteer? Ketahui Hal-hal Penting Ini!",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis non sapien viverra volutpat. Vestibulum hendrerit nunc ac sapien lobortis, id hendrerit elit ultricies. Quisque congue tincidunt orci, id vulputate odio suscipit eu. Sed id metus quis elit dictum bibendum id ac quam. Fusce consectetur facilisis leo, vel egestas lectus. Vivamus nec est sit amet justo efficitur feugiat eu vel odio. Proin aliquet ipsum ac turpis volutpat, eget tincidunt orci venenatis. Curabitur in tellus nec nisi viverra convallis. Sed dignissim, dolor eu tincidunt scelerisque, purus urna vestibulum lorem, eu tincidunt nisi libero a ligula.",
+            "newsSrc": "https://rimbakita.com/volunteer/"
+        },
+        {
+            "id": 3,
+            "gambar": "../src/img/tips5.webp",
+            "judul": "Apa itu Volunteer? Pengertian & Manfaatnya untuk Perkembangan Karir",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis non sapien viverra volutpat. Vestibulum hendrerit nunc ac sapien lobortis, id hendrerit elit ultricies. Quisque congue tincidunt orci, id vulputate odio suscipit eu. Sed id metus quis elit dictum bibendum id ac quam. Fusce consectetur facilisis leo, vel egestas lectus. Vivamus nec est sit amet justo efficitur feugiat eu vel odio. Proin aliquet ipsum ac turpis volutpat, eget tincidunt orci venenatis. Curabitur in tellus nec nisi viverra convallis. Sed dignissim, dolor eu tincidunt scelerisque, purus urna vestibulum lorem, eu tincidunt nisi libero a ligula.",
+            "newsSrc": "https://www.linovhr.com/volunteer-adalah/"
+        },
+        {
+            "id": 4,
+            "gambar": "../src/img/tips4.jpeg",
+            "judul": "Belum ada pengalaman? Ini Tips Bergabung Volunteering",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis non sapien viverra volutpat. Vestibulum hendrerit nunc ac sapien lobortis, id hendrerit elit ultricies. Quisque congue tincidunt orci, id vulputate odio suscipit eu. Sed id metus quis elit dictum bibendum id ac quam. Fusce consectetur facilisis leo, vel egestas lectus. Vivamus nec est sit amet justo efficitur feugiat eu vel odio. Proin aliquet ipsum ac turpis volutpat, eget tincidunt orci venenatis. Curabitur in tellus nec nisi viverra convallis. Sed dignissim, dolor eu tincidunt scelerisque, purus urna vestibulum lorem, eu tincidunt nisi libero a ligula.",
+            "newsSrc": "https://pemimpin.id/belum-ada-pengalaman-ini-tips-bergabung-volunteering/"
+        }
+    ]
+}

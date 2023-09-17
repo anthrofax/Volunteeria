@@ -12,7 +12,7 @@ const controlNavbar = function() {
 const controlMain = function() {
     mainView.closeVolunteerDetailHandler();
     mainView.searchVolunteerByLocation(state.daftarLowonganBawaan);
-    mainView.printJumlahLowongan(true);
+    mainView.printJumlahLowongan(true); 
 
     if (screen.width >= 1024) mainView.openDetailVolunteer();
 }

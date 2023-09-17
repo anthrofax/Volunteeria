@@ -86,11 +86,11 @@
           </div>
         </div>
 
-        <button class="hamburger relative xl:hidden elative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-purple1 ring-white ring-opacity-30 duration-200 shadow-md burger-ring">
+        <button class="hamburger relative lg:hidden elative flex overflow-hidden items-center justify-center rounded-full w-[10vw] h-[10vw] max-w-[40px] max-h-[40px] transform transition-all bg-purple1 ring-white ring-opacity-30 duration-200 shadow-md burger-ring">
           <div class="flex flex-col gap-[1.5vw] sm:gap-2 justify-center items-center w-[5vw] h-[5vw] transform transition-all duration-300 origin-center max-w-sm">
-            <div class="bg-white h-[2px] w-[20px] max-w-[20px] transform transition-all duration-300 origin-left three-line"></div>
-            <div class="bg-white h-[2px] w-[20px] max-w-[20px] rounded transform transition-all duration-300 delay-75 three-line"></div>
-            <div class="bg-white h-[2px] w-[20px] max-w-[20px] transform transition-all duration-300 origin-left delay-150 three-line"></div>
+            <div class="bg-white h-[2px] w-[90%] max-w-[20px] transform transition-all duration-300 origin-left three-line"></div>
+            <div class="bg-white h-[2px] w-[90%] max-w-[20px] rounded transform transition-all duration-300 delay-75 three-line"></div>
+            <div class="bg-white h-[2px] w-[90%] max-w-[20px] transform transition-all duration-300 origin-left delay-150 three-line"></div>
 
             <div class="absolute items-center justify-center transform transition-all duration-500 top-1/2 -left-10 flex w-0 -translate-x-1/2 close-hamburger">
               <div class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 delay-300 close-line"></div>
@@ -321,23 +321,23 @@
         <div class="volunteer-detail hidden">
           <section class="p-5 bg-white dark:bg-black1 dark:text-palewhite rounded-b-lg text-center">
             <div class="flex justify-between mb-5 text-purple1">
-              <a href="./detail-volunteer/detail-volunteer.html">View in full screen</a>
+              <a href="./detail-volunteer/detail-volunteer.php">View in full screen</a>
               <a href="" class="close-detail-volunteer">Close</a>
             </div>
-            <h1 class="font-bold text-lg mt-8">Admin Penjualan</h1>
-            <h2 class="font-semibold text-base mt-2">PT Utama Sejuk Abadi</h2>
-            <p class="text-sm">Jakarta Raya</p>
+            <h1 class="font-bold text-lg mt-8 judul-lowongan">Admin Penjualan</h1>
+            <h2 class="font-semibold text-base mt-2 perusahaan-lowongan">PT Utama Sejuk Abadi</h2>
+            <p class="text-sm lokasi-lowongan">Jakarta Raya</p>
 
             <button class="rounded-md bg-purple1 w-full h-12 mt-10 mx-auto text-white hover:bg-purple1/90 duration-100">Apply Now</button>
           </section>
 
           <section class="mt-5 px-5 pt-12 bg-white dark:bg-black1 dark:text-palewhite text-base rounded-t-lg pb-52">
-            <p>
+            <p class="kuota-penerimaan">
               Kuota penerimaan : 16 <br />
               <br />
             </p>
 
-            <p>
+            <p class="job-desk"> 
               Job Desk <br />
               ・Bekerja Full Time di dalam kantor <br />
               ・Menjawab telepon, Email, Whatsapp dari customer <br />
@@ -348,7 +348,7 @@
               <br />
             </p>
 
-            <p>
+            <p class="banefit-lowongan">
               Yang didapatkan <br />
               ・Pengalaman bekerja sama dalam tim <br />
               ・Relasi yang dapat membangun <br />
@@ -357,7 +357,7 @@
               <br />
             </p>
 
-            <p>
+            <p class="kontak-lowongan">
               Kontak <br />
               Telepon : +62 8301830 <br />
               Email : jayaabadi@gmail.com <br />

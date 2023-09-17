@@ -71,11 +71,11 @@
           </div>
         </div>
 
-        <button class="hamburger relative xl:hidden elative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-purple1 ring-white ring-opacity-30 duration-200 shadow-md burger-ring">
+        <button class="hamburger relative lg:hidden elative flex overflow-hidden items-center justify-center rounded-full w-[10vw] h-[10vw] max-w-[40px] max-h-[40px] transform transition-all bg-purple1 ring-white ring-opacity-30 duration-200 shadow-md burger-ring">
           <div class="flex flex-col gap-[1.5vw] sm:gap-2 justify-center items-center w-[5vw] h-[5vw] transform transition-all duration-300 origin-center max-w-sm">
-            <div class="bg-white h-[2px] w-[20px] max-w-[20px] transform transition-all duration-300 origin-left three-line"></div>
-            <div class="bg-white h-[2px] w-[20px] max-w-[20px] rounded transform transition-all duration-300 delay-75 three-line"></div>
-            <div class="bg-white h-[2px] w-[20px] max-w-[20px] transform transition-all duration-300 origin-left delay-150 three-line"></div>
+            <div class="bg-white h-[2px] w-[90%] max-w-[20px] transform transition-all duration-300 origin-left three-line"></div>
+            <div class="bg-white h-[2px] w-[90%] max-w-[20px] rounded transform transition-all duration-300 delay-75 three-line"></div>
+            <div class="bg-white h-[2px] w-[90%] max-w-[20px] transform transition-all duration-300 origin-left delay-150 three-line"></div>
 
             <div class="absolute items-center justify-center transform transition-all duration-500 top-1/2 -left-10 flex w-0 -translate-x-1/2 close-hamburger">
               <div class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 delay-300 close-line"></div>

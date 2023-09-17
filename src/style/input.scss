@@ -211,3 +211,29 @@
     @apply shadow-[0_0_25px_-10px_rgba(0,0,0,0.3)] dark:shadow-[0_0_15px_-5px_rgba(95,122,219,0.5)] rounded-lg max-w-[20rem] bg-white dark:bg-black1 text-black1 dark:text-white inline-block mr-5 whitespace-normal w-[90vw] h-64 align-middle lg:w-72 lg:h-96;
   }
 }
+
+/* --- TENTANG KAMI PAGE --- */
+.identity-list {
+  @apply font-poppins
+}
+
+.identity-title {
+  @apply text-lg font-medium tracking-widest mb-2 mt-3
+}
+
+.identity-caption {
+  @apply leading-7 text-xs sm:text-sm sm:leading-8
+}
+
+.contributor-profile {
+  @apply w-[95%] mx-auto grayscale
+}
+
+.contributor-name {
+  @apply font-light text-xl lg:text-2xl text-center mt-3
+}
+
+.contributor-part {
+  @apply text-sm lg:text-base text-center italic mb-3
+}
+

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&family=Inter:wght@100;200;400;600;700&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../node_modules/preline/dist/preline.js"></script>
+
+    <link rel="stylesheet" href="../src/style/output.css" />
+    <script defer type="module" src="../src/js/tentang-kami/tentangKamiController.js"></script>
+
+    <script>
+      // You can set control options to change the default position or style of many
+      // of the map controls.
+      function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: { lat: -33, lng: 151 },
+          mapTypeControl: true,
+          mapTypeControlOptions: {
+            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+            mapTypeIds: ["roadmap", "terrain"],
+          },
+        });
+      }
+
+      window.initMap = initMap;
+    </script>
+    <title>Volunteeria</title>
+  </head>
+  <body class="text-black1 dark:text-palewhite font-poppins bg-white dark:bg-black1">
+    <!-- Back to Top Button -->
+    <a
+      href="#"
+      class="fixed bottom-5 right-5 rounded-full bg-purple1 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-500 ease-in-out hover:bg-palewhite hover:shadow-lg hover:text-purple1 z-20"
+      id="btn-back-to-top"
+    >
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" class="h-4 w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path
+          fill="currentColor"
+          d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
+        ></path>
+      </svg>
+    </a>
+
+    <!-- Overlay Background -->
+    <div class="overlay-bg bg-black opacity-50 fixed left-0 right-0 bottom-0 top-0 z-30 hidden"></div>
+
+    <!-- Navbar -->
+    <nav class="bg-white dark:bg-black1 sm:py-8 sm:pr-20 sm:pl-16 max-sm:px-5 flex items-center justify-between drop-shadow-[0_ 5px_15px_white] text-black1 dark:text-palewhite relative hover:opacity-100 duration-500 z-20 backdrop-blur-md">
+      <div class="flex items-center gap-x-5 max-sm:gap-x-2">
+        <img src="../src/img/logo.svg" alt="Volunteeria Logo" width="60px" class="max-sm:w-10 max-sm:h-20" />
+        <a href="../index.html" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm mt-2 nav-links">
+          <h1>Volunteeria</h1>
+        </a>
+      </div>
+
+      <div class="flex items-center gap-[5vw]">
+        <!-- Dark Mode (Mobile) -->
+        <div class="hs-dropdown lg:hidden" data-hs-dropdown-placement="bottom-right" data-hs-dropdown-offset="30">
+          <a class="hs-dropdown-toggle hs-dark-mode group flex items-center text-gray-600 hover:text-blue-600 font-medium dark:text-gray-400 dark:hover:text-gray-500" href="javascript:;">
+            <svg class="hs-dark-mode-active:hidden block w-[7vw] max-w-[2rem]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+              <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"
+              />
+            </svg>
+            <svg class="hs-dark-mode-active:block hidden w-[7vw] max-w-[2rem]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+              <path
+                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+              />
+            </svg>
+          </a>
+
+          <div
+            id="selectThemeDropdown"
+            class="hs-dropdown-menu hs-dropdown-open:opacity-100 mt-2 hidden z-10 transition-[margin,opacity] opacity-0 duration-300 mb-2 origin-bottom-left bg-white shadow-md rounded-lg p-2 space-y-1 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700"
+          >
+            <a
+              class="hs-auto-mode-active:bg-gray-100 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+              href="javascript:;"
+              data-hs-theme-click-value="auto"
+            >
+              Auto (system default)
+            </a>
+            <a
+              class="hs-default-mode-active:bg-gray-100 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+              href="javascript:;"
+              data-hs-theme-click-value="default"
+            >
+              Default (light mode)
+            </a>
+            <a
+              class="hs-dark-mode-active:bg-gray-700 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+              href="javascript:;"
+              data-hs-theme-click-value="dark"
+            >
+              Dark
+            </a>
+          </div>
+        </div>
+
+        <button
+          class="hamburger relative lg:hidden elative flex overflow-hidden items-center justify-center rounded-full w-[10vw] h-[10vw] max-w-[40px] max-h-[40px] transform transition-all bg-purple1 ring-white ring-opacity-30 duration-200 shadow-md burger-ring"
+        >
+          <div class="flex flex-col gap-[1.5vw] sm:gap-2 justify-center items-center w-[5vw] h-[5vw] transform transition-all duration-300 origin-center max-w-sm">
+            <div class="bg-white h-[2px] w-[90%] max-w-[20px] transform transition-all duration-300 origin-left three-line"></div>
+            <div class="bg-white h-[2px] w-[90%] max-w-[20px] rounded transform transition-all duration-300 delay-75 three-line"></div>
+            <div class="bg-white h-[2px] w-[90%] max-w-[20px] transform transition-all duration-300 origin-left delay-150 three-line"></div>
+
+            <div class="absolute items-center justify-center transform transition-all duration-500 top-1/2 -left-10 flex w-0 -translate-x-1/2 close-hamburger">
+              <div class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 delay-300 close-line"></div>
+              <div class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 delay-300 close-line"></div>
+            </div>
+          </div>
+        </button>
+      </div>
+
+      <ul class="hidden lg:flex gap-x-8 text-base items-center">
+        <li><a href="" class="nav-links relative active-link text-purple1 after:scale-100">TENTANG KAMI</a></li>
+        <li><a href="../signup/signup.php" class="nav-links hoverable-link">DAFTAR PEREKRUT</a></li>
+        <li><a href="../daftar-lowongan/daftar-lowongan.php" class="nav-links border border-purple1 px-4 py-5 rounded-full hover:border-palewhite">VOLUNTEERS/JOBS</a></li>
+        <li>
+          <div class="hs-dropdown" data-hs-dropdown-placement="bottom-right" data-hs-dropdown-offset="30">
+            <a class="hs-dropdown-toggle hs-dark-mode group flex items-center text-gray-600 hover:text-blue-600 font-medium dark:text-gray-400 dark:hover:text-gray-500" href="javascript:;">
+              <svg class="hs-dark-mode-active:hidden block w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"
+                />
+              </svg>
+              <svg class="hs-dark-mode-active:block hidden w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                />
+              </svg>
+            </a>
+
+            <div
+              id="selectThemeDropdown"
+              class="hs-dropdown-menu hs-dropdown-open:opacity-100 mt-2 hidden z-10 transition-[margin,opacity] opacity-0 duration-300 mb-2 origin-bottom-left bg-white shadow-md rounded-lg p-2 space-y-1 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700"
+            >
+              <a
+                class="hs-auto-mode-active:bg-gray-100 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                href="javascript:;"
+                data-hs-theme-click-value="auto"
+              >
+                Auto (system default)
+              </a>
+              <a
+                class="hs-default-mode-active:bg-gray-100 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                href="javascript:;"
+                data-hs-theme-click-value="default"
+              >
+                Default (light mode)
+              </a>
+              <a
+                class="hs-dark-mode-active:bg-gray-700 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                href="javascript:;"
+                data-hs-theme-click-value="dark"
+              >
+                Dark
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <aside id="default-sidebar" class="lg:hidden side-navbar fixed top-0 left-0 z-50 w-64 h-screen transition-transform -translate-x-full" aria-label="Sidebar">
+      <div class="h-full px-3 py-10 overflow-y-auto bg-gray-50 dark:bg-black1">
+        <ul class="space-y-2 font-medium">
+          <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
+              <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"/>
+             </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap text-purple1">TENTANG KAMI</span>
+            </a>
+          </li>
+          <li>
+            <a href="../signup/signup.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
+              <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z"/>
+                <path d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z"/>
+                <path d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z"/>
+             </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Daftar Perekrut</span>
+            </a>
+          </li>
+          <li>
+            <a href="../daftar-lowongan/daftar-lowongan.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
+              <svg
+                class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z"
+                />
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Volunteers/Jobs</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="w-full h-fit bg-white2">
+      <section class="h-[576px] w-full bg-white2 dark:bg-black2 flex justify-center items-center">
+        <div class="w-[85%] h-[85%] bg-blend-overlay mx-auto bg-no-repeat bg-cover bg-fixed bg-black1 flex items-center justify-center" style="background-image: url(../src/img/partner2.jpeg)">
+          <h1 class="text-white text-3xl sm:text-5xl font-bold tracking-widest">ABOUT US</h1>
+        </div>
+      </section>
+
+      <section class="bg-white dark:bg-black1 min-h-[500px] flex flex-col items-center justify-center text-center py-10 px-5">
+        <h1 class="text-center font-medium text-2xl sm:text-3xl tracking-widest">Tentang Perusahaan Kami</h1>
+        <p class="mt-5 text-sm sm:text-base w-[80%] leading-8 text-center mx-auto mb-10">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis non sapien viverra volutpat. Vestibulum hendrerit nunc ac sapien lobortis, id hendrerit elit ultricies. Quisque congue tincidunt orci, id vulputate odio
+          suscipit eu. Sed id metus quis elit dictum bibendum id ac quam. Fusce consectetur facilisis leo, vel egestas lectus.
+        </p>
+
+        <ul class="py-16 px-10 flex flex-col sm:flex-row gap-10">
+          <li class="identity-list">
+            <img src="../src/img/who.jpeg" alt="" class="w-full h-auto max-w-sm" />
+            <h3 class="identity-title text-left">SIAPA KAMI</h3>
+            <p class="identity-caption text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis non sapien viverra volutpat. Vestibulum hendrerit nunc ac sapien lobortis, id hendrerit elit ultricies. Quisque congue tincidunt orci.
+            </p>
+          </li>
+          <li class="identity-list">
+            <img src="../src/img/mission.jpeg" alt="" class="w-full h-auto max-w-sm" />
+            <h3 class="identity-title text-right sm:text-left">MISI KAMI</h3>
+            <p class="text-right sm:text-left identity-caption">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis non sapien viverra volutpat. Vestibulum hendrerit nunc ac sapien lobortis, id hendrerit elit ultricies. Quisque congue tincidunt orci.
+            </p>
+          </li>
+          <li class="identity-list">
+            <img src="../src/img/vision.jpeg" alt="" class="w-full h-auto max-w-sm" />
+            <h3 class="identity-title text-center sm:text-left">VISI KAMI</h3>
+            <p class="text-center sm:text-left identity-caption">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis non sapien viverra volutpat. Vestibulum hendrerit nunc ac sapien lobortis, id hendrerit elit ultricies. Quisque congue tincidunt orci.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="h-[450px] w-full bg-white2 dark:bg-black2 flex justify-center items-center">
+        <div class="w-[85%] h-[85%] bg-blend-overlay mx-auto bg-no-repeat bg-cover bg-fixed bg-black1 flex items-center justify-center px-5 lg:px-10" style="background-image: url(../src/img/together.jpeg)">
+          <h1 class="text-white text-xl sm:text-2xl lg:text-3xl font-medium tracking-wider text-center">SAKSIKAN BAGAIMANA KAMI MEMBUAT SEMUA NYA MENJADI LEBIH TERHUBUNG</h1>
+        </div>
+      </section>
+
+      <section class="py-10 px-5 bg-white dark:bg-black1">
+        <h1 class="text-center font-medium text-2xl sm:text-3xl tracking-widest">OUR AWESOME MINDS</h1>
+        <p class="mt-5 text-sm sm:text-base w-[80%] leading-8 text-center mx-auto mb-10">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis non sapien viverra volutpat. Vestibulum hendrerit nunc ac sapien lobortis, id hendrerit elit ultricies. Quisque congue tincidunt orci.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-5 justify-center items-center">
+          <div>
+            <div class="bg-white2 w-[80%] max-w-sm mx-auto rounded-t-xl shadow-xl min-h-fit pt-10 flex items-end">
+              <img src="../src/img/afridho.png" alt="Afridho Image" class="contributor-profile" />
+            </div>
+            <h3 class="contributor-name">Afridho Ikhsan</h3>
+            <p class="contributor-part">Frontend</p>
+          </div>
+
+          <div class="">
+            <div class="bg-white2 w-[80%] max-w-sm mx-auto rounded-t-xl shadow-xl min-h-fit pt-10 flex items-end">
+              <img src="../src/img/alif.png" alt="Alif Image" class="contributor-profile" />
+            </div>
+            <h3 class="contributor-name">Alif Fadillah Ummar</h3>
+            <p class="contributor-part">Backend</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-10 bg-white2 dark:bg-black2">
+        <!-- Contact Us -->
+        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+          <div class="max-w-2xl lg:max-w-5xl mx-auto">
+            <div class="text-center">
+              <h1 class="text-center font-medium text-2xl sm:text-3xl tracking-widest">KONTAK KAMI</h1>
+              <p class="mt-5 text-sm sm:text-base w-[80%] leading-8 text-center mx-auto mb-10">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis non sapien viverra volutpat. Vestibulum hendrerit nunc ac sapien lobortis, id hendrerit elit ultricies. Quisque congue tincidunt orci.
+              </p>
+            </div>
+
+            <div class="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
+              <!-- Card -->
+              <div class="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-palewhite">
+                <h2 class="mb-8 text-xl font-semibold text-gray-800 dark:text-gray-200">Fill in the form</h2>
+
+                <form>
+                  <div class="grid gap-4">
+                    <!-- Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div>
+                        <label for="hs-firstname-contacts-1" class="sr-only">First Name</label>
+                        <input
+                          type="text"
+                          name="hs-firstname-contacts-1"
+                          id="hs-firstname-contacts-1"
+                          class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-palewhite dark:border-gray-700 dark:text-gray-400"
+                          placeholder="First Name"
+                        />
+                      </div>
+
+                      <div>
+                        <label for="hs-lastname-contacts-1" class="sr-only">Last Name</label>
+                        <input
+                          type="text"
+                          name="hs-lastname-contacts-1"
+                          id="hs-lastname-contacts-1"
+                          class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-palewhite dark:border-gray-700 dark:text-gray-400"
+                          placeholder="Last Name"
+                        />
+                      </div>
+                    </div>
+                    <!-- End Grid -->
+
+                    <div>
+                      <label for="hs-email-contacts-1" class="sr-only">Email</label>
+                      <input
+                        type="email"
+                        name="hs-email-contacts-1"
+                        id="hs-email-contacts-1"
+                        autocomplete="email"
+                        class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-palewhite dark:border-gray-700 dark:text-gray-400"
+                        placeholder="Email"
+                      />
+                    </div>
+
+                    <div>
+                      <label for="hs-phone-number-1" class="sr-only">Phone Number</label>
+                      <input
+                        type="text"
+                        name="hs-phone-number-1"
+                        id="hs-phone-number-1"
+                        class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-palewhite dark:border-gray-700 dark:text-gray-400"
+                        placeholder="Phone Number"
+                      />
+                    </div>
+
+                    <div>
+                      <label for="hs-about-contacts-1" class="sr-only">Details</label>
+                      <textarea
+                        id="hs-about-contacts-1"
+                        name="hs-about-contacts-1"
+                        rows="4"
+                        class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-palewhite dark:border-gray-700 dark:text-gray-400"
+                        placeholder="Details"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <!-- End Grid -->
+
+                  <div class="mt-4 grid">
+                    <button
+                      type="submit"
+                      class="inline-flex justify-center items-center gap-x-3 text-center bg-purple1 hover:bg-purple2 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+                    >
+                      Send inquiry
+                    </button>
+                  </div>
+
+                  <div class="mt-3 text-center">
+                    <p class="text-sm text-gray-500">We'll get back to you in 1-2 business days.</p>
+                  </div>
+                </form>
+
+                  <!-- Google Map -->
+                  <div class="relative w-full h-96 mt-10">
+                    <iframe class="absolute top-0 left-0 w-full h-full"
+                        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=universitas singaperbangsa karawang&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                </div>
+              </div>
+              <!-- End Card -->
+
+              <div class="divide-y divide-gray-200 dark:divide-gray-800 justify-self-start self-start">
+                <!-- Icon Block -->
+                <div class="flex gap-x-7 py-6">
+                  <svg class="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path
+                      d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"
+                    />
+                  </svg>
+
+                  <div>
+                    <h3 class="font-semibold text-gray-800 dark:text-gray-200">Knowledgebase</h3>
+                    <p class="mt-1 text-sm text-gray-500">We're here to help with any questions or code.</p>
+                    <a class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="#">
+                      Contact support
+                      <svg class="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <!-- End Icon Block -->
+
+                <!-- Icon Block -->
+                <div class="flex gap-x-7 py-6">
+                  <svg class="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                    <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                  </svg>
+                  <div>
+                    <h3 class="font-semibold text-gray-800 dark:text-gray-200">FAQ</h3>
+                    <p class="mt-1 text-sm text-gray-500">Search our FAQ for answers to anything you might ask.</p>
+                    <a class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="#">
+                      Visit FAQ
+                      <svg class="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <!-- End Icon Block -->
+
+                <!-- Icon Block -->
+                <div class="flex gap-x-7 py-6">
+                  <svg class="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9zM3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z" />
+                    <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z" />
+                  </svg>
+                  <div>
+                    <h3 class="font-semibold text-gray-800 dark:text-gray-200">Developer APIs</h3>
+                    <p class="mt-1 text-sm text-gray-500">Check out our development quickstart guide.</p>
+                    <a class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="#">
+                      Contact sales
+                      <svg class="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <!-- End Icon Block -->
+
+                <!-- Icon Block -->
+                <div class="flex gap-x-7 py-6">
+                  <svg class="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                    />
+                  </svg>
+                  <div>
+                    <h3 class="font-semibold text-gray-800 dark:text-gray-200">Contact us by email</h3>
+                    <p class="mt-1 text-sm text-gray-500">If you wish to write us an email instead please use</p>
+                    <a class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="#"> example@site.com </a>
+                  </div>
+                </div>
+                <!-- End Icon Block -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Contact Us -->
+      </section>
+    </main>
+
+    <footer class="drop-shadow-[0_-3px_10px_rgba(95,122,219,0.8)] py-5 px-5 bg-white dark:bg-black1 dark:text-palewhite flex flex-col gap-8 text-black1 lg:pr-32">
+      <div class="flex flex-col items-center gap-2 sm:gap-4 sm:flex-row">
+        <img src="../src/img/logo.svg" alt="Volunteeria Logo" class="w-16" />
+        <h1 class="text-sm sm:text-lg lg:text-2xl uppercase tracking-widest font-semibold">Volunteeria</h1>
+      </div>
+
+      <div class="flex justify-between text-sm">
+        <div class="flex flex-col gap-10">
+          <div>
+            <h4 class="footer-links-title">Company</h4>
+            <ul>
+              <li>
+                <a href="" class="mt-3 hover-text">About</a>
+              </li>
+              <li>
+                <a href="../index.html#faq-section" class="hover-text"> FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-links-title">Career</h4>
+            <a href="" class="mt-3 hover-text">Professional</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-links-title">Contact us</h4>
+          <a href="" class="mt-3 hover-text">+62 90120024</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -23,32 +23,42 @@ class mainView {
   openDetailVolunteer() {
     this._parentElement.addEventListener("click", (e) => {
       const clickedVolunteer = e.target.closest(".daftar-lowongan");
-      
+
       if (!clickedVolunteer) return;
-      const id = clickedVolunteer.getAttribute('data-id');
+      const id = clickedVolunteer.getAttribute("data-id");
       e.preventDefault();
 
       const volunteerDetail = document.querySelectorAll(`.volunteer-detail`);
-      
 
       this._mainImage.classList.replace("flex", "hidden");
 
-      volunteerDetail.forEach(function(node){
-        if(+node.getAttribute('data-id')===+id){
+      volunteerDetail.forEach(function (node) {
+        if (+node.getAttribute("data-id") === +id) {
           node.classList.remove("hidden");
-        }else{
-          node.classList.add("hidden")
+        } else {
+          node.classList.add("hidden");
         }
-      })
+      });
+
+      const judulLowongan = document.querySelector(".judul-lowongan").textContent;
+      const perusahaanLowongan = document.querySelector(".perusahaan-lowongan").textContent;
+      const lokasiLowongan = document.querySelector(".lokasi-lowongan").textContent;
+      const kuotaPenerimaan = document.querySelector(".kuota-penerimaan").textContent;
+      const jobDesk = document.querySelector(".job-desk").textContent;
+      const banefitLowongan = document.querySelector(".banefit-lowongan").textContent;
+      const kontakLowongan = document.querySelector(".kontak-lowongan").textContent;
+
       // this._volunteerDetail.classList.replace("hidden", "block");
+
+      return {judulLowongan, perusahaanLowongan, lokasiLowongan, kuotaPenerimaan, jobDesk, banefitLowongan, kontakLowongan};
     });
   }
 
   // Parameter tampilSemua mengharapkan tipe data boolean (true/false)
   printJumlahLowongan(tampilSemua) {
-    if (tampilSemua) this._jumlahLowonganHTML.textContent = `Tersedia ${this._lowonganContainer.children.length} lowongan saat ini di Volunteeria.`
-    else if (this._jumlahLowonganYangDicari === 0) this._jumlahLowonganHTML.textContent = "Kami tidak menemukan lowongan yang tersedia di lokasi yang anda inginkan."
-    else this._jumlahLowonganHTML.textContent = `Kami menemukan ${this._lowonganContainer.children.length} lowongan yang tersedia di lokasi yang anda inginkan.`
+    if (tampilSemua) this._jumlahLowonganHTML.textContent = `Tersedia ${this._lowonganContainer.children.length} lowongan saat ini di Volunteeria.`;
+    else if (this._jumlahLowonganYangDicari === 0) this._jumlahLowonganHTML.textContent = "Kami tidak menemukan lowongan yang tersedia di lokasi yang anda inginkan.";
+    else this._jumlahLowonganHTML.textContent = `Kami menemukan ${this._lowonganContainer.children.length} lowongan yang tersedia di lokasi yang anda inginkan.`;
   }
 
   searchVolunteerByLocation() {
@@ -73,11 +83,10 @@ class mainView {
 
       // Jika user tidak menginputkan apa apa, maka daftar lowongan yang ditampilkan adalah daftar lowongan bawaan yang disediakan Volunteeria
       if (this._searchBar.value === "") this._lowonganYangDicari = this._lowonganBawaan;
-      
 
       this._lowonganContainer.innerHTML = "";
       this._lowonganContainer.insertAdjacentHTML("beforeend", this._lowonganYangDicari);
-      (this._searchBar.value === "") ? this.printJumlahLowongan(true) : this.printJumlahLowongan(false);
+      this._searchBar.value === "" ? this.printJumlahLowongan(true) : this.printJumlahLowongan(false);
     });
   }
 }
