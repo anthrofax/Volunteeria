@@ -23,26 +23,23 @@ class mainView {
   openDetailVolunteer() {
     this._parentElement.addEventListener("click", (e) => {
       const clickedVolunteer = e.target.closest(".daftar-lowongan");
-      
+  
       if (!clickedVolunteer) return;
       const id = clickedVolunteer.getAttribute('data-id');
       e.preventDefault();
-
-      const volunteerDetail = document.querySelectorAll(`.volunteer-detail`);
-      
-
+  
+      const volunteerDetail = document.querySelector(`.volunteer-detail[data-id="${id}"]`);
+  
       this._mainImage.classList.replace("flex", "hidden");
-
-      volunteerDetail.forEach(function(node){
-        if(+node.getAttribute('data-id')===+id){
-          node.classList.remove("hidden");
-        }else{
-          node.classList.add("hidden")
-        }
-      })
-      // this._volunteerDetail.classList.replace("hidden", "block");
+      volunteerDetail.classList.remove("hidden");
+  
+      // Hide other volunteer details
+      const otherVolunteerDetails = document.querySelectorAll(`.volunteer-detail:not([data-id="${id}"])`);
+      otherVolunteerDetails.forEach(function (node) {
+        node.classList.add("hidden");
+      });
     });
-  }
+  }  
 
   // Parameter tampilSemua mengharapkan tipe data boolean (true/false)
   printJumlahLowongan(tampilSemua) {
@@ -73,7 +70,7 @@ class mainView {
 
       // Jika user tidak menginputkan apa apa, maka daftar lowongan yang ditampilkan adalah daftar lowongan bawaan yang disediakan Volunteeria
       if (this._searchBar.value === "") this._lowonganYangDicari = this._lowonganBawaan;
-      
+
 
       this._lowonganContainer.innerHTML = "";
       this._lowonganContainer.insertAdjacentHTML("beforeend", this._lowonganYangDicari);

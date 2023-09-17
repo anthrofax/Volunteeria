@@ -48,7 +48,7 @@
             <span class="text-gray-300">Masukkan Data Login Anda</span>
           </div>
 
-          <form action="#" class="flex flex-col items-center overflow-y-auto h-[55%] lg:h-[65%] apply-form">
+          <form action="../config/form.php" class="flex flex-col items-center overflow-y-auto h-[55%] lg:h-[65%] apply-form">
             <div class="flex flex-col  mx-auto  w-full">
               <label for="email" class="text-palewhite text-base sm:text-lg">Alamat email</label>
               <input type="email" name="email" id="email" class="mt-2 px-5 py-3 border focus:outline-none focus:ring-0  rounded-full placeholder:text-xs sm:placeholder:text-base text-xs sm:text-base text-black1 w-full " placeholder="Masukkan alamat email" required />
@@ -56,39 +56,32 @@
 
             <div class="flex flex-col mt-5 w-full ">
               <label for="name" class="text-palewhite text-base sm:text-lg">Nama Lengkap</label>
-              <input type="text" name="name" id="name" class="mt-2 px-5 py-3 focus:outline-none focus:ring-0  rounded-full placeholder:text-xs sm:placeholder:text-base text-xs sm:text-base text-black1 w-full" placeholder="Masukkan nama lengkap" required />
+              <input type="text" name="nama" id="name" class="mt-2 px-5 py-3 focus:outline-none focus:ring-0  rounded-full placeholder:text-xs sm:placeholder:text-base text-xs sm:text-base text-black1 w-full" placeholder="Masukkan nama lengkap" required />
             </div>
 
             <div class="flex flex-col mt-5 w-full ">
               <label for="name" class="text-palewhite text-base sm:text-lg">Alamat Pendaftar</label>
-              <input type="text" name="name" id="name" class="mt-2 px-5 py-3 focus:outline-none focus:ring-0  rounded-full placeholder:text-xs sm:placeholder:text-base text-xs sm:text-base text-black1 w-full" placeholder="Masukkan alamat pendaftar" required />
+              <textarea id="alamat" name="alamat" rows="4" cols="50" placeholder="Masukkan alamat" class=" w-full rounded-lg placeholder:text-xs sm:placeholder:text-base"></textarea>
             </div>
 
             <div class="flex flex-col mt-5 w-full ">
               <label for="name" class="text-palewhite text-base sm:text-lg">Asal Institusi (Opsional)</label>
-              <input type="text" name="name" id="name" class="mt-2 px-5 py-3 focus:outline-none focus:ring-0  rounded-full placeholder:text-xs sm:placeholder:text-base text-xs sm:text-base text-black1 w-full" placeholder="Masukkan asal institusi" />
+              <input type="text" name="institusi" id="institusi" class="mt-2 px-5 py-3 focus:outline-none focus:ring-0  rounded-full placeholder:text-xs sm:placeholder:text-base text-xs sm:text-base text-black1 w-full" placeholder="Masukkan asal institusi" />
             </div>
   
             <div class="flex flex-col mt-5 w-full ">
               <label for="name" class="text-palewhite text-base sm:text-lg">Alasan</label>
-              <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Apa alasan kamu..." class=" w-full rounded-lg placeholder:text-xs sm:placeholder:text-base"></textarea>
+              <textarea id="alasan" name="alasan" rows="4" cols="50" placeholder="Apa alasan kamu..." class=" w-full rounded-lg placeholder:text-xs sm:placeholder:text-base"></textarea>
             </div>
   
             <div class="flex flex-col mt-5 w-full ">
               <label for="name" class="text-palewhite text-base sm:text-lg">Masukkan Nomor Whatsapp</label>
-              <input type="tel" name="name" id="name" class="mt-2 px-5 py-3 focus:outline-none focus:ring-0  rounded-full placeholder:text-xs sm:placeholder:text-base text-xs sm:text-base text-black1 w-full" placeholder="Masukkan nomor whatsapp" />
+              <input type="tel" name="notelp" id="notelp" class="mt-2 px-5 py-3 focus:outline-none focus:ring-0  rounded-full placeholder:text-xs sm:placeholder:text-base text-xs sm:text-base text-black1 w-full" placeholder="Masukkan nomor whatsapp" />
             </div>
   
             <div class="flex flex-col mt-5 w-full ">
               <label for="inputFile" class="text-palewhite text-base sm:text-lg">Masukkan file</label>
-              <input type="file" id="inputFile" name="inputFile" accept=".jpg, .jpeg, .png, .pdf" class="text-palewhite w-full" />
-            </div>
-  
-            <div class="flex items-center mt-3 justify-center text-xs sm:text-base">
-              <input style="cursor: pointer" type="checkbox" name="remember_me" id="remember_me" class="mr-2 focus:ring-0 rounded" />
-              <label for="remember_me" class="text-palewhite"
-                >Saya menerima <a href="#" class="text-purple1 hover:text-purple1 hover:underline">persyaratan</a> dan <a href="#" class="text-purple1 hover:text-purple1 hover:underline">kebijakan privasi</a></label
-              >
+              <input type="file" id="berkas" name="berkas" accept=".pdf, .docx, .xlsx" class="text-palewhite w-full" />
             </div>
 
             <div class="my-4 flex items-center justify-center lg:justify-end space-x-4">
