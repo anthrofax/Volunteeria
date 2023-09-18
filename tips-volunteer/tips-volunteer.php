@@ -200,8 +200,8 @@
         </article>
       </section>
 
-      <section class="tips-scrollable-element p-3 ml-10 overflow-x-auto whitespace-nowrap rounded-l-lg ">
-        <!-- "run watchdb" buat manggil data tips volunteer -->
+      <section class="tips-scrollable-element p-3 ml-10 overflow-x-auto whitespace-nowrap rounded-l-lg border h-36">
+
       </section>
     </main>
 
