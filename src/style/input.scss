@@ -122,7 +122,7 @@
 
   /* Feature Section */
   .fitur-website {
-    @apply flex gap-5 flex-col p-5 bg-purple1 text-white dark:text-palewhite  dark:bg-black2 shadow-[0_0_20px_0_rgba(0,0,0,0.5)] rounded-lg dark:shadow-[0_0_20px_0_rgba(95,122,219,0.2)] text-center max-w-xs sm:max-w-md duration-1000 hover:-translate-y-4;
+    @apply flex gap-3 flex-col p-5 bg-purple1 text-white dark:text-palewhite  dark:bg-black2 shadow-[0_0_20px_0_rgba(0,0,0,0.5)] rounded-lg dark:shadow-[0_0_20px_0_rgba(95,122,219,0.2)] text-center max-w-xs sm:max-w-md duration-1000 hover:-translate-y-4;
   }
 
   .feature-line {
@@ -194,6 +194,19 @@
 
   .dot-active {
     background-color: rgb(95, 122, 219);
+  }
+
+  /* FAQ */
+  .faq-accordion {
+    @apply flex items-center justify-between w-full max-lg:p-5 lg:px-5 lg:py-8 font-medium text-left text-black border border-b-0 border-gray-200  dark:border-palewhite dark:text-palewhite hover:bg-purple2 hover:text-white dark:hover:text-white;
+  }
+
+  .faq-question {
+    @apply text-base lg:text-lg;
+  }
+
+  .faq-answer {
+    @apply mb-2 text-gray-500 dark:text-palewhite text-xs lg:text-lg;
   }
 
   /* Footer */
