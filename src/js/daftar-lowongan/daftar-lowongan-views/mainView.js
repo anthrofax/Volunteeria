@@ -52,7 +52,6 @@ class mainView {
       const kontakLowongan = document.querySelector(".kontak-lowongan").textContent;
 
       // this._volunteerDetail.classList.replace("hidden", "block");
-      console.log(judulLowongan);
 
       return {judulLowongan, perusahaanLowongan, lokasiLowongan, kuotaPenerimaan, jobDesk, banefitLowongan, kontakLowongan};
     });

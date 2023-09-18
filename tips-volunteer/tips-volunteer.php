@@ -184,7 +184,6 @@
             <div class="flex items-center w-full">
               <img src="../src/img/tips1.jpeg" alt="News Logo" class="rounded-t-lg min-[800px]:rounded-l-lg group-hover:brightness-105" />
             </div>
-
             <div class="p-3 md:p-5 group-hover:text-purple1 relative">
               <caption>
                 <h1 class="text-lg sm:text-2xl font-semibold">Tips interview yang Baik Agar Diterima dan Penting Disimak</h1>

@@ -81,7 +81,7 @@
         <a href="#" class="nav-links relative active-link text-purple1 after:scale-100">Lowongan Volunteer</a>
       </li>
       <li>
-        <a href="../tips-volunteer/tips-volunteer.html" class="nav-links hoverable-link">Tips Volunteer</a>
+        <a href="../tips-volunteer/tips-volunteer.php" class="nav-links hoverable-link">Tips Volunteer</a>
       </li>
       <li><a href="" class="nav-links border border-purple1 px-4 py-5 rounded-full hover:border-black1 dark:hover:border-palewhite">FOR EMPLOYERS</a></li>
       <li>
@@ -122,7 +122,7 @@
           </a>
         </li>
         <li>
-          <a href="../tips-volunteer/tips-volunteer.html" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
+          <a href="../tips-volunteer/tips-volunteer.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
             <img src="../src/img/tips.svg" alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
             <span class="flex-1 ml-3 whitespace-nowrap">Tips Volunteer</span>
           </a>
@@ -248,13 +248,13 @@
             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium">
               <li class="mb-4">
-                <a href="../tentang-kami/tentang-kami.html" class="hover:underline">Tentang Kami</a>
+                <a href="../tentang-kami/tentang-kami.php" class="hover:underline">Tentang Kami</a>
               </li>
               <li class="mb-4">
                 <a href="../index.html#faq-section" class="hover:underline">FAQ</a>
               </li>
               <li>
-                <a href="../tentang-kami/tentang-kami.html#contact-section" class="hover:underline">Kontak Kami</a>
+                <a href="../tentang-kami/tentang-kami.php#contact-section" class="hover:underline">Kontak Kami</a>
               </li>
             </ul>
           </div>
@@ -265,7 +265,7 @@
                 <a href="#" class="hover:underline">Daftar Lowongan</a>
               </li>
               <li>
-                <a href="../tips-volunteer/tips-volunteer.html" class="hover:underline">Tips Volunteer</a>
+                <a href="../tips-volunteer/tips-volunteer.php" class="hover:underline">Tips Volunteer</a>
               </li>
             </ul>
           </div>
