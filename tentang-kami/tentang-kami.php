@@ -403,7 +403,7 @@
                 <a href="../daftar-lowongan/daftar-lowongan.php" class="hover:underline">Daftar Lowongan</a>
               </li>
               <li>
-                <a href="../tips-volunteer/tips-volunteer.html" class="hover:underline">Tips Volunteer</a>
+                <a href="../tips-volunteer/tips-volunteer.php" class="hover:underline">Tips Volunteer</a>
               </li>
             </ul>
           </div>
