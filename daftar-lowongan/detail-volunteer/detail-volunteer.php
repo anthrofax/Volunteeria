@@ -22,7 +22,8 @@
   <!-- Navbar -->
   <nav class="bg-white dark:bg-black1 sm:py-8 sm:pr-20 sm:pl-16 max-sm:px-5 flex items-center justify-between drop-shadow-[0_ 5px_15px_white] text-black1 dark:text-palewhite relative hover:opacity-100 duration-1000 z-20 backdrop-blur-md">
     <div class="flex items-center gap-x-5 max-sm:gap-x-2">
-      <img src="../../src/img/logo.svg" alt="Volunteeria Logo" width="60px" class="max-sm:w-10 max-sm:h-20" />
+    <img src="../src/img/logo2dark.svg" alt="Volunteeria Logo" width="60px" class="max-sm:w-10 max-sm:h-20 dark:hidden" />
+       <img src="../src/img/logo2white.svg" alt="Volunteeria Logo" width="60px" class="max-sm:w-10 max-sm:h-20 hidden dark:block" />
       <a href="../volunteeria.html" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm mt-2 nav-links">
         <h1>Volunteeria</h1>
       </a>

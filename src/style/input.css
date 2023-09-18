@@ -25,6 +25,38 @@
     transform: translateY(0);
   }
 }
+.btn {
+  border-radius: 30px;
+  position: relative;
+  background-image: #5F7ADB;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  height: 50px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250%;
+  padding-block-end: 250%;
+  background-color: #A2B2EE;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  z-index: -1;
+  transition: transform 2s linear;
+}
+
+.btn:is(:hover, :focus-visible)::before {
+  transform: translate(-50%, -50%) scale(5);
+  color: white;
+}
+
 /* Untuk cek, apakah section Jumbotron sedang di hover atau tidak */
 .jumbotron:hover {
   opacity: 0.99999;
@@ -166,25 +198,26 @@
   }
   /* FAQ */
   .faq-accordion {
-    @apply flex items-center justify-between w-full max-lg:p-5 lg:px-5 lg:py-8 font-medium text-left text-black border border-b-0 border-gray-200  dark:border-palewhite dark:text-palewhite hover:bg-purple2 hover:text-white dark:hover:text-white;
+    @apply flex items-center justify-between w-full max-lg:p-5 lg:px-5 lg:py-8 font-medium text-left text-black border border-b-0 border-gray-200  dark:border-palewhite dark:text-palewhite hover:bg-[#556dc4] hover:text-white dark:hover:text-white;
   }
   .faq-question {
     @apply text-base lg:text-lg;
   }
   .faq-answer {
-    @apply mb-2 text-gray-500 dark:text-palewhite text-xs lg:text-lg;
+    @apply mb-2 text-gray-700 dark:text-gray-700 text-xs lg:text-lg;
   }
   /* Footer */
   .footer-links-title {
     @apply font-semibold text-sm lg:text-lg;
   }
+  /* Tips Volunteer */
   /* --- DAFTAR LOWONGAN PAGE --- */
   /* Daftar Lowongan */
   .daftar-lowongan {
     @apply w-full  p-5 text-sm rounded-lg shadow-[0_0_25px_-10px_rgba(0,0,0,0.3)] dark:shadow-[0_0_25px_-15px_rgba(95,122,219,0.5)] border dark:border-palewhite/10 bg-white dark:bg-black2;
   }
   .mini-news {
-    @apply shadow-[0_0_25px_-10px_rgba(0,0,0,0.3)] dark:shadow-[0_0_15px_-5px_rgba(95,122,219,0.5)] rounded-lg max-w-[20rem] bg-white dark:bg-black1 text-black1 dark:text-white inline-block mr-5 whitespace-normal w-[90vw] h-64 align-middle lg:w-72 lg:h-96;
+    @apply shadow-[0_0_25px_-10px_rgba(0,0,0,0.3)] dark:shadow-[0_0_15px_-5px_rgba(95,122,219,0.5)] rounded-lg max-w-[20rem] bg-white dark:bg-black1 text-black1 dark:text-white inline-block mr-5 whitespace-normal h-64 align-middle lg:w-72 lg:h-96 relative;
   }
 }
 /* --- TENTANG KAMI PAGE --- */

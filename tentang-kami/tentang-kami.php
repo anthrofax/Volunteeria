@@ -53,7 +53,8 @@
   <!-- Navbar -->
   <nav class="bg-white dark:bg-black1 sm:py-8 sm:pr-20 sm:pl-16 max-sm:px-5 flex items-center justify-between drop-shadow-[0_ 5px_15px_white] text-black1 dark:text-palewhite relative hover:opacity-100 duration-500 z-20 backdrop-blur-md">
     <div class="flex items-center gap-x-5 max-sm:gap-x-2">
-      <img src="../src/img/logo.svg" alt="Volunteeria Logo" width="60px" class="max-sm:w-10 max-sm:h-20" />
+       <img src="../src/img/logo2dark.svg" alt="Volunteeria Logo" width="60px" class="max-sm:w-10 max-sm:h-20 dark:hidden" />
+       <img src="../src/img/logo2white.svg" alt="Volunteeria Logo" width="60px" class="max-sm:w-10 max-sm:h-20 hidden dark:block" />
       <a href="../index.html" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm mt-2 nav-links">
         <h1>Volunteeria</h1>
       </a>
@@ -101,8 +102,7 @@
     <ul class="hidden lg:flex gap-x-8 text-base items-center">
       <li><a href="" class="nav-links relative active-link text-purple1 after:scale-100">TENTANG KAMI</a></li>
       <li><a href="../signup/signup.php" class="nav-links hoverable-link">DAFTAR PEREKRUT</a></li>
-      <li><a href="../daftar-lowongan/daftar-lowongan.php" class="nav-links border border-purple1 px-4 py-5 rounded-full hover:border-palewhite">VOLUNTEERS/JOBS</a></li>
-      <li>
+      <li class="btn px-5 py-8 flex items-center justify-center group border border-black1 dark:border-palewhite"><a href="../daftar-lowongan/daftar-lowongan.php" class=" nav-links text-black1 dark:text-palewhite group-hover:text-white font-medium tracking-widest">VOLUNTEERS/JOBS</a></li>
         <div class="hs-dropdown" data-hs-dropdown-placement="bottom-right" data-hs-dropdown-offset="30">
           <a class="hs-dropdown-toggle hs-dark-mode group flex items-center text-gray-600 hover:text-blue-600 font-medium dark:text-gray-400 dark:hover:text-gray-500" href="javascript:;">
             <svg class="hs-dark-mode-active:hidden block w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -255,41 +255,41 @@
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label for="firstname" class="sr-only">First Name</label>
-                      <input type="text" name="firstname" id="firstname" class="py-3 lg:py-5 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-palewhite dark:border-gray-700 dark:text-gray-400 lg:placeholder:text-base" placeholder="Jhon" />
+                      <input type="text" name="firstname" id="firstname" class="py-3 lg:py-5 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-palewhite dark:border-gray-700 dark:text-black lg:placeholder:text-base" placeholder="Jhon" />
                     </div>
 
                     <div>
                       <label for="lastname" class="sr-only">Last Name</label>
-                      <input type="text" name="lastname" id="lastname" class="py-3 lg:py-5 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-palewhite dark:border-gray-700 dark:text-gray-400 lg:placeholder:text-base" placeholder="Doe" />
+                      <input type="text" name="lastname" id="lastname" class="py-3 lg:py-5 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-palewhite dark:border-gray-700 dark:text-black lg:placeholder:text-base" placeholder="Doe" />
                     </div>
                   </div>
                   <!-- End Grid -->
 
                   <div>
                     <label for="email" class="sr-only">Email</label>
-                    <input type="email" name="email" id="email" autocomplete="email" class="py-3 lg:py-5 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-palewhite dark:border-gray-700 dark:text-gray-400 lg:placeholder:text-base" placeholder="Volunteeria@info.com" />
+                    <input type="email" name="email" id="email" autocomplete="email" class="py-3 lg:py-5 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-palewhite dark:border-gray-700 dark:text-black lg:placeholder:text-base" placeholder="Volunteeria@info.com" />
                   </div>
 
                   <div>
                     <label for="telepon" class="sr-only">Phone Number</label>
-                    <input type="text" name="telepon" id="telepon" class="py-3 lg:py-5 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-palewhite dark:border-gray-700 dark:text-gray-400 lg:placeholder:text-base" placeholder="081312345678" />
+                    <input type="text" name="telepon" id="telepon" class="py-3 lg:py-5 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-palewhite dark:border-gray-700 dark:text-black lg:placeholder:text-base" placeholder="081312345678" />
                   </div>
 
                   <div>
                     <label for="detail" class="sr-only">Details</label>
-                    <textarea id="detail" name="detail" rows="8" class="py-3 lg:py-5 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-palewhite dark:border-gray-700 dark:text-gray-400 lg:placeholder:text-base" placeholder="Very useful website!!"></textarea>
+                    <textarea id="detail" name="detail" rows="8" class="py-3 lg:py-5 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-palewhite dark:border-gray-700 dark:text-black lg:placeholder:text-base" placeholder="Very useful website!!"></textarea>
                   </div>
                 </div>
                 <!-- End Grid -->
 
                 <div class="mt-4 grid">
                   <button type="submit" class="inline-flex justify-center items-center gap-x-3 text-center bg-purple1 hover:bg-purple2 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800">
-                    Send inquiry
+                    Kirim pesan
                   </button>
                 </div>
 
                 <div class="mt-3 text-center">
-                  <p class="text-sm text-gray-500">We'll get back to you in 1-2 business days.</p>
+                  <p class="text-sm text-gray-500">Kami akan melakukan respon terhadap pesan anda dalam 1-2 hari.</p>
                 </div>
               </form>
             </div>

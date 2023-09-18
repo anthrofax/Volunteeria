@@ -21,7 +21,8 @@
     <!-- Navbar -->
     <nav class="bg-white dark:bg-black1 sm:py-8 sm:pr-20 sm:pl-16 max-sm:px-5 flex items-center justify-between drop-shadow-[0_ 5px_15px_white] text-black1 dark:text-palewhite relative hover:opacity-100 duration-1000 z-20 backdrop-blur-md">
       <div class="flex items-center gap-x-5 max-sm:gap-x-2">
-        <img src="../src/img/logo.svg" alt="Volunteeria Logo" width="60px" class="max-sm:w-10 max-sm:h-20" />
+      <img src="../src/img/logo2dark.svg" alt="Volunteeria Logo" width="60px" class="max-sm:w-10 max-sm:h-20 dark:hidden" />
+       <img src="../src/img/logo2white.svg" alt="Volunteeria Logo" width="60px" class="max-sm:w-10 max-sm:h-20 hidden dark:block" />
         <a href="../index.html" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm mt-2 nav-links">
           <h1>Volunteeria</h1>
         </a>
@@ -71,7 +72,9 @@
           </div>
         </div>
 
-        <button class="hamburger relative lg:hidden elative flex overflow-hidden items-center justify-center rounded-full w-[10vw] h-[10vw] max-w-[40px] max-h-[40px] transform transition-all bg-purple1 ring-white ring-opacity-30 duration-200 shadow-md burger-ring">
+        <button
+          class="hamburger relative lg:hidden elative flex overflow-hidden items-center justify-center rounded-full w-[10vw] h-[10vw] max-w-[40px] max-h-[40px] transform transition-all bg-purple1 ring-white ring-opacity-30 duration-200 shadow-md burger-ring"
+        >
           <div class="flex flex-col gap-[1.5vw] sm:gap-2 justify-center items-center w-[5vw] h-[5vw] transform transition-all duration-300 origin-center max-w-sm">
             <div class="bg-white h-[2px] w-[90%] max-w-[20px] transform transition-all duration-300 origin-left three-line"></div>
             <div class="bg-white h-[2px] w-[90%] max-w-[20px] rounded transform transition-all duration-300 delay-75 three-line"></div>
@@ -179,39 +182,80 @@
       <section class="p-10">
         <h1 class="text-center min-[800px]:text-left text-xl sm:text-3xl font-semibold text-black1 dark:text-white">Latest Volunteer Tips</h1>
 
-        <article class="shadow-xl bg-white dark:bg-black1 rounded-lg group mx-auto mt-5 text-black1 dark:text-white">
-          <a target="_blank" href="https://katadata.co.id/intan/lifestyle/6399d3766a2bb/7-cara-interview-kerja-yang-baik-agar-diterima-dan-penting-disimak" class="flex flex-col min-[800px]:flex-row">
-            <div class="flex items-center w-full">
-              <img src="../src/img/tips1.jpeg" alt="News Logo" class="rounded-t-lg min-[800px]:rounded-l-lg group-hover:brightness-105" />
-            </div>
-            <div class="p-3 md:p-5 group-hover:text-purple1 relative">
-              <caption>
-                <h1 class="text-lg sm:text-2xl font-semibold">Tips interview yang Baik Agar Diterima dan Penting Disimak</h1>
-                <p class="text-sm sm:text-base sm:mt-3">Interview adalah salah satu tahap yang perlu dilakukan saat melamar kerja. Tahap interview mungkin cukup mendebarkan, terlebih untuk seorang fresh graduate.</p>
-              </caption>
-              <p class="absolute bottom-7 text-gray-500 dark:text-palewhite hidden min-[800px]:block text-lg">Lihat detail</p>
-            </div>
+        <article class="shadow-xl bg-white dark:bg-black1 rounded-lg mx-auto mt-5 text-black1 dark:text-white flex flex-col min-[800px]:flex-row">
+          <div class="flex items-center w-full">
+            <img src="../src/img/tips1.jpeg" alt="News Logo" class="max-[800px]:rounded-t-lg min-[800px]:rounded-l-lg" />
+          </div>
+          <div class="p-3 md:p- relative">
+            <a
+              class="text-lg sm:text-2xl font-semibold bg-gradient-to-l from-purple1 to-purple2 bg-[length:0%_4px] bg-[left_bottom] hover:bg-[length:100%_4px] duration-1000 bg-no-repeat inline"
+              target="_blank"
+              href="https://katadata.co.id/intan/lifestyle/6399d3766a2bb/7-cara-interview-kerja-yang-baik-agar-diterima-dan-penting-disimak"
+              >Tips interview yang Baik Agar Diterima dan Penting Disimak</a
+            >
+            <p class="text-sm sm:text-base mt-3">Interview adalah salah satu tahap yang perlu dilakukan saat melamar kerja. Tahap interview mungkin cukup mendebarkan, terlebih untuk seorang fresh graduate.</p>
+            <a class="absolute bottom-7 text-gray-500 dark:text-palewhite hidden min-[800px]:block text-lg hover:text-purple1 dark:hover:text-purple1 duration-500 cursor-pointer">Lihat detail</a>
+          </div>
 
-            <div class="flex gap-5 mt-5 w-full bg-purple1 px-5 py-3 text-white justify-center items-center rounded-b-lg hover:brightness-105 sm:hidden">
-              <img src="../src/img/arrow-white.svg" alt="" class="w-[3vw] max-w-[20px] -rotate-90" />
-              <p href="" class="text-center">Lihat detail</p>
-            </div>
-          </a>
+          <div class="flex gap-5 mt-3 w-full bg-purple1 px-5 py-3 text-white justify-center items-center rounded-b-lg hover:brightness-105 sm:hidden">
+            <img src="../src/img/arrow-white.svg" alt="" class="w-[3vw] max-w-[20px] -rotate-90" />
+            <a target="_blank" href="https://katadata.co.id/intan/lifestyle/6399d3766a2bb/7-cara-interview-kerja-yang-baik-agar-diterima-dan-penting-disimak" class="text-center">Lihat detail</a>
+          </div>
         </article>
       </section>
 
-      <section class="tips-scrollable-element p-3 ml-10 overflow-x-auto whitespace-nowrap rounded-l-lg border h-36">
+      <section class="tips-scrollable-element p-3 ml-10 overflow-x-auto whitespace-nowrap rounded-l-lg pb-16">
+        <figure class="mini-news">
+          <div class="w-full h-[50%] flex items-center justify-center relative overflow-hidden rounded-t-xl">
+            <img src="../src/img/tips2.webp" alt="" class="absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover scale-150" />
+          </div>
 
+          <div class="mt-3 p-3">
+            <a
+              target="_blank"
+              href="https://www.umn.ac.id/dear-mahasiswa-persiapkan-5-hal-ini-sebelum-terjun-jadi-volunteer/"
+              class="font-semibold bg-gradient-to-l from-purple1 to-purple2 bg-[length:0%_4px] bg-[left_bottom] hover:bg-[length:100%_4px] duration-1000 bg-no-repeat inline"
+            >
+              Dear Mahasiswa, Persiapkan 5 Hal Ini Sebelum Terjun Jadi Volunteer!
+            </a>
+          </div>
+
+          <a target="_blank" href="https://katadata.co.id/intan/lifestyle/6399d3766a2bb/7-cara-interview-kerja-yang-baik-agar-diterima-dan-penting-disimak" class="flex gap-5 mt-3 w-full bg-purple1 p-3 text-white justify-center items-center rounded-b-lg hover:brightness-105 absolute -bottom-11">
+            <img src="../src/img/arrow-white.svg" alt="" class="lg:w-[1vw] w-[3vw] max-w-[20px] -rotate-90" />
+            <p class="text-center">Lihat detail</p>
+          </a>
+        </figure>
+        <figure class="mini-news">
+          <div class="w-full h-[50%] flex items-center justify-center relative overflow-hidden rounded-t-xl">
+            <img src="../src/img/tips3.jpeg" alt="" class="absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover scale-150" />
+          </div>
+
+          <div class="mt-3 p-3">
+            <a
+              target="_blank"
+              href="https://www.linovhr.com/volunteer-adalah/"
+              class="font-semibold bg-gradient-to-l from-purple1 to-purple2 bg-[length:0%_4px] bg-[left_bottom] hover:bg-[length:100%_4px] duration-1000 bg-no-repeat inline"
+            >
+            Apa itu Volunteer? Pengertian & Manfaatnya untuk Perkembangan Karir
+            </a>
+          </div>
+
+          <a target="_blank" href="https://www.linovhr.com/volunteer-adalah/" class="flex gap-5 mt-3 w-full bg-purple1 p-3 text-white justify-center items-center rounded-b-lg hover:brightness-105 absolute -bottom-11">
+            <img src="../src/img/arrow-white.svg" alt="" class="lg:w-[1vw] w-[3vw] max-w-[15px] -rotate-90" />
+            <p class="text-center">Lihat detail</p>
+          </a>
+        </figure>
+        
       </section>
     </main>
 
-    <footer class="bg-white dark:bg-black1 drop-shadow-[0_-3px_10px_rgba(95,122,219,0.8)]">
+    <footer class="mt-5 bg-white dark:bg-black1 drop-shadow-[0_-3px_10px_rgba(95,122,219,0.8)]">
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-10 md:mb-0">
-            <a href="../index.html" class="flex items-center ">
+            <a href="../index.html" class="flex items-center">
               <img src="../src/img/logo.svg" class="h-7 lg:h-8 w-auto mr-3" alt="Volunteeria Logo" />
-              <span class="self-center text-lg lg:text-2xl font-semibold dark:text-white tracking-widest ">VOLUNTEERIA</span>
+              <span class="self-center text-lg lg:text-2xl font-semibold dark:text-white tracking-widest">VOLUNTEERIA</span>
             </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-1 lg:gap-6 sm:grid-cols-3">
