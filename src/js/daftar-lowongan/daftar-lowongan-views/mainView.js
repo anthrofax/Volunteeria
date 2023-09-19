@@ -42,18 +42,6 @@ class mainView {
           node.classList.add("hidden");
         }
       });
-
-      const judulLowongan = document.querySelector(".judul-lowongan").textContent;
-      const perusahaanLowongan = document.querySelector(".perusahaan-lowongan").textContent;
-      const lokasiLowongan = document.querySelector(".lokasi-lowongan").textContent;
-      const kuotaPenerimaan = document.querySelector(".kuota-penerimaan").textContent;
-      const jobDesk = document.querySelector(".job-desk").textContent;
-      const banefitLowongan = document.querySelector(".banefit-lowongan").textContent;
-      const kontakLowongan = document.querySelector(".kontak-lowongan").textContent;
-
-      // this._volunteerDetail.classList.replace("hidden", "block");
-
-      return {judulLowongan, perusahaanLowongan, lokasiLowongan, kuotaPenerimaan, jobDesk, banefitLowongan, kontakLowongan};
     });
   }
 
