@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt = $koneksi->prepare($sql);
         if ($stmt->execute([$name, $email, $hashed_password])) {
             // echo "Registrasi berhasil!";
-            header("Location: ");  // perlu redirect ke halaman html lagi
+            header("Location: http://127.0.0.1:8000/admin/login");  // perlu redirect ke halaman html lagi
         } else {
             echo "Terjadi kesalahan dalam proses registrasi.";
         }

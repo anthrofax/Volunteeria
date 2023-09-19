@@ -1,5 +1,4 @@
 import innerNavbarView from '../innerNavbarView.js'
-import tipsListView from './tipsListView.js';
 
 const controlNavbar = function() {
     innerNavbarView.navLinkHandler();
@@ -8,13 +7,13 @@ const controlNavbar = function() {
     innerNavbarView.overlayBgHandler();
 }
 
-const controlTipsListSection = async function() {
-     tipsListView.newsLoadInit();
-}
+// const controlTipsListSection = async function() {
+//      tipsListView.newsLoadInit();
+// }
 
 const init = function() {
     controlNavbar();
-    controlTipsListSection();
+    // controlTipsListSection();
 
     // Preline Library for Dark Mode 
     const HSThemeAppearance = {
