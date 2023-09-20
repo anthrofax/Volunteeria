@@ -45,7 +45,7 @@ const init = function() {
     controlNavbar();
     controlContributionSection();
     controlFeatureSection();
-    controlCarousel();
+    // controlCarousel();
 
      // Preline Library for Dark Mode 
     const HSThemeAppearance = {

@@ -16,6 +16,7 @@
   "dependencies": {
     "flowbite": "^1.8.1",
     "json-server": "^0.17.3",
-    "preline": "^1.9.0"
+    "preline": "^1.9.0",
+    "tw-elements": "^1.0.0"
   }
 }

@@ -29,14 +29,12 @@
   <!-- Overlay Background -->
   <div class="overlay-bg bg-black opacity-50 fixed left-0 right-0 bottom-0 top-0 z-30 hidden"></div>
   <!-- Navbar -->
-  <nav class="bg-white dark:bg-black1 sm:py-8 sm:pr-20 sm:pl-16 max-sm:px-5 flex items-center justify-between drop-shadow-[0_ 5px_15px_white] text-black1 dark:text-palewhite relative hover:opacity-100 duration-1000 z-20 backdrop-blur-md">
-    <div class="flex items-center gap-x-5 max-sm:gap-x-2">
-    <img src="../src/img/logo2dark.svg" alt="Volunteeria Logo" width="60px" class="max-sm:w-10 max-sm:h-20 dark:hidden" />
-       <img src="../src/img/logo2white.svg" alt="Volunteeria Logo" width="60px" class="max-sm:w-10 max-sm:h-20 hidden dark:block" />
-      <a href="../index.html" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm mt-2 nav-links">
-        <h1>Volunteeria</h1>
-      </a>
-    </div>
+  <nav class="bg-white dark:bg-black1 py-3 sm:py-4 lg:py-6 sm:pr-20 sm:pl-16 max-sm:px-5 flex items-center justify-between drop-shadow-[0_ 5px_15px_white] text-black1 dark:text-palewhite relative hover:opacity-100 duration-500 z-20 backdrop-blur-md">
+        <a href="../index.html" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm mt-2 flex items-center gap-x-3 max-sm:gap-x-2  nav-links group">
+          <img src="../src/img/logo2dark.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto dark:hidden  group-hover:-translate-y-2 transition-all" />
+          <img src="../src/img/logo2white.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto hidden dark:block group-hover:-translate-y-2 transition-all" />
+          <h1>Volunteeria</h1>
+        </a>
 
     <!-- Dark Mode (Mobile) -->
     <div class="flex items-center gap-[5vw]">
@@ -162,19 +160,19 @@
       $query = mysqli_query($koneksi, "SELECT * FROM suntings ");
       while ($lowongan = mysqli_fetch_array($query)) {
         $job_id = $lowongan['id'];
-      ?>
-        <li class="daftar-lowongan" data-id="<?= $job_id ?>">
-          <a href="./detail-volunteer/detail-volunteer.php?job_id=<?= $job_id ?>">
-            <h1 class="text-lg mt-5 text-purple1"><?php echo $lowongan['posisi'] ?></h1>
-            <p><?php echo $lowongan['nama_agency'] ?></p>
-            <h3 class="mt-3 font-semibold location-data"><?php echo $lowongan['lokasi'] ?></h3>
+        ?>
+            <li class="daftar-lowongan" data-id="<?= $job_id ?>">
+              <a href="./detail-volunteer/detail-volunteer.php?job_id=<?= $job_id ?>">
+                <h1 class="text-lg mt-5 text-purple1"><?php echo $lowongan['posisi'] ?></h1>
+                <p><?php echo $lowongan['nama_agency'] ?></p>
+                <h3 class="mt-3 font-semibold location-data"><?php echo $lowongan['lokasi'] ?></h3>
 
-            <p class="mt-5">
-              Kriteria <br />
-              <?php echo $lowongan['kriteria'] ?>
-            </p>
-          </a>
-        </li>
+                <p class="mt-5">
+                  Kriteria <br />
+                  <?php echo $lowongan['kriteria'] ?>
+                </p>
+              </a>
+            </li>
       <?php } ?>
     </ul>
 
@@ -191,46 +189,46 @@
       $query = mysqli_query($koneksi, "SELECT * FROM suntings ");
       while ($daftar_lowongan = mysqli_fetch_array($query)) {
         $job_id = $daftar_lowongan['id'];
-      ?>
-        <div class="volunteer-detail hidden" data-id="<?= $daftar_lowongan['id'] ?>">
-          <section class="p-5 bg-white dark:bg-black1 dark:text-palewhite rounded-b-lg text-center">
-            <div class="flex justify-between mb-5 text-purple1">
-              <a href="./detail-volunteer/detail-volunteer.php?job_id=<?= $job_id ?>">View in full screen</a>
-              <a href="" class="close-detail-volunteer">Close</a>
+        ?>
+            <div class="volunteer-detail hidden" data-id="<?= $daftar_lowongan['id'] ?>">
+              <section class="p-5 bg-white dark:bg-black1 dark:text-palewhite rounded-b-lg text-center">
+                <div class="flex justify-between mb-5 text-purple1">
+                  <a href="./detail-volunteer/detail-volunteer.php?job_id=<?= $job_id ?>">View in full screen</a>
+                  <a href="" class="close-detail-volunteer">Close</a>
+                </div>
+                <h1 class="font-bold text-lg mt-8"><?php echo $daftar_lowongan['posisi'] ?></h1>
+                <h2 class="font-semibold text-base mt-2"><?php echo $daftar_lowongan['nama_agency'] ?></h2>
+                <p class="text-sm"><?php echo $daftar_lowongan['lokasi'] ?></p>
+
+                <a href="<?php echo $daftar_lowongan['link_form'] ?>" target="blank"><button class="rounded-md bg-purple1 w-full h-12 mt-10 mx-auto text-white hover:bg-purple1/90 duration-100">Apply Now</button></a>
+              </section>
+
+              <section class="mt-5 px-5 pt-12 bg-white dark:bg-black1 dark:text-palewhite text-base rounded-t-lg pb-52">
+                <p>
+                  Kuota penerimaan : <?php echo $daftar_lowongan['kuota'] ?> <br />
+                  <br />
+                </p>
+
+                <p>
+                  Job Desk <br />
+                  <?php echo $daftar_lowongan['jobdesk'] ?>
+                  <br />
+                </p>
+
+                <p>
+                  Benefit <br />
+                  <?php echo $daftar_lowongan['benefit'] ?>
+                  <br />
+                </p>
+
+                <p>
+                  Kontak <br />
+                  Nomor telepon: <?php echo $daftar_lowongan['telepon'] ?> <br />
+                  Instagram: <?php echo $daftar_lowongan['instagram'] ?> <br />
+                  <?php echo $daftar_lowongan['facebook'] ?> <br />
+                </p>
+              </section>
             </div>
-            <h1 class="font-bold text-lg mt-8"><?php echo $daftar_lowongan['posisi'] ?></h1>
-            <h2 class="font-semibold text-base mt-2"><?php echo $daftar_lowongan['nama_agency'] ?></h2>
-            <p class="text-sm"><?php echo $daftar_lowongan['lokasi'] ?></p>
-
-            <a href="<?php echo $daftar_lowongan['link_form'] ?>" target="blank"><button class="rounded-md bg-purple1 w-full h-12 mt-10 mx-auto text-white hover:bg-purple1/90 duration-100">Apply Now</button></a>
-          </section>
-
-          <section class="mt-5 px-5 pt-12 bg-white dark:bg-black1 dark:text-palewhite text-base rounded-t-lg pb-52">
-            <p>
-              Kuota penerimaan : <?php echo  $daftar_lowongan['kuota'] ?> <br />
-              <br />
-            </p>
-
-            <p>
-              Job Desk <br />
-              <?php echo  $daftar_lowongan['jobdesk'] ?>
-              <br />
-            </p>
-
-            <p>
-              Benefit <br />
-              <?php echo  $daftar_lowongan['benefit'] ?>
-              <br />
-            </p>
-
-            <p>
-              Kontak <br />
-              Nomor telepon: <?php echo  $daftar_lowongan['telepon'] ?> <br />
-              Instagram: <?php echo  $daftar_lowongan['instagram'] ?> <br />
-              <?php echo  $daftar_lowongan['facebook'] ?> <br />
-            </p>
-          </section>
-        </div>
       <?php } ?>
     </div>
   </main>

@@ -20,15 +20,13 @@
 <body class="bg-white2 dark:bg-black2 font-poppins">
   <!-- Overlay Background -->
   <div class="overlay-bg bg-black opacity-50 fixed left-0 right-0 bottom-0 top-0 z-30 hidden"></div>
-  <!-- Navbar -->
-  <nav class="bg-white dark:bg-black1 sm:py-8 sm:pr-20 sm:pl-16 max-sm:px-5 flex items-center justify-between drop-shadow-[0_ 5px_15px_white] text-black1 dark:text-palewhite relative hover:opacity-100 duration-1000 z-20 backdrop-blur-md">
-    <div class="flex items-center gap-x-5 max-sm:gap-x-2">
-      <img src="../src/img/logo2dark.svg" alt="Volunteeria Logo" width="60px" class="max-sm:w-10 max-sm:h-20 dark:hidden" />
-      <img src="../src/img/logo2white.svg" alt="Volunteeria Logo" width="60px" class="max-sm:w-10 max-sm:h-20 hidden dark:block" />
-      <a href="../index.html" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm mt-2 nav-links">
-        <h1>Volunteeria</h1>
-      </a>
-    </div>
+   <!-- Navbar -->
+   <nav class="bg-white dark:bg-black1 py-3 sm:py-4 lg:py-6 sm:pr-20 sm:pl-16 max-sm:px-5 flex items-center justify-between drop-shadow-[0_ 5px_15px_white] text-black1 dark:text-palewhite relative hover:opacity-100 duration-500 z-20 backdrop-blur-md">
+        <a href="../index.html" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm mt-2 flex items-center gap-x-3 max-sm:gap-x-2  nav-links group">
+          <img src="../src/img/logo2dark.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto dark:hidden  group-hover:-translate-y-2 transition-all" />
+          <img src="../src/img/logo2white.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto hidden dark:block group-hover:-translate-y-2 transition-all" />
+          <h1>Volunteeria</h1>
+        </a>
 
     <!-- Dark Mode (Mobile) -->
     <div class="flex items-center gap-[5vw]">
