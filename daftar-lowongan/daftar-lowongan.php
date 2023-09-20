@@ -191,20 +191,16 @@
         $job_id = $daftar_lowongan['id'];
         ?>
             <div class="volunteer-detail hidden" data-id="<?= $daftar_lowongan['id'] ?>">
-              <section class="p-5 bg-white dark:bg-black1 dark:text-palewhite rounded-b-lg text-center">
+              <section class="p-5 bg-white dark:bg-black1 dark:text-palewhite rounded-b-lg text-left">
                 <div class="flex justify-between mb-5 text-purple1">
                   <a href="./detail-volunteer/detail-volunteer.php?job_id=<?= $job_id ?>">View in full screen</a>
                   <a href="" class="close-detail-volunteer">Close</a>
                 </div>
-                <h1 class="font-bold text-lg mt-8"><?php echo $daftar_lowongan['posisi'] ?></h1>
-                <h2 class="font-semibold text-base mt-2"><?php echo $daftar_lowongan['nama_agency'] ?></h2>
-                <p class="text-sm"><?php echo $daftar_lowongan['lokasi'] ?></p>
+                <h1 class="font-bold text-lg mt-8 text-center"><?php echo $daftar_lowongan['posisi'] ?></h1>
+                <h2 class="font-semibold text-base mt-2 text-center"><?php echo $daftar_lowongan['nama_agency'] ?></h2>
+                <p class="text-sm text-center"><?php echo $daftar_lowongan['lokasi'] ?></p>
 
-                <a href="<?php echo $daftar_lowongan['link_form'] ?>" target="blank"><button class="rounded-md bg-purple1 w-full h-12 mt-10 mx-auto text-white hover:bg-purple1/90 duration-100">Apply Now</button></a>
-              </section>
-
-              <section class="mt-5 px-5 pt-12 bg-white dark:bg-black1 dark:text-palewhite text-base rounded-t-lg pb-52">
-                <p>
+                <p class="mt-16">
                   Kuota penerimaan : <?php echo $daftar_lowongan['kuota'] ?> <br />
                   <br />
                 </p>
@@ -225,9 +221,12 @@
                   Kontak <br />
                   Nomor telepon: <?php echo $daftar_lowongan['telepon'] ?> <br />
                   Instagram: <?php echo $daftar_lowongan['instagram'] ?> <br />
-                  <?php echo $daftar_lowongan['facebook'] ?> <br />
                 </p>
+
+                <a href="<?php echo $daftar_lowongan['link_form'] ?>" target="blank"><button class="rounded-md bg-purple1 w-80 h-12 mt-10 mx-auto text-white hover:bg-purple1/90 duration-100">Apply Now</button></a>
               </section>
+
+             
             </div>
       <?php } ?>
     </div>

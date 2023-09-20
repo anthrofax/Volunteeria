@@ -154,7 +154,7 @@
                 <p class="text-sm lg:text-base"><?php echo $detail_volunteer['lokasi'] ?></p>
               </div>
 
-              <a href="<?php echo $detail_volunteer['link_form'] ?>" target="blank"><button class="rounded-md bg-purple1 w-full h-12 mt-10 mx-auto text-white hover:bg-purple1/90 duration-100">Apply Now</button></a>
+              <a href="<?php echo $detail_volunteer['link_form'] ?>" target="blank"><button class="px-5 rounded-md bg-purple1 w-full h-12 mt-10 mx-auto text-white hover:bg-purple1/90 duration-100">Apply Now</button></a>
             </section>
 
             <section class="mt-5 px-5 py-12 bg-white dark:bg-black1 dark:text-palewhite text-sm lg:text-base">
