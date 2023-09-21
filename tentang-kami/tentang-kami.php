@@ -293,7 +293,7 @@
         <p class="mt-5 text-sm sm:text-base w-[80%] leading-8 text-center mx-auto mb-10">Ide Cemerlang dibalik Volunteeria</p>
 
         <div class="flex flex-col sm:flex-row gap-5 justify-center items-center">
-          <div class=" flex flex-col w-[80%] max-w-sm h-fit bg-white2 dark:bg-black2 rounded-xl py-4 hover:border-4 border-purple1 transition-all">
+          <div class=" flex flex-col w-[80%] max-w-sm h-fit bg-white2 dark:bg-black2 rounded-xl py-4 hover:border-4 border-purple1 transition-all" style="cursor: pointer;">
             <div class=" grow-[2] flex items-center justify-center py-4">
               <div class="basis-2/3 max-h-[30rem] flex items-center justify-center rounded-full  overflow-hidden bg-purple1 border-2 border-black1 dark:border-palewhite">
                 <img src="../src/img/afridho.png" alt="" class=" w-full h-auto" />
@@ -338,7 +338,7 @@
               </a>
             </div>
           </div>
-          <div class=" flex flex-col w-[80%] max-w-sm h-fit bg-white2 dark:bg-black2 rounded-xl py-4 hover:border-4 border-purple1 transition-all">
+          <div class=" flex flex-col w-[80%] max-w-sm h-fit bg-white2 dark:bg-black2 rounded-xl py-4 hover:border-4 border-purple1 transition-all" style="cursor: pointer;">
             <div class=" grow-[2] flex items-center justify-center py-4">
               <div class="basis-2/3 max-h-[30rem] flex items-center justify-center rounded-full  overflow-hidden bg-purple1 border-2 border-black1 dark:border-palewhite">
                 <img src="../src/img/alip.png" alt="" class=" w-full h-auto" />
