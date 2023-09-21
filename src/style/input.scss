@@ -268,15 +268,10 @@
   @apply leading-7 text-xs sm:text-sm sm:leading-8
 }
 
-.contributor-profile {
-  @apply w-[95%] mx-auto grayscale
+.developer-name {
+  @apply text-base sm:text-lg
 }
-
-.contributor-name {
-  @apply font-light text-xl lg:text-2xl text-center mt-3
-}
-
-.contributor-part {
-  @apply text-sm lg:text-base text-center italic mb-3
+.developer-part {
+  @apply text-xs sm:text-base
 }
 
