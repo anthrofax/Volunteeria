@@ -234,9 +234,9 @@
 }
 
 .developer-name {
-  @apply text-base sm:text-lg;
+  @apply text-base sm:text-lg font-medium;
 }
 
 .developer-part {
-  @apply text-xs sm:text-base;
+  @apply text-xs sm:text-base italic font-light;
 }/*# sourceMappingURL=input.css.map */
