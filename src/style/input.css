@@ -140,7 +140,7 @@
   }
   /* Feature Section */
   .fitur-website {
-    @apply flex gap-3 flex-col p-5 bg-purple1 text-white dark:text-palewhite  dark:bg-black2 shadow-[0_0_20px_0_rgba(0,0,0,0.5)] rounded-lg dark:shadow-[0_0_20px_0_rgba(95,122,219,0.2)] text-center max-w-xs sm:max-w-md duration-1000 hover:-translate-y-4;
+    @apply flex gap-3 flex-col justify-center items-center p-5 bg-purple1 text-white dark:text-palewhite  dark:bg-black2 shadow-[0_0_20px_0_rgba(0,0,0,0.5)] rounded-lg dark:shadow-[0_0_20px_0_rgba(95,122,219,0.2)] text-center max-w-xs sm:max-w-md duration-1000 hover:-translate-y-4;
   }
   .feature-line {
     @apply w-0 h-[2px] bg-purple1/50 duration-1000;
@@ -150,13 +150,13 @@
     @apply flex flex-col items-center text-center gap-5 duration-1000 ease-out;
   }
   .contribution-header {
-    @apply text-base sm:text-xl md:text-2xl order-1;
+    @apply text-base sm:text-lg md:text-xl order-1;
   }
   .contribution-caption {
     @apply text-sm sm:text-lg lg:text-base order-3  w-[80%];
   }
   .contribution-image {
-    @apply max-w-[230px] sm:max-w-md lg:max-w-sm order-2;
+    @apply max-w-[16rem] sm:max-w-[18rem] lg:max-w-sm order-2;
   }
   .contribution-r-animation {
     @apply translate-x-[7vw] opacity-0 scale-50;
@@ -204,7 +204,7 @@
     @apply text-base lg:text-lg;
   }
   .faq-answer {
-    @apply mb-2 text-gray-700 dark:text-gray-700 text-xs lg:text-lg;
+    @apply mb-2 text-gray-700 dark:text-gray-500 text-xs lg:text-lg;
   }
   /* Footer */
   .footer-links-title {

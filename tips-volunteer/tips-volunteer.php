@@ -106,15 +106,17 @@
   <aside id="default-sidebar" class="xl:hidden side-navbar fixed top-0 left-0 z-50 w-64 h-screen transition-transform -translate-x-full" aria-label="Sidebar">
     <div class="h-full px-3 py-10 overflow-y-auto bg-gray-50 dark:bg-black1">
       <ul class="space-y-2 font-medium">
-        <li>
+      <li>
           <a href="../daftar-lowongan/daftar-lowongan.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
-            <img src="../src/img/volunteer.svg" alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
+          <img src="../src/img/daftar-lowongan.svg" alt="" width="35px" class="dark:hidden" />
+            <img src="../src/img/daftar-lowongan-light.svg" alt="" width="35px" class="hidden dark:inline-block" />
             <span class="flex-1 ml-3 whitespace-nowrap">Lowongan Volunteer</span>
           </a>
         </li>
         <li>
           <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
-            <img src="../src/img/tips.svg" alt="" class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
+          <img src="../src/img/tips-volunteer2.svg" alt="" width="35px" class="dark:hidden" />
+            <img src="../src/img/tips-volunteer-light.svg" alt="" width="35px" class="hidden dark:inline-block" />
             <span class="flex-1 ml-3 whitespace-nowrap text-purple1">Tips Volunteer</span>
           </a>
         </li>
@@ -146,7 +148,7 @@
         <div class="flex items-center w-full">
           <img src="../src/img/tips1.jpeg" alt="News Logo" class="max-[800px]:rounded-t-lg min-[800px]:rounded-l-lg" />
         </div>
-        <div class="p-3 md:p- relative">
+        <div class="p-3 md:p-5 relative">
           <a class="text-lg sm:text-2xl font-semibold bg-gradient-to-l from-purple1 to-purple2 bg-[length:0%_4px] bg-[left_bottom] hover:bg-[length:100%_4px] duration-1000 bg-no-repeat inline" target="_blank" href="https://katadata.co.id/intan/lifestyle/6399d3766a2bb/7-cara-interview-kerja-yang-baik-agar-diterima-dan-penting-disimak">Tips interview yang Baik Agar Diterima dan Penting Disimak</a>
           <p class="text-sm sm:text-base mt-3">Interview adalah salah satu tahap yang perlu dilakukan saat melamar kerja. Tahap interview mungkin cukup mendebarkan, terlebih untuk seorang fresh graduate.</p>
           <a href="https://katadata.co.id/intan/lifestyle/6399d3766a2bb/7-cara-interview-kerja-yang-baik-agar-diterima-dan-penting-disimak" target="_blank" class="absolute bottom-7 text-gray-500 dark:text-palewhite hidden min-[800px]:block text-lg hover:text-purple1 dark:hover:text-purple1 duration-500 cursor-pointer">Lihat detail</a>

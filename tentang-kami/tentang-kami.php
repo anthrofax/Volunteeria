@@ -170,9 +170,12 @@
 
     <section class="bg-white dark:bg-black1 min-h-[500px] flex flex-col items-center justify-center text-center py-10 px-5">
       <h1 class="text-center font-medium text-2xl sm:text-3xl tracking-widest">Tentang Perusahaan Kami</h1>
-      <p class="mt-5 text-sm sm:text-base w-[80%] leading-8 text-center mx-auto mb-10">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis non sapien viverra volutpat. Vestibulum hendrerit nunc ac sapien lobortis, id hendrerit elit ultricies. Quisque congue tincidunt orci, id vulputate odio
-        suscipit eu. Sed id metus quis elit dictum bibendum id ac quam. Fusce consectetur facilisis leo, vel egestas lectus.
+      <p class="mt-5 text-sm sm:text-base w-[80%] leading-8 text-justify sm:text-center mx-auto ">
+      Kami adalah Volunteeria, sebuah platform yang dipenuhi dengan semangat untuk memberikan perubahan positif. Misi kami adalah menghubungkan orang-orang yang ingin memberikan kembali dengan proyek-proyek yang membutuhkan bantuan mereka. Kami percaya bahwa setiap tindakan baik, sekecil apapun, memiliki kekuatan untuk merubah dunia.
+
+      Dengan Volunteeria, Anda dapat menjelajahi berbagai kesempatan sukarela yang cocok dengan minat dan keterampilan Anda. Kami menyediakan alat yang memudahkan Anda untuk terlibat dalam aksi sosial, membangun komunitas yang lebih baik, dan memberikan dampak positif dalam hidup orang lain.
+
+      Bersama-sama, mari kita menjadi bagian dari perubahan yang kita inginkan. Bergabunglah dengan kami di Volunteeria dan mari berbuat baik bersama-sama!
       </p>
 
       <ul class="py-16 px-10 flex flex-col sm:flex-row gap-10">
@@ -180,21 +183,21 @@
           <img src="../src/img/who.jpeg" alt="" class="w-full h-auto max-w-sm" />
           <h3 class="identity-title text-left">SIAPA KAMI</h3>
           <p class="identity-caption text-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis non sapien viverra volutpat. Vestibulum hendrerit nunc ac sapien lobortis, id hendrerit elit ultricies. Quisque congue tincidunt orci.
+          Kami adalah komunitas sukarelawan yang bersemangat dan peduli. Dengan beragam latar belakang dan keahlian, kami bersatu dalam tekad untuk memberikan dampak positif dalam masyarakat. Bergabunglah dengan kami dan kenali lebih dekat siapa kami di Volunteeria.
           </p>
         </li>
         <li class="identity-list">
           <img src="../src/img/mission.jpeg" alt="" class="w-full h-auto max-w-sm" />
           <h3 class="identity-title text-right sm:text-left">MISI KAMI</h3>
           <p class="text-right sm:text-left identity-caption">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis non sapien viverra volutpat. Vestibulum hendrerit nunc ac sapien lobortis, id hendrerit elit ultricies. Quisque congue tincidunt orci.
+          Misi kami adalah menginspirasi dan memfasilitasi aksi sukarela yang bermakna. Kami berkomitmen untuk menghubungkan para sukarelawan dengan proyek-proyek yang sesuai dengan minat dan keterampilan mereka, sehingga bersama-sama kita dapat mencapai perubahan positif.
           </p>
         </li>
         <li class="identity-list">
           <img src="../src/img/vision.jpeg" alt="" class="w-full h-auto max-w-sm" />
           <h3 class="identity-title text-center sm:text-left">VISI KAMI</h3>
           <p class="text-center sm:text-left identity-caption">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis non sapien viverra volutpat. Vestibulum hendrerit nunc ac sapien lobortis, id hendrerit elit ultricies. Quisque congue tincidunt orci.
+          Visi kami adalah menciptakan dunia yang dipenuhi dengan aksi-aksi sukarela yang membawa perubahan positif. Kami bermimpi tentang masyarakat yang saling peduli dan berbagi, di mana setiap tindakan baik memiliki dampak jauh lebih besar.
           </p>
         </li>
       </ul>
@@ -209,7 +212,7 @@
     <section class="py-10 px-5 bg-white dark:bg-black1">
       <h1 class="text-center font-medium text-2xl sm:text-3xl tracking-widest">OUR AWESOME MINDS</h1>
       <p class="mt-5 text-sm sm:text-base w-[80%] leading-8 text-center mx-auto mb-10">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis non sapien viverra volutpat. Vestibulum hendrerit nunc ac sapien lobortis, id hendrerit elit ultricies. Quisque congue tincidunt orci.
+        Ide Cemerlang dibalik Volunteeria
       </p>
 
       <div class="flex flex-col sm:flex-row gap-5 justify-center items-center">
@@ -238,14 +241,14 @@
           <div class="text-center">
             <h1 class="text-center font-medium text-2xl sm:text-3xl tracking-widest">KONTAK KAMI</h1>
             <p class="mt-5 text-sm sm:text-base w-[80%] leading-8 text-center mx-auto mb-10">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis non sapien viverra volutpat. Vestibulum hendrerit nunc ac sapien lobortis, id hendrerit elit ultricies. Quisque congue tincidunt orci.
+              Kami Siap Mendengarkan Anda.
             </p>
           </div>
 
           <div class="mt-12 grid items-center lg:grid-cols-2 border border-palewhite rounded-lg justify-items-center px-5">
             <!-- Card -->
             <div class="flex flex-col rounded-xl p-4 sm:p-6 lg:p-8 h-full w-full">
-              <h2 class="mb-8 text-2xl font-semibold text-black1 dark:text-palewhite">Sampaikan pesan anda disini</h2>
+              <h2 class="mb-5 text-xl font-semibold text-black1 dark:text-palewhite">Sampaikan pesan anda disini</h2>
 
               <form method="post" action="https://formspree.io/f/mqkvlywd">
                 <div class="grid gap-4 lg:gap-6">
