@@ -224,9 +224,7 @@
                 </p>
 
                 <a href="<?php echo $daftar_lowongan['link_form'] ?>" target="blank"><button class="rounded-md bg-purple1 w-80 h-12 mt-10 mx-auto text-white hover:bg-purple1/90 duration-100">Apply Now</button></a>
-              </section>
-
-             
+              </section>         
             </div>
       <?php } ?>
     </div>

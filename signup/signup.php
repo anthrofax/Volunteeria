@@ -130,6 +130,7 @@
     function validateForm() {
       // Ambil nilai password dan konfirmasi password
       var password = document.getElementById("password").value;
+      var pattern = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
       var confirmPassword = document.getElementById("password_confirmation").value;
       var checkbox = document.getElementById("remember_me");
 
@@ -141,6 +142,15 @@
           text: 'Password harus terdiri dari minimal 8 karakter!',
         });
         return false; // Mencegah pengiriman form
+      }
+
+      if (!pattern.test(password)) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Password tidak valid!',
+          text: 'Password harus mengandung setidaknya 1 huruf, 1 angka, 1 simbol, dan memiliki panjang minimal 8 karakter.',
+        });
+        return false;
       }
 
       // Cek apakah password dan konfirmasi password cocok
