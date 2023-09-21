@@ -34,6 +34,25 @@ export default class Navbar {
         this._overlayBg.classList.add('hidden')
       })
     }
+
+    fixNavbar(jumbotron) {
+      const nav = this._parentElement;
+  
+      const navFixedObserver = new IntersectionObserver(
+        function (entries) {
+          const [entry] = entries;
+          if (entry.isIntersecting) nav.classList.replace("sticky-navbar", "relative");
+          else nav.classList.replace("relative", "sticky-navbar");
+        },
+        {
+          root: null,
+          threshold: 0,
+          rootMargin: `-${nav.getBoundingClientRect().height}px`,
+        }
+      );
+  
+      navFixedObserver.observe(jumbotron);
+    }
   
     _showNavbar() {
       const threeLine = this._hamburgerButton.querySelectorAll('.three-line')

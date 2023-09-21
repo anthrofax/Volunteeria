@@ -4,6 +4,7 @@ const controlNavbar = function() {
     aboutUsNavbar.navLinkHandler();
     aboutUsNavbar.hamburgerHandler();
     aboutUsNavbar.overlayBgHandler();
+    aboutUsNavbar.fixNavbar(document.querySelector('.first-section'))
 }
 
 const init = function() {

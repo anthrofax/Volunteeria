@@ -1,4 +1,3 @@
-import carouselView from "./main-views/carouselView.js";
 import mainNavbarView from "./main-views/mainNavbarView.js";
 import contributionSection from "./main-views/contributionSection.js";
 import featureSectionView from "./main-views/featureSectionView.js";
@@ -7,7 +6,7 @@ import { state } from "../model.js";
 
 const controlNavbar = function() {
     mainNavbarView.navLinkHandler();
-    mainNavbarView.fixNavbar();
+    mainNavbarView.fixNavbar(document.querySelector('.jumbotron'));
     mainNavbarView.hamburgerHandler();
     mainNavbarView.overlayBgHandler();
 }
@@ -29,23 +28,11 @@ const controlContributionSection = function () {
     }
 }
 
-const controlCarousel = function() {
-    // Render Carousel & Dots
-    carouselView.renderSlider();
-
-    // Next Prev Button Handler
-    carouselView.carouselButtonHandler();
-
-    // Dot Button Handler
-    carouselView.carouselDotHandler();
-}
-
 const init = function() {
     controlJumbotronSection();
     controlNavbar();
     controlContributionSection();
     controlFeatureSection();
-    // controlCarousel();
 
      // Preline Library for Dark Mode 
     const HSThemeAppearance = {

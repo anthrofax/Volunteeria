@@ -239,7 +239,7 @@
     </aside>
 
     <main class="w-full h-fit bg-white2">
-      <section class="h-[576px] w-full bg-white2 dark:bg-black2 flex justify-center items-center">
+      <section class="first-section h-[576px] w-full bg-white2 dark:bg-black2 flex justify-center items-center">
         <div class="w-[85%] h-[85%] bg-blend-overlay mx-auto bg-no-repeat bg-cover bg-fixed bg-black1 flex items-center justify-center" style="background-image: url(../src/img/partner2.jpeg)">
           <h1 class="text-white text-3xl sm:text-5xl font-bold tracking-widest">ABOUT US</h1>
         </div>
