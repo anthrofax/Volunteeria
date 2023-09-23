@@ -128,9 +128,9 @@
 
       <ul class="hidden lg:flex gap-x-8 text-base items-center">
         <li><a href="#" class="nav-links relative active-link text-purple1 after:scale-100">TENTANG KAMI</a></li>
-        <li><a href="../../component/signup/signup.php" class="nav-links hoverable-link">DAFTAR PEREKRUT</a></li>
+        <li><a href="../../components/signup/signup.php" class="nav-links hoverable-link">DAFTAR PEREKRUT</a></li>
         <li class="btn px-5 py-8 flex items-center justify-center group border border-black1 dark:border-palewhite">
-          <a href="../../component/daftar-lowongan/daftar-lowongan.php" class="nav-links text-black1 dark:text-palewhite group-hover:text-white font-medium tracking-widest">VOLUNTEERS/JOBS</a>
+          <a href="../../components/daftar-lowongan/daftar-lowongan.php" class="nav-links text-black1 dark:text-palewhite group-hover:text-white font-medium tracking-widest">VOLUNTEERS/JOBS</a>
         </li>
         <li>
           <div class="hs-dropdown" data-hs-dropdown-placement="bottom-right" data-hs-dropdown-offset="30">
@@ -199,7 +199,7 @@
             </a>
           </li>
           <li>
-            <a href="../../component/signup/signup.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
+            <a href="../../components/signup/signup.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
               <svg
                 class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                 aria-hidden="true"
@@ -219,7 +219,7 @@
             </a>
           </li>
           <li>
-            <a href="../../component/daftar-lowongan/daftar-lowongan.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
+            <a href="../../components/daftar-lowongan/daftar-lowongan.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
               <svg
                 class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                 aria-hidden="true"
@@ -604,10 +604,10 @@
               <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Features</h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
-                  <a href="../../component/daftar-lowongan/daftar-lowongan.php" class="hover:underline">Daftar Lowongan</a>
+                  <a href="../../components/daftar-lowongan/daftar-lowongan.php" class="hover:underline">Daftar Lowongan</a>
                 </li>
                 <li>
-                  <a href="../../component/tips-volunteer/tips-volunteer.php" class="hover:underline">Tips Volunteer</a>
+                  <a href="../../components/tips-volunteer/tips-volunteer.php" class="hover:underline">Tips Volunteer</a>
                 </li>
               </ul>
             </div>
