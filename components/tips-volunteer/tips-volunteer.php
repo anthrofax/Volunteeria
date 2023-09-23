@@ -146,7 +146,7 @@
 
     <section class="tips-scrollable-element p-3 ml-10 overflow-x-auto whitespace-nowrap rounded-l-lg pb-16">
       <?php
-      include('../config/config.php');
+      include('../../config/config.php');
       $query = mysqli_query($koneksi, "SELECT * FROM tips ");
       while ($tips = mysqli_fetch_array($query)) {
       ?>

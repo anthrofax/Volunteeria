@@ -52,7 +52,7 @@
       </a>
       <h2 class="text-center text-lg sm:text-3xl font-bold tracking-wide text-palewhite">Sign Up</h2>
 
-      <form class="text-xs sm:text-base" action="../config/connect.php" method="post" onsubmit="return validateForm()">
+      <form class="text-xs sm:text-base" action="../../config/connect.php" method="post" onsubmit="return validateForm()">
         <div class="flex flex-col my-4 sm:my-7">
           <label for="name" class="text-palewhite">Nama Lembaga</label>
           <input type="text" name="name" id="name" class="mt-2 p-2 focus:outline-none focus:ring-0 rounded text-xs sm:text-base text-black1" placeholder="Masukkan nama" required />

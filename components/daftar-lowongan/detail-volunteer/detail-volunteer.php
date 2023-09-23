@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth ">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,30 +9,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&family=Inter:wght@100;200;400;600;700&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
-  <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
-  <script src="../../node_modules/preline/dist/preline.js"></script>
+  <script src="../../../node_modules/preline/dist/preline.js"></script>
 
-  <link rel="stylesheet" href="../../assets/style/output.css" />
-  <script defer type="module" src="../../assets/js/daftar-lowongan/daftarLowonganController.js"></script>
-  </script>
-
+  <link rel="stylesheet" href="../../../assets/style/output.css" />
+  <script defer type="module" src="../../../assets/js/daftar-lowongan/detail-volunteer/detailVolunteerController.js"></script>
   <title>Volunteeria</title>
 </head>
 
 <body class="bg-white2 dark:bg-black2 font-poppins">
-  <!-- Back to Top Button -->
-  <a href="#" class="fixed bottom-5 right-5 rounded-full bg-purple1 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-500 ease-in-out hover:bg-palewhite hover:shadow-lg hover:text-purple1 z-20" id="btn-back-to-top">
-    <svg aria-hidden="true" focusable="false" data-prefix="fas" class="h-4 w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-      <path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path>
-    </svg>
-  </a>
   <!-- Overlay Background -->
   <div class="overlay-bg bg-black opacity-50 fixed left-0 right-0 bottom-0 top-0 z-30 hidden"></div>
   <!-- Navbar -->
   <nav class="bg-white dark:bg-black1 py-3 sm:py-4 lg:py-6 sm:pr-20 sm:pl-16 max-sm:px-5 flex items-center justify-between drop-shadow-[0_ 5px_15px_white] text-black1 dark:text-palewhite relative hover:opacity-100 duration-500 z-20 backdrop-blur-md">
-        <a href="../../index.html" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm mt-2 flex items-center gap-x-3 max-sm:gap-x-2  nav-links group">
-          <img src="../../assets/img/logo2dark.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto dark:hidden  group-hover:-translate-y-2 transition-all" />
-          <img src="../../assets/img/logo2white.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto hidden dark:block group-hover:-translate-y-2 transition-all" />
+        <a href="../../../index.html" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm mt-2 flex items-center gap-x-3 max-sm:gap-x-2  nav-links group">
+          <img src="../../../assets/img/logo2dark.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto dark:hidden  group-hover:-translate-y-2 transition-all" />
+          <img src="../../../assets/img/logo2white.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto hidden dark:block group-hover:-translate-y-2 transition-all" />
           <h1>Volunteeria</h1>
         </a>
 
@@ -77,10 +68,10 @@
 
     <ul class="hidden xl:flex gap-x-5 text-sm items-center">
       <li>
-        <a href="#" class="nav-links relative active-link text-purple1 after:scale-100">Lowongan Volunteer</a>
+        <a href="../daftar-lowongan.php" class="nav-links relative active-link text-purple1 after:scale-100">Lowongan Volunteer</a>
       </li>
       <li>
-        <a href="../tips-volunteer/tips-volunteer.php" class="nav-links hoverable-link">Tips Volunteer</a>
+        <a href="../../tips-volunteer/tips-volunteer.php" class="nav-links hoverable-link">Tips Volunteer</a>
       </li>
       <li>
         <div class="hs-dropdown" data-hs-dropdown-placement="bottom-right" data-hs-dropdown-offset="30">
@@ -113,17 +104,17 @@
   <aside id="default-sidebar" class="xl:hidden side-navbar fixed top-0 left-0 z-50 w-64 h-screen transition-transform -translate-x-full" aria-label="Sidebar">
     <div class="h-full px-3 py-10 overflow-y-auto bg-gray-50 dark:bg-black1">
       <ul class="space-y-2 font-medium">
-        <li>
-          <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
-            <img src="../../assets/img/daftar-lowongan.svg" alt="" width="35px" class="dark:hidden" />
-            <img src="../../assets/img/daftar-lowongan-light.svg" alt="" width="35px" class="hidden dark:inline-block" />
+      <li>
+          <a href="../daftar-lowongan.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
+          <img src="../../../assets/img/daftar-lowongan.svg" alt="" width="35px" class="dark:hidden" />
+            <img src="../../../assets/img/daftar-lowongan-light.svg" alt="" width="35px" class="hidden dark:inline-block" />
             <span class="flex-1 ml-3 whitespace-nowrap text-purple1">Lowongan Volunteer</span>
           </a>
         </li>
         <li>
-          <a href="../tips-volunteer/tips-volunteer.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
-            <img src="../../assets/img/tips-volunteer2.svg" alt="" width="35px" class="dark:hidden" />
-            <img src="../../assets/img/tips-volunteer-light.svg" alt="" width="35px" class="hidden dark:inline-block" />
+          <a href="../../tips-volunteer/tips-volunteer.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
+          <img src="../../../assets/img/tips-volunteer2.svg" alt="" width="35px" class="dark:hidden" />
+            <img src="../../../assets/img/tips-volunteer-light.svg" alt="" width="35px" class="hidden dark:inline-block" />
             <span class="flex-1 ml-3 whitespace-nowrap">Tips Volunteer</span>
           </a>
         </li>
@@ -131,104 +122,82 @@
     </div>
   </aside>
 
-  <!-- Search Navbar Section -->
-  <nav class="search-nav p-5 bg-purple1 dark:bg-black2 h-fit hover:opacity-100 duration-500">
-    <form>
-      <div class="relative">
-        <div class="absolute inset-y-0 w-10 flex items-center pointer-events-none z-10">
-          <img src="../../assets/img/locationpurple.svg" alt="" class="w-7 h-7 absolute left-1/2 -translate-x-1/2" />
-        </div>
-        <input type="text" id="default-search" class="search-location block w-full p-4 pl-10 text-sm text-black1 dark:text-palewhite rounded-lg bg-white dark:bg-black1 dark:focus:ring-purple1 dark:focus:border-purple1 dark:placeholder-palewhite border-none drop-shadow-[0_0_1px_rgba(255,255,255,0.8)]" placeholder="Area, kota, & daerah..." required />
-      </div>
-    </form>
-  </nav>
+  <?php
+  include('../../../config/config.php');
 
-  <!-- Section Daftar Lowongan -->
-  <main class="flex flex-col py-5 bg-white dark:bg-black1 dark:text-palewhite relative">
-    <p class="jumlah-lowongan text-black1 dark:text-palewhite text-sm mx-auto lg:ml-8 mb-5 w-[80%] lg:w-[400px] text-center lg:text-left">Terdapat 6 lowongan yang tersedia saat ini.</p>
+  // memastikan job_id ada dalam parameter URL
+  if (isset($_GET['job_id'])) {
+    $job_id = $_GET['job_id'];
 
-    <ul class="lowongan-container flex flex-col min-h-screen px-8 items-center gap-5 lg:w-[35vw]">
-      <?php
-      include('../config/config.php');
-      $query = mysqli_query($koneksi, "SELECT * FROM suntings ");
-      while ($lowongan = mysqli_fetch_array($query)) {
-        $job_id = $lowongan['id'];
-        ?>
-            <li class="daftar-lowongan" data-id="<?= $job_id ?>">
-              <a href="./detail-volunteer/detail-volunteer.php?job_id=<?= $job_id ?>">
-                <h1 class="text-lg mt-5 text-purple1"><?php echo $lowongan['posisi'] ?></h1>
-                <p><?php echo $lowongan['nama_agency'] ?></p>
-                <h3 class="mt-3 font-semibold location-data"><?php echo $lowongan['lokasi'] ?></h3>
+    // Query database untuk mendapatkan detail pekerjaan dengan job_id tertentu
+    $query = mysqli_query($koneksi, "SELECT * FROM suntings WHERE id = $job_id");
+    $detail_volunteer = mysqli_fetch_array($query);
 
-                <p class="mt-5">
-                  Kriteria <br />
-                  <?php echo $lowongan['kriteria'] ?>
-                </p>
-              </a>
-            </li>
-      <?php } ?>
-    </ul>
+    // memastikan data ditemukan sebelum menampilkan detail
+    if ($detail_volunteer) {
+      ?>
+              <main class="dark:bg-black2" data-id="<?= $detail_volunteer['id'] ?>">
+                <section class="px-8 text-center lg:text-left py-20 bg-white dark:bg-black1 dark:text-palewhite flex flex-col lg:flex-row lg:items-center justify-start gap-5 lg:justify-between relative">
+                  <a href="../daftar-lowongan.php" class="left-3 top-5 absolute w-10 h-10 bg-purple1 hover:bg-palewhite duration-500 rounded-full flex items-center justify-center backdrop-blur-xl bg-opacity-80">
+                    <img src="../../../assets/img/backwhite2.svg" alt="Back Logo" class="w-5 h-5" />
+                  </a>
+                  <div>
+                    <h1 class="font-bold text-lg lg:text-xl mt-3"><?php echo $detail_volunteer['posisi'] ?></h1>
+                    <h2 class="font-semibold text-base lg:text-lg"><?php echo $detail_volunteer['nama_agency'] ?></h2>
+                    <p class="text-sm lg:text-base"><?php echo $detail_volunteer['lokasi'] ?></p>
+                  </div>
 
-    <!-- Detail Volunteer (Area kanan, khusus untuk tampilan laptop) -->
-    <div class="volunteer-detail-parent overflow-y-scroll fixed right-0 w-[65vw] h-[70%] hidden lg:block bg-white dark:bg-black2 shadow-[0_0_25px_-10px_rgba(0,0,0,0.3)] dark:shadow-[0_0_25px_-15px_rgba(95,122,219,0.5)] rounded-lg">
-      <div class="main-image flex flex-col absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center text-black1 dark:text-palewhite text-center">
-        <img src="../../assets/img/wehave.png" alt="" class="w-64 mb-5" />
-        <h3 class="font-semibold text-xl">Tersedia berbagai jenis lowongan yang mungkin cocok untuk mu</h3>
-        <p>Pilih salah satu lowongan volunteer untuk melihat lebih lanjut</p>
-      </div>
+                  <a href="<?php echo $detail_volunteer['link_form'] ?>" target="blank"><button class="px-5 rounded-md bg-purple1 w-full h-12 mt-10 mx-auto text-white hover:bg-purple1/90 duration-100">Apply Now</button></a>
+                </section>
 
-      <?php
-      include('../config/config.php');
-      $query = mysqli_query($koneksi, "SELECT * FROM suntings ");
-      while ($daftar_lowongan = mysqli_fetch_array($query)) {
-        $job_id = $daftar_lowongan['id'];
-        ?>
-            <div class="volunteer-detail hidden" data-id="<?= $daftar_lowongan['id'] ?>">
-              <section class="p-5 bg-white dark:bg-black1 dark:text-palewhite rounded-b-lg text-left">
-                <div class="flex justify-between mb-5 text-purple1">
-                  <a href="./detail-volunteer/detail-volunteer.php?job_id=<?= $job_id ?>">View in full screen</a>
-                  <a href="" class="close-detail-volunteer">Close</a>
-                </div>
-                <h1 class="font-bold text-lg mt-8 text-center"><?php echo $daftar_lowongan['posisi'] ?></h1>
-                <h2 class="font-semibold text-base mt-2 text-center"><?php echo $daftar_lowongan['nama_agency'] ?></h2>
-                <p class="text-sm text-center"><?php echo $daftar_lowongan['lokasi'] ?></p>
+                <section class="mt-5 px-5 py-12 bg-white dark:bg-black1 dark:text-palewhite text-sm lg:text-base">
+                  <p>
+                    Kuota penerimaan : <?php echo $detail_volunteer['kuota'] ?><br> <br>
+                  </p>
 
-                <p class="mt-16">
-                  Kuota penerimaan : <?php echo $daftar_lowongan['kuota'] ?> <br />
-                  <br />
-                </p>
+                  <p>
+                    Kriteria <br />
+                    <?php echo $detail_volunteer['kriteria'] ?>
+                    <br />
+                  </p>
 
-                <p>
-                  Job Desk <br />
-                  <?php echo $daftar_lowongan['jobdesk'] ?>
-                  <br />
-                </p>
+                  <p>
+                    Job Desk <br />
+                    <?php echo $detail_volunteer['jobdesk'] ?>
+                    <br />
+                  </p>
 
-                <p>
-                  Benefit <br />
-                  <?php echo $daftar_lowongan['benefit'] ?>
-                  <br />
-                </p>
+                  <p>
+                    Benefit <br />
+                    <?php echo $detail_volunteer['benefit'] ?> <br>
+                  </p>
 
-                <p>
-                  Kontak <br />
-                  Nomor telepon: <?php echo $daftar_lowongan['telepon'] ?> <br />
-                  Instagram: <?php echo $daftar_lowongan['instagram'] ?> <br />
-                </p>
+                  <p>
+                    Kontak <br />
+                    Telepon : <?php echo $detail_volunteer['telepon'] ?> <br>
+                    Email : <?php echo $detail_volunteer['email'] ?> <br>
+                    Instagram : <?php echo $detail_volunteer['instagram'] ?>
+                  </p>
 
-                <a href="<?php echo $daftar_lowongan['link_form'] ?>" target="blank"><button class="rounded-md bg-purple1 w-80 h-12 mt-10 mx-auto text-white hover:bg-purple1/90 duration-100">Apply Now</button></a>
-              </section>         
-            </div>
-      <?php } ?>
-    </div>
-  </main>
+                </section>
+              </main>
+          <?php
+    } else {
+      // Handle jika data tidak ditemukan
+      echo "Data pekerjaan tidak ditemukan.";
+    }
+  } else {
+    // Handle jika parameter job_id tidak ada dalam URL
+    echo "Parameter job_id tidak ditemukan.";
+  }
+  ?>
 
   <footer class="bg-white dark:bg-black1 drop-shadow-[0_-3px_10px_rgba(95,122,219,0.8)]">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
       <div class="md:flex md:justify-between">
         <div class="mb-10 md:mb-0">
-          <a href="../../index.html" class="flex items-center ">
-            <img src="../../assets/img/logo.svg" class="h-7 lg:h-8 w-auto mr-3" alt="Volunteeria Logo" />
+          <a href="../../../index.html" class="flex items-center ">
+            <img src="../../../assets/img/logo.svg" class="h-7 lg:h-8 w-auto mr-3" alt="Volunteeria Logo" />
             <span class="self-center text-lg lg:text-2xl font-semibold dark:text-white tracking-widest ">VOLUNTEERIA</span>
           </a>
         </div>
@@ -237,13 +206,13 @@
             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium">
               <li class="mb-4">
-                <a href="../tentang-kami/tentang-kami.php" class="hover:underline">Tentang Kami</a>
+                <a href="../../tentang-kami/tentang-kami.php" class="hover:underline">Tentang Kami</a>
               </li>
               <li class="mb-4">
-                <a href="../../index.html#faq-section" class="hover:underline">FAQ</a>
+                <a href="../../../index.html#faq-section" class="hover:underline">FAQ</a>
               </li>
               <li>
-                <a href="../tentang-kami/tentang-kami.php#contact-section" class="hover:underline">Kontak Kami</a>
+                <a href="../../tentang-kami/tentang-kami.php#contact-section" class="hover:underline">Kontak Kami</a>
               </li>
             </ul>
           </div>
@@ -251,10 +220,10 @@
             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Features</h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium">
               <li class="mb-4">
-                <a href="#" class="hover:underline">Daftar Lowongan</a>
+                <a href="../daftar-lowongan.php" class="hover:underline">Daftar Lowongan</a>
               </li>
               <li>
-                <a href="../tips-volunteer/tips-volunteer.php" class="hover:underline">Tips Volunteer</a>
+                <a href="../../tips-volunteer/tips-volunteer.php" class="hover:underline">Tips Volunteer</a>
               </li>
             </ul>
           </div>
@@ -273,7 +242,7 @@
       </div>
       <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Volunteeria™</a>. All Rights Reserved. </span>
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="../../../index.html" class="hover:underline">Volunteeria™</a>. All Rights Reserved. </span>
         <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
           <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
             <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
