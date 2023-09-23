@@ -17,8 +17,9 @@ Volunteeria merupakan aplikasi berbasis web yang bertujuan untuk memfasilitasi p
 2. Pencarian Berdasarkan Lokasi: Pengguna dapat mencari lowongan sukarelawan berdasarkan lokasi/domisili yang diinginkan.
 3. Deskripsi Lowongan: Setiap lowongan akan memiliki deskripsi lengkap, persyaratan, dan kontak yang jelas.
 4. Penyamapaian Berita/Edukasi: Pengguna dapat mengakses sumber daya artikel yang membahas mengenai kegiatan sukarelawan, seperti tips, berita, lowongan eksternal, & berita di halaman Tips Volunteer pada situs web Volunteeria.
-5. Pengunggahan Lowongan Sukarelawan Bagi Para Perekrut: Para perekrut dapat mengunggah lowongan sukarelawan baru melalui halaman admin yang telah disediakan Volunteeria agar dapat tampil di halaman Daftar Lowongan. 6. Penunggahan Berita Baru Mengenai Kegiatan Sukarelawan: Selain mengunggah lowongan baru, pengguna juga bisa mengunggah berita mengenai kegiatan sukarelawan melalui halaman admin yang sama. Dengan memilih opsi "Tips" pada halaman admin tersebut.
-6. Dark Mode (Mode Gelap): Pengguna bisa melakukan personalisasi pada tampilan pada website Volunteeria sesuai dengan apa yang lebih disukai (Light Mode / Dark Mode)
+5. Pengunggahan Lowongan Sukarelawan Bagi Para Perekrut: Para perekrut dapat mengunggah lowongan sukarelawan baru melalui halaman admin yang telah disediakan Volunteeria agar dapat tampil di halaman Daftar Lowongan. 
+6. Penunggahan Berita Baru Mengenai Kegiatan Sukarelawan: Selain mengunggah lowongan baru, pengguna juga bisa mengunggah berita mengenai kegiatan sukarelawan melalui halaman admin yang sama. Dengan memilih opsi "Tips" pada halaman admin tersebut.
+7. Dark Mode (Mode Gelap): Pengguna bisa melakukan personalisasi pada tampilan pada website Volunteeria sesuai dengan apa yang lebih disukai (Light Mode / Dark Mode)
 
 ## Struktur Direktori
 📦Volunteeria
