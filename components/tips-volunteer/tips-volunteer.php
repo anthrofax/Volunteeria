@@ -156,7 +156,7 @@
           </div>
 
           <div class="mt-3 p-3">
-            <a target="_blank" href="https://www.umn.ac.id/dear-mahasiswa-persiapkan-5-hal-ini-sebelum-terjun-jadi-volunteer/" class="font-semibold bg-gradient-to-l from-purple1 to-purple2 bg-[length:0%_4px] bg-[left_bottom] hover:bg-[length:100%_4px] duration-1000 bg-no-repeat inline">
+            <a target="_blank" href="<?php echo $tips['link'] ?>" class="font-semibold bg-gradient-to-l from-purple1 to-purple2 bg-[length:0%_4px] bg-[left_bottom] hover:bg-[length:100%_4px] duration-1000 bg-no-repeat inline">
               <?php echo $tips['slug'] ?>
             </a>
           </div>
