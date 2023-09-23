@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&family=Inter:wght@100;200;400;600;700&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="../src/style/output.css" />
+  <link rel="stylesheet" href="../../assets/style/output.css" />
 
   <style>
     * {
@@ -31,28 +31,26 @@
     }
   </style>
   <title>Volunteeria</title>
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body class="font-poppins">
-  <img src="../src/img/background.svg" alt="" class="background-svg block -z-10 lg:hidden" />
+  <img src="../../assets/img/background.svg" alt="" class="background-svg block -z-10 lg:hidden" />
 
   <!-- Parent Element -->
   <div class="lg:w-full h-screen flex flex-col lg:flex-row items-center justify-center">
     <div class="lg:hidden text-black1 text-lg sm:text-2xl flex flex-col items-center">
-      <img src="../src/img/logo3.svg" alt="Volunteeria Mobile Logo" class="w-16 sm:w-[85px]" />
+      <img src="../../assets/img/logo3.svg" alt="Volunteeria Mobile Logo" class="w-16 sm:w-[85px]" />
       <h1>Volunteeria</h1>
     </div>
 
     <!-- Left Area -->
     <div class="lg:w-full sm:w-5/6 md:w-2/3 xl:w-1/3 2xl:w-1/4 w-[80vw] h-[70vh] lg:h-full bg-black1/50 backdrop-blur-xl lg:bg-black1  flex flex-col items-center justify-start py-8 px-[8vw] lg:px-10 overflow-scroll lg:overflow-auto rounded-xl lg:rounded-none">
 
-      <a href="../index.html" class="absolute left-4 top-4 w-12 h-12 bg-purple1 hover:bg-black2 duration-500 rounded-full flex items-center justify-center backdrop-blur-xl bg-opacity-80">
-        <img src="../src/img/arrow-white.svg" alt="Back Logo" class="w-3" />
+      <a href="../../index.html" class="absolute left-4 top-4 w-12 h-12 bg-purple1 hover:bg-black2 duration-500 rounded-full flex items-center justify-center backdrop-blur-xl bg-opacity-80">
+        <img src="../../assets/img/arrow-white.svg" alt="Back Logo" class="w-3" />
       </a>
       <h2 class="text-center text-lg sm:text-3xl font-bold tracking-wide text-palewhite">Sign Up</h2>
-      <!-- <p class="text-center text-xs sm:text-base text-palewhite mt-2">Sudah punya akun? <a href="../login/login.html" class="text-purple1 hover:text-purple1 hover:underline" title="Sign In">Login di sini</a></p> -->
 
       <form class="text-xs sm:text-base" action="../config/connect.php" method="post" onsubmit="return validateForm()">
         <div class="flex flex-col my-4 sm:my-7">
@@ -114,10 +112,10 @@
 
     <!-- Right Area -->
     <div class="hidden lg:flex lg:w-1/2 xl:w-2/3 2xl:w-3/4 h-full bg-cover relative">
-      <img src="../src/img/background.svg" alt="" class="background-svg hidden lg:block -z-10" />
+      <img src="../../assets/img/background.svg" alt="" class="background-svg hidden lg:block -z-10" />
       <div class="lg:w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-30">
         <div class="flex items-center justify-center">
-          <img src="../src/img/logo2.svg" width="80px" alt="" />
+          <img src="../../assets/img/logo2.svg" width="80px" alt="" />
           <h1 class="text-3xl xl:text-4xl 2xl:text-5xl font-bold text-palewhite tracking-wider">Volunteeria</h1>
         </div>
         <p class="text-palewhite mt-4 px-16 text-center">Daftarkan akunmu & raih pengalaman berharga.</p>

@@ -8,12 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&family=Inter:wght@100;200;400;600;700&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
-    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script src="../node_modules/preline/dist/preline.js"></script>
+    <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../../node_modules/preline/dist/preline.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <link rel="stylesheet" href="../src/style/output.css" />
-    <script defer type="module" src="../src/js/tentang-kami/tentangKamiController.js"></script>
+    <link rel="stylesheet" href="../../assets/style/output.css" />
+    <script defer type="module" src="../../assets/js/tentang-kami/tentangKamiController.js"></script>
 
     <script>
       // You can set control options to change the default position or style of many
@@ -60,9 +60,9 @@
     <nav
       class="bg-white dark:bg-black1 py-3 sm:py-4 lg:py-6 sm:pr-20 sm:pl-16 max-sm:px-5 flex items-center justify-between drop-shadow-[0_ 5px_15px_white] text-black1 dark:text-palewhite relative hover:opacity-100 duration-500 z-20 backdrop-blur-md"
     >
-      <a href="../index.html" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm mt-2 flex items-center gap-x-3 max-sm:gap-x-2 nav-links group">
-        <img src="../src/img/logo2dark.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto dark:hidden group-hover:-translate-y-2 transition-all" />
-        <img src="../src/img/logo2white.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto hidden dark:block group-hover:-translate-y-2 transition-all" />
+      <a href="../../index.html" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm mt-2 flex items-center gap-x-3 max-sm:gap-x-2 nav-links group">
+        <img src="../../assets/img/logo2dark.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto dark:hidden group-hover:-translate-y-2 transition-all" />
+        <img src="../../assets/img/logo2white.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto hidden dark:block group-hover:-translate-y-2 transition-all" />
         <h1>Volunteeria</h1>
       </a>
 
@@ -127,10 +127,10 @@
       </div>
 
       <ul class="hidden lg:flex gap-x-8 text-base items-center">
-        <li><a href="" class="nav-links relative active-link text-purple1 after:scale-100">TENTANG KAMI</a></li>
-        <li><a href="../signup/signup.php" class="nav-links hoverable-link">DAFTAR PEREKRUT</a></li>
+        <li><a href="#" class="nav-links relative active-link text-purple1 after:scale-100">TENTANG KAMI</a></li>
+        <li><a href="../../component/signup/signup.php" class="nav-links hoverable-link">DAFTAR PEREKRUT</a></li>
         <li class="btn px-5 py-8 flex items-center justify-center group border border-black1 dark:border-palewhite">
-          <a href="../daftar-lowongan/daftar-lowongan.php" class="nav-links text-black1 dark:text-palewhite group-hover:text-white font-medium tracking-widest">VOLUNTEERS/JOBS</a>
+          <a href="../../component/daftar-lowongan/daftar-lowongan.php" class="nav-links text-black1 dark:text-palewhite group-hover:text-white font-medium tracking-widest">VOLUNTEERS/JOBS</a>
         </li>
         <li>
           <div class="hs-dropdown" data-hs-dropdown-placement="bottom-right" data-hs-dropdown-offset="30">
@@ -199,7 +199,7 @@
             </a>
           </li>
           <li>
-            <a href="../signup/signup.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
+            <a href="../../component/signup/signup.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
               <svg
                 class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                 aria-hidden="true"
@@ -219,7 +219,7 @@
             </a>
           </li>
           <li>
-            <a href="../daftar-lowongan/daftar-lowongan.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
+            <a href="../../component/daftar-lowongan/daftar-lowongan.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
               <svg
                 class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                 aria-hidden="true"
@@ -240,7 +240,7 @@
 
     <main class="w-full h-fit bg-white2">
       <section class="first-section h-[576px] w-full bg-white2 dark:bg-black2 flex justify-center items-center">
-        <div class="w-[85%] h-[85%] bg-blend-overlay mx-auto bg-no-repeat bg-cover bg-fixed bg-black1 flex items-center justify-center" style="background-image: url(../src/img/partner2.jpeg)">
+        <div class="w-[85%] h-[85%] bg-blend-overlay mx-auto bg-no-repeat bg-cover bg-fixed bg-black1 flex items-center justify-center" style="background-image: url(../../assets/img/partner2.jpeg)">
           <h1 class="text-white text-3xl sm:text-5xl font-bold tracking-widest">ABOUT US</h1>
         </div>
       </section>
@@ -256,7 +256,7 @@
 
         <ul class="py-16 px-10 flex flex-col sm:flex-row gap-10">
           <li class="identity-list">
-            <img src="../src/img/who.jpeg" alt="" class="w-full h-auto max-w-sm" />
+            <img src="../../assets/img/who.jpeg" alt="" class="w-full h-auto max-w-sm" />
             <h3 class="identity-title text-left">SIAPA KAMI</h3>
             <p class="identity-caption text-left">
               Kami adalah komunitas sukarelawan yang bersemangat dan peduli. Dengan beragam latar belakang dan keahlian, kami bersatu dalam tekad untuk memberikan dampak positif dalam masyarakat. Bergabunglah dengan kami dan kenali lebih
@@ -264,7 +264,7 @@
             </p>
           </li>
           <li class="identity-list">
-            <img src="../src/img/mission.jpeg" alt="" class="w-full h-auto max-w-sm" />
+            <img src="../../assets/img/mission.jpeg" alt="" class="w-full h-auto max-w-sm" />
             <h3 class="identity-title text-right sm:text-left">MISI KAMI</h3>
             <p class="text-right sm:text-left identity-caption">
               Misi kami adalah menginspirasi dan memfasilitasi aksi sukarela yang bermakna. Kami berkomitmen untuk menghubungkan para sukarelawan dengan proyek-proyek yang sesuai dengan minat dan keterampilan mereka, sehingga bersama-sama
@@ -272,7 +272,7 @@
             </p>
           </li>
           <li class="identity-list">
-            <img src="../src/img/vision.jpeg" alt="" class="w-full h-auto max-w-sm" />
+            <img src="../../assets/img/vision.jpeg" alt="" class="w-full h-auto max-w-sm" />
             <h3 class="identity-title text-center sm:text-left">VISI KAMI</h3>
             <p class="text-center sm:text-left identity-caption">
               Visi kami adalah menciptakan dunia yang dipenuhi dengan aksi-aksi sukarela yang membawa perubahan positif. Kami bermimpi tentang masyarakat yang saling peduli dan berbagi, di mana setiap tindakan baik memiliki dampak jauh
@@ -283,7 +283,7 @@
       </section>
 
       <section class="h-[450px] w-full bg-white2 dark:bg-black2 flex justify-center items-center">
-        <div class="w-[85%] h-[85%] bg-blend-overlay mx-auto bg-no-repeat bg-cover bg-fixed bg-black1 flex items-center justify-center px-5 lg:px-10" style="background-image: url(../src/img/together.jpeg)">
+        <div class="w-[85%] h-[85%] bg-blend-overlay mx-auto bg-no-repeat bg-cover bg-fixed bg-black1 flex items-center justify-center px-5 lg:px-10" style="background-image: url(../../assets/img/together.jpeg)">
           <h1 class="text-white text-xl sm:text-2xl lg:text-3xl font-medium tracking-wider text-center">SAKSIKAN BAGAIMANA KAMI MEMBUAT SEMUA NYA MENJADI LEBIH TERHUBUNG</h1>
         </div>
       </section>
@@ -296,7 +296,7 @@
           <div class=" flex flex-col w-[80%] max-w-sm h-fit bg-white2 dark:bg-black2 rounded-xl py-4 hover:border-4 border-purple1 transition-all" style="cursor: pointer;">
             <div class=" grow-[2] flex items-center justify-center py-4">
               <div class="basis-2/3 max-h-[30rem] flex items-center justify-center rounded-full  overflow-hidden bg-purple1 border-2 border-black1 dark:border-palewhite">
-                <img src="../src/img/afridho.png" alt="" class=" w-full h-auto" />
+                <img src="../../assets/img/afridho.png" alt="" class=" w-full h-auto" />
               </div>
             </div>
             <div class=" grow flex items-center justify-center flex-col p-1">
@@ -341,7 +341,7 @@
           <div class=" flex flex-col w-[80%] max-w-sm h-fit bg-white2 dark:bg-black2 rounded-xl py-4 hover:border-4 border-purple1 transition-all" style="cursor: pointer;">
             <div class=" grow-[2] flex items-center justify-center py-4">
               <div class="basis-2/3 max-h-[30rem] flex items-center justify-center rounded-full  overflow-hidden bg-purple1 border-2 border-black1 dark:border-palewhite">
-                <img src="../src/img/alip.png" alt="" class=" w-full h-auto" />
+                <img src="../../assets/img/alip.png" alt="" class=" w-full h-auto" />
               </div>
             </div>
             <div class=" grow flex items-center justify-center flex-col p-1">
@@ -545,7 +545,7 @@
                     <h3 class="font-semibold text-gray-800 dark:text-palewhite">E-Mail</h3>
                     <ul>
                       <li>
-                        <a class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="mailto:afridho@gmail.com"> afridho@gmail.com </a>
+                        <a class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="mailto:afridhoikhsan@gmail.com"> afridhoikhsan@gmail.com </a>
                       </li>
                       <li>
                         <a class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="mailto:arszalzdarker@gmail.com">arszalzdarker@gmail.com</a>
@@ -580,8 +580,8 @@
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-10 md:mb-0">
-            <a href="../index.html" class="flex items-center">
-              <img src="../src/img/logo.svg" class="h-7 lg:h-8 w-auto mr-3" alt="Volunteeria Logo" />
+            <a href="../../index.html" class="flex items-center">
+              <img src="../../assets/img/logo.svg" class="h-7 lg:h-8 w-auto mr-3" alt="Volunteeria Logo" />
               <span class="self-center text-lg lg:text-2xl font-semibold dark:text-white tracking-widest">VOLUNTEERIA</span>
             </a>
           </div>
@@ -593,7 +593,7 @@
                   <a href="#" class="hover:underline">Tentang Kami</a>
                 </li>
                 <li class="mb-4">
-                  <a href="../index.html#faq-section" class="hover:underline">FAQ</a>
+                  <a href="../../index.html#faq-section" class="hover:underline">FAQ</a>
                 </li>
                 <li>
                   <a href="#contact-section" class="hover:underline">Kontak Kami</a>
@@ -604,10 +604,10 @@
               <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Features</h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
-                  <a href="../daftar-lowongan/daftar-lowongan.php" class="hover:underline">Daftar Lowongan</a>
+                  <a href="../../component/daftar-lowongan/daftar-lowongan.php" class="hover:underline">Daftar Lowongan</a>
                 </li>
                 <li>
-                  <a href="../tips-volunteer/tips-volunteer.php" class="hover:underline">Tips Volunteer</a>
+                  <a href="../../component/tips-volunteer/tips-volunteer.php" class="hover:underline">Tips Volunteer</a>
                 </li>
               </ul>
             </div>
@@ -626,7 +626,7 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Volunteeria™</a>. All Rights Reserved. </span>
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="../../index.html" class="hover:underline">Volunteeria™</a>. All Rights Reserved. </span>
           <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
             <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
               <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">

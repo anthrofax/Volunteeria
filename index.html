@@ -11,8 +11,8 @@
     <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
     <script src="./node_modules/preline/dist/preline.js"></script>
 
-    <link rel="stylesheet" href="./src/style/output.css" />
-    <script defer type="module" src="./src/js/company-profile/controller.js"></script>
+    <link rel="stylesheet" href="./assets/style/output.css" />
+    <script defer type="module" src="./assets/js/company-profile/controller.js"></script>
     <title>Volunteeria</title>
   </head>
   <body class="text-black1 dark:text-palewhite font-poppins bg-white dark:bg-black1">
@@ -36,8 +36,8 @@
     <!-- Navbar -->
     <nav class="bg-white dark:bg-black1 py-3 sm:py-4 lg:py-6 sm:pr-20 sm:pl-16 max-sm:px-5 flex items-center justify-between drop-shadow-[0_ 5px_15px_white] text-black1 dark:text-palewhite relative hover:opacity-100 duration-500 z-20 backdrop-blur-md">
         <a href="#" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm mt-2 flex items-center gap-x-3 max-sm:gap-x-2  nav-links group">
-          <img src="./src/img/logo2dark.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto dark:hidden  group-hover:-translate-y-2 transition-all" />
-          <img src="./src/img/logo2white.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto hidden dark:block group-hover:-translate-y-2 transition-all" />
+          <img src="./assets/img/logo2dark.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto dark:hidden  group-hover:-translate-y-2 transition-all" />
+          <img src="./assets/img/logo2white.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto hidden dark:block group-hover:-translate-y-2 transition-all" />
           <h1>Volunteeria</h1>
         </a>
 
@@ -62,21 +62,21 @@
             class="hs-dropdown-menu hs-dropdown-open:opacity-100 mt-2 hidden z-10 transition-[margin,opacity] opacity-0 duration-300 mb-2 origin-bottom-left bg-white shadow-md rounded-lg p-2 space-y-1 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700"
           >
             <a
-              class="hs-auto-mode-active:bg-gray-100 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+              class="hs-auto-mode-active:bg-gray-100 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:bg-palewhite dark:hover:bg-gray-700 dark:hover:text-white"
               href="javascript:;"
               data-hs-theme-click-value="auto"
             >
               Auto (system default)
             </a>
             <a
-              class="hs-default-mode-active:bg-gray-100 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+              class="hs-default-mode-active:bg-gray-100 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:bg-palewhite dark:hover:bg-gray-700 dark:hover:text-white"
               href="javascript:;"
               data-hs-theme-click-value="default"
             >
               Default (light mode)
             </a>
             <a
-              class="hs-dark-mode-active:bg-gray-700 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+              class="hs-dark-mode-active:bg-gray-700 flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:bg-palewhite dark:hover:bg-gray-700 dark:hover:text-white"
               href="javascript:;"
               data-hs-theme-click-value="dark"
             >
@@ -102,10 +102,10 @@
       </div>
 
       <ul class="hidden lg:flex gap-x-8 text-base items-center">
-        <li><a href="./tentang-kami/tentang-kami.php" class="nav-links hoverable-link">TENTANG KAMI</a></li>
-        <li><a href="./signup/signup.php" class="nav-links hoverable-link">DAFTAR PEREKRUT</a></li>
+        <li><a href="./component/tentang-kami/tentang-kami.php" class="nav-links hoverable-link">TENTANG KAMI</a></li>
+        <li><a href="./component/signup/signup.php" class="nav-links hoverable-link">DAFTAR PEREKRUT</a></li>
         <li class="btn px-5 py-8 flex items-center justify-center group border border-black1 dark:border-palewhite">
-          <a href="./daftar-lowongan/daftar-lowongan.php" class="nav-links text-black1 dark:text-palewhite group-hover:text-white font-medium tracking-widest">VOLUNTEERS/JOBS</a>
+          <a href="./component/daftar-lowongan/daftar-lowongan.php" class="nav-links text-black1 dark:text-palewhite group-hover:text-white font-medium tracking-widest">VOLUNTEERS/JOBS</a>
         </li>
         <li>
           <div class="hs-dropdown" data-hs-dropdown-placement="bottom-right" data-hs-dropdown-offset="30">
@@ -158,7 +158,7 @@
       <div class="h-full px-3 py-10 overflow-y-auto bg-gray-50 dark:bg-black1">
         <ul class="space-y-2 font-medium">
           <li>
-            <a href="./tentang-kami/tentang-kami.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
+            <a href="./component/tentang-kami/tentang-kami.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
               <svg
                 class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                 aria-hidden="true"
@@ -174,7 +174,7 @@
             </a>
           </li>
           <li>
-            <a href="./signup/signup.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
+            <a href="./component/signup/signup.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
               <svg
                 class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                 aria-hidden="true"
@@ -194,7 +194,7 @@
             </a>
           </li>
           <li>
-            <a href="./daftar-lowongan/daftar-lowongan.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
+            <a href="./component/daftar-lowongan/daftar-lowongan.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
               <svg
                 class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                 aria-hidden="true"
@@ -216,13 +216,13 @@
     <!-- Jumbotron -->
     <header
       class="jumbotron flex items-center max-sm:justify-center max-sm:py-20 w-full h-screen bg-slate-600 bg-no-repeat bg-cover bg-center bg-blend-multiply duration-[2000ms] relative transition-[background-image]"
-      style="background-image: url(src/img/mainimage.png)"
+      style="background-image: url(assets/img/mainimage.png)"
     >
       <div class="loading-indicator bg-purple1 dark:bg-palewhite h-[3px] w-0 absolute left-0 top-0 ease-in-out duration-[50ms]"></div>
 
       <!-- Prev Button -->
       <button class="prevnext-jumbotron-button left-0 opacity-0">
-        <img src="src/img/arrow-white.svg" alt="" class="w-[40%]" />
+        <img src="assets/img/arrow-white.svg" alt="" class="w-[40%]" />
       </button>
       <div class="jumbotron-text left-1/2 max-lg:-translate-x-1/2 lg:left-16">
         <h2 class="lg:text-4xl sm:text-2xl text-lg text-center lg:text-left tracking-widest font-semibold uppercase opacity-0">Tebarkan Kebaikan Bersama</h2>
@@ -239,7 +239,7 @@
 
       <!-- Next Button -->
       <button class="prevnext-jumbotron-button right-0 opacity-0">
-        <img src="src/img/arrow-white.svg" alt="" class="w-[40%] rotate-180" />
+        <img src="assets/img/arrow-white.svg" alt="" class="w-[40%] rotate-180" />
       </button>
     </header>
 
@@ -286,17 +286,17 @@
       <div class="flex flex-col lg:flex-row">
         <div class="flex flex-col gap-16 lg:gap-20 p-10 left-cont">
           <div class="kontribusi">
-            <img src="./src/img/help-1.jpeg" alt="" class="shadow-[-10px_10px_5px_0_rgba(95,122,219,0.3)] contribution-image" />
+            <img src="./assets/img/help-1.jpeg" alt="" class="shadow-[-10px_10px_5px_0_rgba(95,122,219,0.3)] contribution-image" />
             <h5 class="contribution-header">Peningkatan Kualitas Hidup Komunitas</h5>
             <p class="contribution-caption">Volunteeria telah secara konsisten berkomitmen untuk meningkatkan kualitas hidup komunitas kami melalui berbagai program dan inisiatif sosial</p>
           </div>
           <div class="kontribusi">
-            <img src="./src/img/help-2.jpeg" alt="" class="shadow-[-10px_10px_5px_0_rgba(95,122,219,0.3)] contribution-image" />
+            <img src="./assets/img/help-2.jpeg" alt="" class="shadow-[-10px_10px_5px_0_rgba(95,122,219,0.3)] contribution-image" />
             <h5 class="contribution-header">Menginspirasi Bersama: Kisah Keberhasilan Sukarelawan</h5>
             <p class="contribution-caption">Kisah-kisah inspiratif dari sukarelawan Volunteeria yang telah membuat perbedaan besar dalam hidup orang lain. Mereka adalah pahlawan sejati</p>
           </div>
           <div class="kontribusi">
-            <img src="./src/img/help-3.jpeg" alt="" class="shadow-[-10px_10px_5px_0_rgba(95,122,219,0.3)] contribution-image" />
+            <img src="./assets/img/help-3.jpeg" alt="" class="shadow-[-10px_10px_5px_0_rgba(95,122,219,0.3)] contribution-image" />
             <h5 class="contribution-header">Pemberdayaan Ekonomi</h5>
             <p class="contribution-caption">Volunteeria telah meluncurkan program pelatihan keterampilan, memfasilitasi usaha kecil, dan mendukung wirausaha lokal untuk membantu membangun perekonomian komunitas</p>
           </div>
@@ -306,17 +306,17 @@
 
         <div class="flex flex-col gap-16 lg:pt-60 px-10">
           <div class="kontribusi">
-            <img src="./src/img/help-4.jpeg" alt="" class="shadow-[10px_10px_5px_0_rgba(95,122,219,0.3)] contribution-image" />
+            <img src="./assets/img/help-4.jpeg" alt="" class="shadow-[10px_10px_5px_0_rgba(95,122,219,0.3)] contribution-image" />
             <h5 class="contribution-header">Lingkungan yang Lebih Bersih</h5>
             <p class="contribution-caption">Volunteeria telah memimpin inisiatif kebersihan lingkungan, mengadakan kampanye pembersihan, dan mempromosikan praktik berkelanjutan</p>
           </div>
           <div class="kontribusi">
-            <img src="./src/img/help-5.jpeg" alt="" class="shadow-[10px_10px_5px_0_rgba(95,122,219,0.3)] contribution-image" />
+            <img src="./assets/img/help-5.jpeg" alt="" class="shadow-[10px_10px_5px_0_rgba(95,122,219,0.3)] contribution-image" />
             <h5 class="contribution-header">Mengubah Dunia Satu Aksi Sukarelawan pada Waktunya</h5>
             <p class="contribution-caption">Setiap tindakan sukarelawan adalah langkah kecil menuju perubahan yang lebih besar. Bersama-sama, kami menciptakan dampak positif yang luar biasa</p>
           </div>
           <div class="kontribusi">
-            <img src="./src/img/help-7.jpeg" alt="" class="shadow-[10px_10px_5px_0_rgba(95,122,219,0.3)] contribution-image" />
+            <img src="./assets/img/help-7.jpeg" alt="" class="shadow-[10px_10px_5px_0_rgba(95,122,219,0.3)] contribution-image" />
             <h5 class="contribution-header">Ribuan Sukarelawan Beraksi</h5>
             <p class="contribution-caption">Dengan dukungan ribuan sukarelawan, Volunteeria telah berhasil menjangkau berbagai sektor dan memenuhi berbagai kebutuhan masyarakat</p>
           </div>
@@ -567,30 +567,30 @@
         <p class="mt-5 text-sm sm:text-base w-[80%] leading-8 text-center mx-auto mb-10">Kami sudah diverifikasi & teruji oleh</p>
       </div>
 
-      <div class="flex gap-6 flex-wrap mx-auto mt-10 border justify-center p-20 bg-slate-500 bg-no-repeat bg-blend-multiply bg-cover bg-center bg-fixed" style="background-image: url(src/img/supportimage.png)">
+      <div class="flex gap-6 flex-wrap mx-auto mt-10 border justify-center p-20 bg-slate-500 bg-no-repeat bg-blend-multiply bg-cover bg-center bg-fixed" style="background-image: url(assets/img/supportimage.png)">
         <div class="organization-card">
-          <img src="./src/img/Asset 1.svg" alt="" class="organization-img" />
+          <img src="./assets/img/Asset 1.svg" alt="" class="organization-img" />
           <h1 class="text-[#00499D] font-semibold text-lg mt-1">BNPB</h1>
         </div>
         <div class="organization-card">
-          <img src="./src/img/Asset 2.svg" alt="" class="organization-img" />
+          <img src="./assets/img/Asset 2.svg" alt="" class="organization-img" />
         </div>
         <div class="organization-card">
-          <img src="./src/img/Asset 13.svg" alt="" class="organization-img" />
+          <img src="./assets/img/Asset 13.svg" alt="" class="organization-img" />
           <p class="text-green-950 font-semibold text-[10px] mt-3">KEMENTRIAN SOSIAL</p>
           <p class="text-green-950 font-semibold text-[10px]">REPUBLIK INDONESIA</p>
         </div>
         <div class="organization-card">
-          <img src="./src/img/Asset 7.svg" alt="" class="organization-img" />
+          <img src="./assets/img/Asset 7.svg" alt="" class="organization-img" />
           <p class="text-green-950 font-semibold text-[10px] mt-1">BAZNAS</p>
         </div>
         <div class="organization-card">
-          <img src="./src/img/Asset 5.svg" alt="" class="organization-img" />
+          <img src="./assets/img/Asset 5.svg" alt="" class="organization-img" />
           <p class="text-[#00499D] font-semibold text-[8px] mt-3">YAYASAN PEDULI</p>
           <p class="text-red-600 font-semibold text-[8px]">KESEJAHTERAAN BERSAMA</p>
         </div>
         <div class="organization-card">
-          <img src="./src/img/Asset 6.svg" alt="" class="organization-img" />
+          <img src="./assets/img/Asset 6.svg" alt="" class="organization-img" />
           <h1 class="text-black1 font-semibold text-sm mt-3 italic">care for humanity</h1>
         </div>
       </div>
@@ -699,7 +699,7 @@
         <div class="md:flex md:justify-between">
           <div class="mb-10 md:mb-0">
             <a href="#" class="flex items-center">
-              <img src="./src/img/logo.svg" class="h-7 lg:h-8 w-auto mr-3" alt="Volunteeria Logo" />
+              <img src="./assets/img/logo.svg" class="h-7 lg:h-8 w-auto mr-3" alt="Volunteeria Logo" />
               <span class="self-center text-lg lg:text-2xl font-semibold dark:text-white tracking-widest">VOLUNTEERIA</span>
             </a>
           </div>
@@ -708,13 +708,13 @@
               <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
-                  <a href="./tentang-kami/tentang-kami.php" class="hover:underline">Tentang Kami</a>
+                  <a href="./component/tentang-kami/tentang-kami.php" class="hover:underline">Tentang Kami</a>
                 </li>
                 <li class="mb-4">
                   <a href="#faq-section" class="hover:underline">FAQ</a>
                 </li>
                 <li>
-                  <a href="./tentang-kami/tentang-kami.php#contact-section" class="hover:underline">Kontak Kami</a>
+                  <a href="./component/tentang-kami/tentang-kami.php#contact-section" class="hover:underline">Kontak Kami</a>
                 </li>
               </ul>
             </div>
@@ -722,10 +722,10 @@
               <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Features</h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
-                  <a href="./daftar-lowongan/daftar-lowongan.php" class="hover:underline">Daftar Lowongan</a>
+                  <a href="./component/daftar-lowongan/daftar-lowongan.php" class="hover:underline">Daftar Lowongan</a>
                 </li>
                 <li>
-                  <a href="./tips-volunteer/tips-volunteer.php" class="hover:underline">Tips Volunteer</a>
+                  <a href="./component/tips-volunteer/tips-volunteer.php" class="hover:underline">Tips Volunteer</a>
                 </li>
               </ul>
             </div>

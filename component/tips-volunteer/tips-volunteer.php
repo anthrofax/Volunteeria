@@ -9,10 +9,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&family=Inter:wght@100;200;400;600;700&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
-  <script src="../node_modules/preline/dist/preline.js"></script>
+  <script src="../../node_modules/preline/dist/preline.js"></script>
 
-  <link rel="stylesheet" href="../src/style/output.css" />
-  <script defer type="module" src="../src/js/tips-volunteer/tipsVolunteerController.js"></script>
+  <link rel="stylesheet" href="../../assets/style/output.css" />
+  <script defer type="module" src="../../assets/js/tips-volunteer/tipsVolunteerController.js"></script>
 
   <title>Volunteeria</title>
 </head>
@@ -22,9 +22,9 @@
   <div class="overlay-bg bg-black opacity-50 fixed left-0 right-0 bottom-0 top-0 z-30 hidden"></div>
    <!-- Navbar -->
    <nav class="bg-white dark:bg-black1 py-3 sm:py-4 lg:py-6 sm:pr-20 sm:pl-16 max-sm:px-5 flex items-center justify-between drop-shadow-[0_ 5px_15px_white] text-black1 dark:text-palewhite relative hover:opacity-100 duration-500 z-20 backdrop-blur-md">
-        <a href="../index.html" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm mt-2 flex items-center gap-x-3 max-sm:gap-x-2  nav-links group">
-          <img src="../src/img/logo2dark.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto dark:hidden  group-hover:-translate-y-2 transition-all" />
-          <img src="../src/img/logo2white.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto hidden dark:block group-hover:-translate-y-2 transition-all" />
+        <a href="../../index.html" class="text-2xl uppercase tracking-widest font-semibold max-sm:text-sm mt-2 flex items-center gap-x-3 max-sm:gap-x-2  nav-links group">
+          <img src="../../assets/img/logo2dark.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto dark:hidden  group-hover:-translate-y-2 transition-all" />
+          <img src="../../assets/img/logo2white.svg" alt="Volunteeria Logo" class="w-10 sm:w-[3.5rem] h-auto hidden dark:block group-hover:-translate-y-2 transition-all" />
           <h1>Volunteeria</h1>
         </a>
 
@@ -74,7 +74,6 @@
       <li>
         <a href="#" class="nav-links relative active-link text-purple1 after:scale-100">Tips Volunteer</a>
       </li>
-      <!-- <li><a href="" class="nav-links border border-purple1 px-4 py-5 rounded-full hover:border-black1 dark:hover:border-palewhite">FOR EMPLOYERS</a></li> -->
       <li>
         <div class="hs-dropdown" data-hs-dropdown-placement="bottom-right" data-hs-dropdown-offset="30">
           <a class="hs-dropdown-toggle hs-dark-mode group flex items-center text-gray-600 hover:text-blue-600 font-medium dark:text-gray-400 dark:hover:text-gray-500" href="javascript:;">
@@ -108,34 +107,18 @@
       <ul class="space-y-2 font-medium">
       <li>
           <a href="../daftar-lowongan/daftar-lowongan.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
-          <img src="../src/img/daftar-lowongan.svg" alt="" width="35px" class="dark:hidden" />
-            <img src="../src/img/daftar-lowongan-light.svg" alt="" width="35px" class="hidden dark:inline-block" />
+          <img src="../../assets/img/daftar-lowongan.svg" alt="" width="35px" class="dark:hidden" />
+            <img src="../../assets/img/daftar-lowongan-light.svg" alt="" width="35px" class="hidden dark:inline-block" />
             <span class="flex-1 ml-3 whitespace-nowrap">Lowongan Volunteer</span>
           </a>
         </li>
         <li>
           <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
-          <img src="../src/img/tips-volunteer2.svg" alt="" width="35px" class="dark:hidden" />
-            <img src="../src/img/tips-volunteer-light.svg" alt="" width="35px" class="hidden dark:inline-block" />
+          <img src="../../assets/img/tips-volunteer2.svg" alt="" width="35px" class="dark:hidden" />
+            <img src="../../assets/img/tips-volunteer-light.svg" alt="" width="35px" class="hidden dark:inline-block" />
             <span class="flex-1 ml-3 whitespace-nowrap text-purple1">Tips Volunteer</span>
           </a>
         </li>
-        <!-- <li>
-            <a href="" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-palewhite group">
-              <svg
-                class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z"
-                />
-              </svg>
-              <span class="flex-1 ml-3 whitespace-nowrap">FOR EMPLOYERS</span>
-            </a>
-          </li> -->
       </ul>
     </div>
   </aside>
@@ -146,7 +129,7 @@
 
       <article class="shadow-xl bg-white dark:bg-black1 rounded-lg mx-auto mt-5 text-black1 dark:text-white flex flex-col min-[800px]:flex-row">
         <div class="flex items-center w-full">
-          <img src="../src/img/tips1.jpeg" alt="News Logo" class="max-[800px]:rounded-t-lg min-[800px]:rounded-l-lg" />
+          <img src="../../assets/img/tips1.jpeg" alt="News Logo" class="max-[800px]:rounded-t-lg min-[800px]:rounded-l-lg" />
         </div>
         <div class="p-3 md:p-5 relative">
           <a class="text-lg sm:text-2xl font-semibold bg-gradient-to-l from-purple1 to-purple2 bg-[length:0%_4px] bg-[left_bottom] hover:bg-[length:100%_4px] duration-1000 bg-no-repeat inline" target="_blank" href="https://katadata.co.id/intan/lifestyle/6399d3766a2bb/7-cara-interview-kerja-yang-baik-agar-diterima-dan-penting-disimak">Tips interview yang Baik Agar Diterima dan Penting Disimak</a>
@@ -155,7 +138,7 @@
         </div>
 
         <div class="flex gap-5 mt-3 w-full bg-purple1 px-5 py-3 text-white justify-center items-center rounded-b-lg hover:brightness-105 sm:hidden">
-          <img src="../src/img/arrow-white.svg" alt="" class="w-[3vw] max-w-[20px] -rotate-90" />
+          <img src="../../assets/img/arrow-white.svg" alt="" class="w-[3vw] max-w-[20px] -rotate-90" />
           <a target="_blank" href="https://katadata.co.id/intan/lifestyle/6399d3766a2bb/7-cara-interview-kerja-yang-baik-agar-diterima-dan-penting-disimak" class="text-center">Lihat detail</a>
         </div>
       </article>
@@ -179,7 +162,7 @@
           </div>
 
           <a target="_blank" href="<?php echo $tips['link'] ?>" class="flex gap-5 mt-3 w-full bg-purple1 p-3 text-white justify-center items-center rounded-b-lg hover:brightness-105 absolute -bottom-11">
-            <img src="../src/img/arrow-white.svg" alt="" class="lg:w-[1vw] w-[3vw] max-w-[20px] -rotate-90" />
+            <img src="../../assets/img/arrow-white.svg" alt="" class="lg:w-[1vw] w-[3vw] max-w-[20px] -rotate-90" />
             <p class="text-center">Lihat detail</p>
           </a>
         </figure>
@@ -191,8 +174,8 @@
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
       <div class="md:flex md:justify-between">
         <div class="mb-10 md:mb-0">
-          <a href="../index.html" class="flex items-center">
-            <img src="../src/img/logo.svg" class="h-7 lg:h-8 w-auto mr-3" alt="Volunteeria Logo" />
+          <a href="../../index.html" class="flex items-center">
+            <img src="../../assets/img/logo.svg" class="h-7 lg:h-8 w-auto mr-3" alt="Volunteeria Logo" />
             <span class="self-center text-lg lg:text-2xl font-semibold dark:text-white tracking-widest">VOLUNTEERIA</span>
           </a>
         </div>
@@ -204,7 +187,7 @@
                 <a href="../tentang-kami/tentang-kami.html" class="hover:underline">Tentang Kami</a>
               </li>
               <li class="mb-4">
-                <a href="../index.html#faq-section" class="hover:underline">FAQ</a>
+                <a href="../../index.html#faq-section" class="hover:underline">FAQ</a>
               </li>
               <li>
                 <a href="../tentang-kami/tentang-kami.html#contact-section" class="hover:underline">Kontak Kami</a>
@@ -237,7 +220,7 @@
       </div>
       <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Volunteeria™</a>. All Rights Reserved. </span>
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="../../index.html" class="hover:underline">Volunteeria™</a>. All Rights Reserved. </span>
         <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
           <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
             <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
