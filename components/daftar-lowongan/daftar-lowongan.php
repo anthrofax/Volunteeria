@@ -145,7 +145,7 @@
 
   <!-- Section Daftar Lowongan -->
   <main class="flex flex-col py-5 bg-white dark:bg-black1 dark:text-palewhite relative">
-    <p class="jumlah-lowongan text-black1 dark:text-palewhite text-sm mx-auto lg:ml-8 mb-5 w-[80%] lg:w-[400px] text-center lg:text-left">Terdapat 6 lowongan yang tersedia saat ini.</p>
+    <p class="jumlah-lowongan text-black1 dark:text-palewhite text-sm mx-auto lg:ml-8 mb-5 w-[80%] lg:w-[400px] text-center lg:text-left">Terdapat 0 lowongan yang tersedia saat ini.</p>
 
     <ul class="lowongan-container flex flex-col min-h-screen px-8 items-center gap-5 lg:w-[35vw]">
       <?php
