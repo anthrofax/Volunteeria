@@ -98,4 +98,6 @@ Note : Pengambilan data pada aplikasi Volunteeria diambil secara langsung dari d
 - tailwind.config.js: File konfigurasi untuk Tailwind CSS.
 
 ## Lisensi
-Aplikasi Volunteeria bersifat close source. Anda dapat membuka, mengubah, mendistribusikan seluruh file yang tersedia sesuai dengan kebutuhan Anda hanya jika anda membeli aplikasi ini.
+Aplikasi Volunteeria bersifat open source. Anda dapat mengubah, lalu publish ke internet.
+
+Note: jangan lupa berikan credit jika projek ini dimuat ke internet, hak cipta dilindungi.
