@@ -1,6 +1,8 @@
 ## Volunteeria
 Volunteeria merupakan aplikasi berbasis web yang bertujuan untuk memfasilitasi pencarian lowongan volunteer, memudahkan pencarian lowongan yang lebih spesifik dengan fitur pencarian berdasarkan lokasi, menghubungkan organisasi dengan calon volunteer, dan meningkatkan partisipasi dalam kegiatan sukarelawan.
 
+Note : Pengambilan data pada aplikasi Volunteeria diambil secara langsung dari database (Tidak melalui API)
+
 ## Cara Membuka Aplikasi
 1. Pastikan anda sudah mengunduh XAMPP, code editor, dan browser pada perangkat anda.
 2. Install Zip File Aplikasi Volunteeria
@@ -11,6 +13,7 @@ Volunteeria merupakan aplikasi berbasis web yang bertujuan untuk memfasilitasi p
 7. Buka aplikasi browser (Chrome, Mozilla, Opera, dll).
 8. Akses "localhost/Volunteeria" (Volunteeria : nama dari file yang sudah diekstrak ke folder htdocs).
 9. Aplikasi sudah bisa terbuka di browser.
+10. (Untuk menambahkan daftar lowongan & tips volunteer, perlu dilakukan clone & berbagai configurasi pada proyek laravel Github Admin : https://github.com/zalzdarkent/volunteeria-app)
 
 ## Fitur Aplikasi
 1.  Penyedia Informasi Lowongan Sukarelawan:  Pengguna dapat menemukan lowongan sukarelawan yang tersedia dengan mudah di halaman Daftar Lowongan pada situs web Volunteeria.
