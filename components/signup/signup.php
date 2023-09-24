@@ -99,7 +99,7 @@
 
         <div class="flex items-center justify-center text-xs sm:text-base">
           <input style="cursor: pointer;" type="checkbox" name="remember_me" id="remember_me" class="mr-2 focus:ring-0 rounded" />
-          <label for="remember_me" class="text-palewhite">Ingat selalu <a href="#" class="text-purple1 hover:text-purple1 hover:underline">password</a> yang telah dibuat
+          <label for="remember_me" class="text-palewhite">Ingat selalu  <a href="#" class="text-purple1 hover:text-purple1 hover:underline">password</a> yang telah dibuat
         </div>
 
         <div class="my-4 flex items-center justify-center lg:justify-end space-x-4">
