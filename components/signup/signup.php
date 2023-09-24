@@ -99,7 +99,7 @@
 
         <div class="flex items-center justify-center text-xs sm:text-base">
           <input style="cursor: pointer;" type="checkbox" name="remember_me" id="remember_me" class="mr-2 focus:ring-0 rounded" />
-          <label for="remember_me" class="text-palewhite">Saya menerima <a href="#" class="text-purple1 hover:text-purple1 hover:underline">persyaratan</a> dan <a href="#" class="text-purple1 hover:text-purple1 hover:underline">kebijakan privasi</a></label>
+          <label for="remember_me" class="text-palewhite">Ingat selalu <a href="#" class="text-purple1 hover:text-purple1 hover:underline">password</a> yang telah dibuat
         </div>
 
         <div class="my-4 flex items-center justify-center lg:justify-end space-x-4">
@@ -146,7 +146,7 @@
         Swal.fire({
           icon: 'error',
           title: 'Password tidak valid!',
-          text: 'Password harus mengandung setidaknya 1 huruf, 1 angka, 1 simbol, dan memiliki panjang minimal 8 karakter.',
+          text: 'Password harus mengandung setidaknya 3 huruf, 3 angka, 3 simbol, dan memiliki panjang minimal 8 karakter.',
         });
         return false;
       }
