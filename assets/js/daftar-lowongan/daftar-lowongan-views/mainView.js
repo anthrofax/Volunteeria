@@ -12,6 +12,8 @@ class mainView {
   _jumlahLowonganYangDicari = 0;
 
   closeVolunteerDetailHandler() {
+    if (!this._closeDetailVolunteer) return;
+    
     this._closeDetailVolunteer.addEventListener("click", (e) => {
       e.preventDefault();
       this._volunteerDetail.classList.replace("block", "hidden");

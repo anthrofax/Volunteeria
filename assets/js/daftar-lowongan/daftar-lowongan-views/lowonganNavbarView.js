@@ -6,6 +6,8 @@ class lowonganNavbarView extends Navbar {
   _volunteerDetailParent = document.querySelector('.volunteer-detail-parent');
   _navObserver = new IntersectionObserver(
      entries => {
+      if (!this._volunteerDetailParent) return;
+      
       const [entry] = entries;
 
       if (entry.isIntersecting) {
