@@ -23,8 +23,6 @@ class mainView {
     });
   }
   
-
-  // tadi gua utak-atik ini buat detail nya masih error malah data pertama mulu yang keambil, tapi sebelum gua edit bagian ini, search bar sama halaman daftar lowongan pas lagi ga ada lowongan udah ga bener tampilannya do
   openDetailVolunteer() {
     this._parentElement.addEventListener("click", (e) => {
       const clickedVolunteer = e.target.closest(".daftar-lowongan");
