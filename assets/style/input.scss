@@ -251,7 +251,7 @@
   }
 
   .mini-news {
-    @apply shadow-[0_0_25px_-10px_rgba(0,0,0,0.3)] dark:shadow-[0_0_15px_-5px_rgba(95,122,219,0.5)] rounded-lg max-w-[20rem] bg-white dark:bg-black1 text-black1 dark:text-white inline-block mr-5 whitespace-normal h-64 align-middle lg:w-72 lg:h-96 relative;
+    @apply shadow-[0_0_25px_-10px_rgba(0,0,0,0.3)] dark:shadow-[0_0_15px_-5px_rgba(95,122,219,0.2)] rounded-lg max-w-[20rem] bg-white dark:bg-black1 text-black1 dark:text-white inline-block mr-5 whitespace-normal h-64 align-middle lg:w-72 lg:h-96 relative;
   }
 }
 

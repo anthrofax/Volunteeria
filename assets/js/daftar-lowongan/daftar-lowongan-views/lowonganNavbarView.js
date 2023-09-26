@@ -12,11 +12,9 @@ class lowonganNavbarView extends Navbar {
 
       if (entry.isIntersecting) {
         this._searchNavbar.classList.remove("sticky-navbar");   
-        this._volunteerDetailParent.classList.replace('h-[95%]', 'h-[70%]')
       } 
       else {
         this._searchNavbar.classList.add("sticky-navbar");
-        this._volunteerDetailParent.classList.replace('h-[70%]', 'h-[95%]')
       } 
     },
     {
