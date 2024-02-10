@@ -1,30 +1,37 @@
-'use client'
-
-import { Navbar as FlowbiteNavbar } from "flowbite-react";
+"use client";
+import { MdOutlineVolunteerActivism } from "react-icons/md";
+import { Navbar as FlowbiteNavbar, Button } from "flowbite-react";
 
 function Navbar() {
   return (
-    <FlowbiteNavbar fluid={true} rounded={true}>
-      <FlowbiteNavbar.Brand href="https://flowbite.com/">
+    <FlowbiteNavbar fluid rounded>
+      <FlowbiteNavbar.Brand href="https://flowbite-react.com">
         <img
-          src="https://flowbite.com/docs/images/logo.svg"
-          className="mr-3 h-6 sm:h-9"
-          alt="Flowbite Logo"
+          src="logo-dark.svg"
+          className="mr-3 h-10 sm:h-9"
+          alt="Flowbite React Logo"
         />
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
           Volunteeria
         </span>
       </FlowbiteNavbar.Brand>
-      <FlowbiteNavbar.Toggle />
       <FlowbiteNavbar.Collapse>
-        <FlowbiteNavbar.Link href="/navbars" active={true}>
-          Home
-        </FlowbiteNavbar.Link>
-        <FlowbiteNavbar.Link href="/about">About us</FlowbiteNavbar.Link>
+        <FlowbiteNavbar.Link href="/about">About</FlowbiteNavbar.Link>
         <FlowbiteNavbar.Link href="/signup">Sign up</FlowbiteNavbar.Link>
-        <FlowbiteNavbar.Link href="/login">Log in</FlowbiteNavbar.Link>
-        <FlowbiteNavbar.Link href="/volunteers">Volunteers/Job</FlowbiteNavbar.Link>
+        <FlowbiteNavbar.Link href="/login">Login</FlowbiteNavbar.Link>
       </FlowbiteNavbar.Collapse>
+
+      <div className="flex md:order-2">
+        <form action="/volunteers" >
+          <Button pill gradientMonochrome="purple" type="submit">
+            Volunteers / Jobs{" "}
+            <div className="ml-2 mb-2">
+              <MdOutlineVolunteerActivism size={30} />
+            </div>
+          </Button>
+          <FlowbiteNavbar.Toggle />
+        </form>
+      </div>
     </FlowbiteNavbar>
   );
 }

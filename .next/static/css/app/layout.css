@@ -1289,6 +1289,9 @@ input:checked + .toggle-bg {
 .h-3\.5 {
   height: 0.875rem;
 }
+.h-32 {
+  height: 8rem;
+}
 .h-36 {
   height: 9rem;
 }
@@ -1313,6 +1316,9 @@ input:checked + .toggle-bg {
 .h-96 {
   height: 24rem;
 }
+.h-\[1000px\] {
+  height: 1000px;
+}
 .h-auto {
   height: auto;
 }
@@ -1331,6 +1337,9 @@ input:checked + .toggle-bg {
 }
 .h-screen {
   height: 100vh;
+}
+.h-\[10000px\] {
+  height: 10000px;
 }
 .max-h-\[90vh\] {
   max-height: 90vh;
@@ -2069,6 +2078,10 @@ input:checked + .toggle-bg {
 .bg-red-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(200 30 30 / var(--tw-bg-opacity));
+}
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 .bg-teal-100 {
   --tw-bg-opacity: 1;
@@ -4555,6 +4568,10 @@ input:checked + .toggle-bg {
     height: 1.75rem;
   }
 
+  .sm\:h-9 {
+    height: 2.25rem;
+  }
+
   .sm\:w-10 {
     width: 2.5rem;
   }
@@ -4585,6 +4602,10 @@ input:checked + .toggle-bg {
 
   .md\:inset-0 {
     inset: 0px;
+  }
+
+  .md\:order-2 {
+    order: 2;
   }
 
   .md\:mx-2 {
