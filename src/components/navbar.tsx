@@ -1,36 +1,54 @@
 "use client";
 import { MdOutlineVolunteerActivism } from "react-icons/md";
 import { Navbar as FlowbiteNavbar, Button } from "flowbite-react";
+import Image from "next/image";
+import { useState } from "react";
 
 function Navbar() {
   return (
-    <FlowbiteNavbar fluid rounded>
+    <FlowbiteNavbar fluid rounded className="p-5 shadow-md shadow-slate-300 ">
       <FlowbiteNavbar.Brand href="https://flowbite-react.com">
-        <img
+        <Image
           src="logo-dark.svg"
-          className="mr-3 h-10 sm:h-9"
+          className="mr-3"
           alt="Flowbite React Logo"
+          width={55}
+          height={55}
         />
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+        <span className="self-center whitespace-nowrap text-3xl  dark:text-white">
           Volunteeria
         </span>
       </FlowbiteNavbar.Brand>
-      <FlowbiteNavbar.Collapse>
-        <FlowbiteNavbar.Link href="/about">About</FlowbiteNavbar.Link>
-        <FlowbiteNavbar.Link href="/signup">Sign up</FlowbiteNavbar.Link>
-        <FlowbiteNavbar.Link href="/login">Login</FlowbiteNavbar.Link>
-      </FlowbiteNavbar.Collapse>
+      <div className="flex md:order-2 items-center gap-5">
+        <FlowbiteNavbar.Collapse>
+          <FlowbiteNavbar.Link href="/about" className="text-base">
+            About
+          </FlowbiteNavbar.Link>
+          <FlowbiteNavbar.Link href="/signup" className="text-base">
+            Sign up
+          </FlowbiteNavbar.Link>
+          <FlowbiteNavbar.Link href="/login" className="text-base">
+            Login
+          </FlowbiteNavbar.Link>
+          <FlowbiteNavbar.Link href="/login" className="text-base block md:hidden bg-purple2 text-white2">
+            Volunteers / Jobs
+          </FlowbiteNavbar.Link>
+        </FlowbiteNavbar.Collapse>
 
-      <div className="flex md:order-2">
-        <form action="/volunteers" >
-          <Button pill gradientMonochrome="purple" type="submit">
+        <form action="/volunteers" className="hidden md:block">
+          <Button
+            pill
+            gradientMonochrome="purple"
+            type="submit"
+            className="text-xl"
+          >
             Volunteers / Jobs{" "}
             <div className="ml-2 mb-2">
               <MdOutlineVolunteerActivism size={30} />
             </div>
           </Button>
-          <FlowbiteNavbar.Toggle />
         </form>
+        <FlowbiteNavbar.Toggle />
       </div>
     </FlowbiteNavbar>
   );
