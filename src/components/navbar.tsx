@@ -21,16 +21,16 @@ function Navbar() {
       </FlowbiteNavbar.Brand>
       <div className="flex md:order-2 items-center gap-5">
         <FlowbiteNavbar.Collapse>
-          <FlowbiteNavbar.Link href="/about" className="text-base">
+          <FlowbiteNavbar.Link href="/about" className="nav-links">
             About
           </FlowbiteNavbar.Link>
-          <FlowbiteNavbar.Link href="/signup" className="text-base">
+          <FlowbiteNavbar.Link href="/signup" className="nav-links">
             Sign up
           </FlowbiteNavbar.Link>
-          <FlowbiteNavbar.Link href="/login" className="text-base">
+          <FlowbiteNavbar.Link href="/login" className="nav-links">
             Login
           </FlowbiteNavbar.Link>
-          <FlowbiteNavbar.Link href="/login" className="text-base block md:hidden bg-purple2 text-white2">
+          <FlowbiteNavbar.Link href="/login" className="nav-links block md:hidden bg-purple2 text-white2">
             Volunteers / Jobs
           </FlowbiteNavbar.Link>
         </FlowbiteNavbar.Collapse>
