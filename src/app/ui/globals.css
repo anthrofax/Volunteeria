@@ -6,3 +6,8 @@
 * {
     font-family: 'Poppins';
 }
+
+/* Untuk cek, apakah section Jumbotron sedang di hover atau tidak */
+.jumbotron:hover {
+    opacity: 0.99999;
+  }
