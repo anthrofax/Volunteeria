@@ -8,7 +8,7 @@ import TestimoniSection from "./ui/testimoni-section";
 function page() {
   return (
     <div className="h-[10000px]">
-      <Jumbotron/>
+      <Jumbotron images={['/mainimage.png', '/mainimage2.jpeg', '/mainimage3.png']}/>
       <AchievementSection/>
       <ContributionSection/>
       <TestimoniSection/>
