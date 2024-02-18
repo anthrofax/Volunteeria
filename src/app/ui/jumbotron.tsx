@@ -4,12 +4,16 @@ import {
   Dispatch,
   MutableRefObject,
   SetStateAction,
+  useContext,
   useEffect,
   useRef,
   useState,
+  createContext
 } from "react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import Image from "next/image";
+
+const JumbotronContext = createContext({});
 
 function Jumbotron({ images }: { images: string[] }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -28,24 +32,22 @@ function Jumbotron({ images }: { images: string[] }) {
         setIsLoading(true);
       }}
     >
-      <Image
-        src={imageLoaded}
-        quality={100}
-        alt="Jumbotron image"
-        className="transition-all absolute duration-1000 z-10"
-        fill
-        sizes="100vw"
-        style={{ objectFit: "cover" }}
-      />
-      <div className="bg-black opacity-20 absolute top-0 left-0 right-0 bottom-0 z-20"></div>
-      <LoadingBar
-        isLoading={isLoading}
-        onChangeLoadedImage={setImageLoaded}
-        images={images}
-      />
-      <h1></h1>
-      <SliderButton direction="left" showed={isHovered} />
-      <SliderButton direction="right" showed={isHovered} />
+      <JumbotronContext.Provider value={{ imageLoaded, setImageLoaded }}>
+        <Image
+          src={imageLoaded}
+          quality={100}
+          alt="Jumbotron image"
+          className="transition-all absolute duration-1000 z-10"
+          fill
+          sizes="100vw"
+          style={{ objectFit: "cover" }}
+        />
+        <div className="bg-black opacity-20 absolute top-0 left-0 right-0 bottom-0 z-20"></div>
+        <LoadingBar isLoading={isLoading} images={images} />
+        <h1></h1>
+        <SliderButton direction="left" showed={isHovered} />
+        <SliderButton direction="right" showed={isHovered} />
+      </JumbotronContext.Provider>
     </div>
   );
 }
@@ -76,12 +78,11 @@ function SliderButton({
 function LoadingBar({
   isLoading,
   images,
-  onChangeLoadedImage,
 }: {
   isLoading: boolean;
-  images: any;
-  onChangeLoadedImage: Dispatch<SetStateAction<string>>;
+  images: string[];
 }) {
+  const { setImageLoaded  } = useContext(JumbotronContext);
   const [loadingProgress, setLoadingProgress] = useState(0);
   //   const loadingProgressString = loadingProgress.toString();
   const loadingBar = useRef() as MutableRefObject<HTMLDivElement>;
@@ -90,9 +91,9 @@ function LoadingBar({
     function () {
       const interval = setInterval(function () {
         if (loadingProgress === 100) {
-          loadingBar.current.style.transitionDuration = "0ms";
+          loadingBar.current.style.opacity = "0";
           setLoadingProgress(0);
-          onChangeLoadedImage((prevImage) => {
+          setImageLoaded((prevImage: string) => {
             if (
               images.findIndex((image: string) => image === prevImage) ===
               images.length - 1
@@ -103,7 +104,7 @@ function LoadingBar({
               images.findIndex((image: string) => image === prevImage) + 1
             ];
           });
-          loadingBar.current.style.transitionDuration = "150ms";
+          loadingBar.current.style.opacity = "1";
         }
 
         if (isLoading) setLoadingProgress((value) => value + 1);
