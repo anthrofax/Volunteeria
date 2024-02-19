@@ -1,24 +1,57 @@
 "use client";
 import { Button } from "flowbite-react";
 import {
-  Dispatch,
   MutableRefObject,
-  SetStateAction,
   useContext,
   useEffect,
   useRef,
   useState,
-  createContext
+  createContext,
 } from "react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import Image from "next/image";
 
-const JumbotronContext = createContext({});
+interface JumbotronContextProps {
+  images: string[];
+  imageLoaded: string;
+  setImageLoaded: React.Dispatch<React.SetStateAction<string>>;
+  handleNextImage: (prevImage: string) => string;
+  handlePrevImage: (prevImage: string) => string;
+}
+
+const JumbotronContext = createContext<JumbotronContextProps>({
+  images: [],
+  imageLoaded: "",
+  setImageLoaded: () => {},
+  handleNextImage: (): string => {
+    return "";
+  },
+  handlePrevImage: (): string => {
+    return "";
+  },
+});
 
 function Jumbotron({ images }: { images: string[] }) {
   const [isHovered, setIsHovered] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [imageLoaded, setImageLoaded] = useState(images[0]);
+
+  const handleNextImage = function (prevImage: string) {
+    if (
+      images.findIndex((image: string) => image === prevImage) ===
+      images.length - 1
+    )
+      return images[0];
+
+    return images[images.findIndex((image: string) => image === prevImage) + 1];
+  };
+
+  const handlePrevImage = function (prevImage: string) {
+    if (images.findIndex((image: string) => image === prevImage) === 0)
+      return images[images.length - 1];
+
+    return images[images.findIndex((image: string) => image === prevImage) - 1];
+  };
 
   return (
     <div
@@ -32,7 +65,15 @@ function Jumbotron({ images }: { images: string[] }) {
         setIsLoading(true);
       }}
     >
-      <JumbotronContext.Provider value={{ imageLoaded, setImageLoaded }}>
+      <JumbotronContext.Provider
+        value={{
+          images,
+          imageLoaded,
+          setImageLoaded,
+          handleNextImage,
+          handlePrevImage,
+        }}
+      >
         <Image
           src={imageLoaded}
           quality={100}
@@ -61,6 +102,9 @@ function SliderButton({
   direction: directions;
   showed: boolean;
 }) {
+  const { setImageLoaded, images, handleNextImage, handlePrevImage } =
+    useContext(JumbotronContext);
+
   return (
     <Button
       className={`h-28 w-14 absolute z-20 ${
@@ -68,6 +112,21 @@ function SliderButton({
       }  top-1/2 -translate-y-1/2 bg-black2 hover:opacity-100 hover:h-36 transition-all ${
         !showed ? "opacity-0" : "opacity-40"
       }`}
+      onClick={() => {
+        setImageLoaded((prevImage: string) => {
+          if (direction === "right") {
+            return handleNextImage(prevImage);
+          }
+
+          if (direction === "left") {
+            return handlePrevImage(prevImage);
+          }
+
+          return images[
+            images.findIndex((image: string) => image === prevImage) + 1
+          ];
+        });
+      }}
     >
       {direction === "left" && <IoIosArrowBack size={50} />}
       {direction === "right" && <IoIosArrowForward size={50} />}
@@ -82,7 +141,7 @@ function LoadingBar({
   isLoading: boolean;
   images: string[];
 }) {
-  const { setImageLoaded  } = useContext(JumbotronContext);
+  const { setImageLoaded, handleNextImage } = useContext(JumbotronContext);
   const [loadingProgress, setLoadingProgress] = useState(0);
   //   const loadingProgressString = loadingProgress.toString();
   const loadingBar = useRef() as MutableRefObject<HTMLDivElement>;
@@ -93,17 +152,7 @@ function LoadingBar({
         if (loadingProgress === 100) {
           loadingBar.current.style.opacity = "0";
           setLoadingProgress(0);
-          setImageLoaded((prevImage: string) => {
-            if (
-              images.findIndex((image: string) => image === prevImage) ===
-              images.length - 1
-            )
-              return images[0];
-
-            return images[
-              images.findIndex((image: string) => image === prevImage) + 1
-            ];
-          });
+          setImageLoaded((prevImage: string) => handleNextImage(prevImage));
           loadingBar.current.style.opacity = "1";
         }
 
