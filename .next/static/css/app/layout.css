@@ -2228,6 +2228,15 @@ input:checked + .toggle-bg {
 .to-yellow-200 {
   --tw-gradient-to: #FCE96A var(--tw-gradient-to-position);
 }
+.bg-cover {
+  background-size: cover;
+}
+.bg-center {
+  background-position: center;
+}
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
 .fill-gray-600 {
   fill: #4B5563;
 }
@@ -2681,6 +2690,9 @@ input:checked + .toggle-bg {
 .opacity-50 {
   opacity: 0.5;
 }
+.bg-blend-multiply {
+  background-blend-mode: multiply;
+}
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -2776,6 +2788,11 @@ input:checked + .toggle-bg {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-\[background-image\] {
+  transition-property: background-image;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .delay-0 {
   transition-delay: 0s;
 }
@@ -2803,6 +2820,9 @@ input:checked + .toggle-bg {
 .duration-75 {
   transition-duration: 75ms;
 }
+.duration-\[2000ms\] {
+  transition-duration: 2000ms;
+}
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -2822,6 +2842,10 @@ input:checked + .toggle-bg {
 .jumbotron:hover {
     opacity: 0.99999;
   }
+
+.jumbotron-image {
+    transition-duration: 3s;
+}
 
 .nav-links {
   font-size: 1rem;

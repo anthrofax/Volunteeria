@@ -12,6 +12,10 @@
     opacity: 0.99999;
   }
 
+.jumbotron-image {
+    transition-duration: 3s;
+}
+
 .nav-links {
     @apply text-base hover:text-purple1
 }

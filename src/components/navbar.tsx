@@ -30,7 +30,10 @@ function Navbar() {
           <FlowbiteNavbar.Link href="/login" className="nav-links">
             Login
           </FlowbiteNavbar.Link>
-          <FlowbiteNavbar.Link href="/login" className="nav-links block md:hidden bg-purple2 text-white2">
+          <FlowbiteNavbar.Link
+            href="/login"
+            className="nav-links block md:hidden bg-purple2 text-white2"
+          >
             Volunteers / Jobs
           </FlowbiteNavbar.Link>
         </FlowbiteNavbar.Collapse>
