@@ -1,8 +1,8 @@
-"use client";
+import { login } from "./actions";
 
 function LoginForm() {
   return (
-    <form className=" flex flex-col gap-3">
+    <form className=" flex flex-col gap-3" action={login}>
       <div className="flex flex-col">
         <label htmlFor="email">Email</label>
         <input
@@ -10,6 +10,7 @@ function LoginForm() {
           className="rounded-md  active:outline-2 outline-purple1"
           autoFocus
           id="email"
+          name="email"
           defaultValue="afridhoikhsan@gmail.com"
         />
         <p className="text-red-600 mt-3"></p>
@@ -21,6 +22,7 @@ function LoginForm() {
           type="password"
           className="rounded-md  active:outline-2 outline-purple1"
           id="password"
+          name="password"
           defaultValue="mar777it39"
         />
         <p className="text-red-600 mt-3"></p>
